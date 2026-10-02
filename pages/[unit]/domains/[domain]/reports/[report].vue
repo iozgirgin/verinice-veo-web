@@ -241,7 +241,7 @@ export default defineComponent({
       }
 
       downloadButton.value.href = URL.createObjectURL(result);
-      downloadButton.value.download = `${report.value.name[locale.value]}.${outputType.value.split('/').pop()}`;
+      downloadButton.value.download = `${report.value.name[reportLang] || report.value.name[locale.value] || requestedReportName.value}.${outputType.value.split('/').pop()}`;
       downloadButton.value.click();
     };
 

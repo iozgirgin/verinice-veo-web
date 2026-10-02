@@ -39,6 +39,7 @@
 </template>
 <script setup lang="ts">
 import { upperFirst } from 'lodash';
+import { getReportLanguages } from '~/lib/reportLanguages';
 import type { IVeoDomain } from '~/composables/api/queryDefinitions/domains';
 import domainQueryDefinitions, { getSubTypes } from '~/composables/api/queryDefinitions/domains';
 import type { IVeoReportMeta, IVeoReportsMeta } from '~/composables/api/queryDefinitions/reports';
@@ -108,18 +109,7 @@ function prepareReportsData(reports: [id: string, report: IVeoReportMeta][]) {
 
   for (const [id, report] of reports) {
     // Create entries for each available language
-    const availableLanguages = [];
-    if (report.name.en || report.description.en) {
-      availableLanguages.push('en');
-    }
-    if (report.name.de || report.description.de) {
-      availableLanguages.push('de');
-    }
-
-    // If no specific languages, use default
-    if (availableLanguages.length === 0) {
-      availableLanguages.push('en');
-    }
+    const availableLanguages = getReportLanguages(report.name);
 
     for (const lang of availableLanguages) {
       const uniqueId = `${id}_${lang}`;

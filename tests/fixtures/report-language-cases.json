@@ -1,0 +1,17 @@
+{
+  "fixtureVersion": "1.0.0",
+  "cases": [
+    {
+      "caseId": "REPORT-LANG-TR-01",
+      "name": { "en": "TEST Risk Assessment", "tr": "TEST Risk Değerlendirmesi" },
+      "expected": ["en", "tr"]
+    },
+    {
+      "caseId": "REPORT-LANG-DE-01",
+      "name": { "de": "TEST Risikoanalyse", "en": "TEST Risk Assessment" },
+      "expected": ["de", "en"]
+    },
+    { "caseId": "REPORT-LANG-EMPTY-01", "name": { "en": "TEST SoA", "tr": "" }, "expected": ["en"] },
+    { "caseId": "REPORT-LANG-OTHER-01", "name": { "nl": "TEST Rapport" }, "expected": ["nl"] }
+  ]
+}
