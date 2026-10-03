@@ -19,7 +19,7 @@ import addFormats from 'ajv-formats';
 import Ajv2019 from 'ajv/dist/2019';
 import { JsonPointer } from '~/lib/jsonPointer';
 import type { JSONSchema7 } from 'json-schema';
-import { cloneDeep, dropRight, merge, partition, pull } from 'lodash';
+import { cloneDeep, dropRight, merge, mergeWith, partition, pull } from 'lodash';
 import type { PropType } from 'vue';
 import type { IVeoLink } from '~/types/VeoTypes';
 
@@ -229,11 +229,15 @@ const getSchemaWithAppliedConditionalSchemaProperties = (
     pathInFormDataParts.push(propertyWithCondition);
     const pathInFormData = pathInFormDataParts.join('/');
 
-    if (JsonPointer.get(objectData, pathInFormData) === ifElseThenBlock.if.properties[propertyWithCondition].const) {
-      schema = merge(controlObjectSchema, ifElseThenBlock.then?.properties?.[controlName]);
-    } else {
-      schema = merge(controlObjectSchema, ifElseThenBlock.else?.properties?.[controlName]);
-    }
+    const conditionalSchema =
+      JsonPointer.get(objectData, pathInFormData) === ifElseThenBlock.if.properties[propertyWithCondition].const ?
+        ifElseThenBlock.then?.properties?.[controlName]
+      : ifElseThenBlock.else?.properties?.[controlName];
+    // A subtype enum is the complete option list. Index-merging arrays leaves
+    // options from other subtypes behind and can display one value twice.
+    schema = mergeWith(controlObjectSchema, conditionalSchema, (_value, source, key) =>
+      key === 'enum' && Array.isArray(source) ? cloneDeep(source) : undefined
+    );
   }
   return schema;
 };

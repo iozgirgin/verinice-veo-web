@@ -16,7 +16,11 @@
    - along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <template>
-  <div v-if="options.visible" :id="objectSchemaPointer" class="vf-input-date-time vf-form-element d-flex">
+  <div
+    v-if="options.visible"
+    :id="objectSchemaPointer"
+    class="vf-input-date-time vf-form-element d-flex flex-column flex-sm-row"
+  >
     <!-- TODO-Vuetify: As of 3.1.0, v-date-picker and v-time-picker are not yet supported, so we use the browser fallback
     <v-menu
       v-model="menu"

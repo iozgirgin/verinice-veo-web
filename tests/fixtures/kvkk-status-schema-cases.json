@@ -1,0 +1,142 @@
+{
+  "fixtureVersion": "1.0.0",
+  "source": "Observed localhost KVKK process schema; canonical expected lists from KVKK template 1.2.0",
+  "schema": {
+    "title": "process",
+    "properties": {
+      "status": {
+        "type": "string",
+        "description": "Domain-specific status - available statuses depend on the sub type and are specified in the domain's element type definition.",
+        "minLength": 1,
+        "maxLength": 255,
+        "enum": [
+          "PLANNED",
+          "EXECUTED",
+          "RECEIVED",
+          "ASSESSING",
+          "RESPONDED",
+          "CLOSED",
+          "NEW",
+          "UNDER_REVIEW"
+        ]
+      },
+      "subType": {
+        "type": "string"
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "subType": {
+              "const": "ErasureRecord"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "status": {
+              "enum": [
+                "PLANNED",
+                "EXECUTED"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "subType": {
+              "const": "DataSubjectRequest"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "status": {
+              "enum": [
+                "RECEIVED",
+                "ASSESSING",
+                "RESPONDED",
+                "CLOSED"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "subType": {
+              "const": "ProcessingActivity"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "status": {
+              "enum": [
+                "NEW"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "subType": {
+              "const": "TransferAssessment"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "status": {
+              "enum": [
+                "UNDER_REVIEW",
+                "CLOSED"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "KVKK-STATUS-01",
+      "subType": "DataSubjectRequest",
+      "expected": [
+        "RECEIVED",
+        "ASSESSING",
+        "RESPONDED",
+        "CLOSED"
+      ]
+    },
+    {
+      "caseId": "KVKK-STATUS-02",
+      "subType": "ErasureRecord",
+      "expected": [
+        "PLANNED",
+        "EXECUTED"
+      ]
+    },
+    {
+      "caseId": "KVKK-STATUS-03",
+      "subType": "TransferAssessment",
+      "expected": [
+        "UNDER_REVIEW",
+        "CLOSED"
+      ]
+    },
+    {
+      "caseId": "KVKK-STATUS-04",
+      "subType": "ProcessingActivity",
+      "expected": [
+        "NEW"
+      ]
+    }
+  ]
+}
