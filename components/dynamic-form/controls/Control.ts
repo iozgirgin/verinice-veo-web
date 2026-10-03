@@ -22,6 +22,7 @@ import { JsonPointer } from '~/lib/jsonPointer';
 import { VeoFormsControlProps } from '../util';
 import * as Autocomplete from './Autocomplete.vue';
 import * as Checkbox from './Checkbox.vue';
+import * as DecisionResults from './DecisionResults.vue';
 import * as InputDate from './InputDate.vue';
 import * as InputDateTime from './InputDateTime.vue';
 import * as InputDuration from './InputDuration.vue';
@@ -38,6 +39,7 @@ import * as Select from './Select.vue';
 const AVAILABLE_CONTROLS = [
   Autocomplete,
   Checkbox,
+  DecisionResults,
   InputDate,
   InputDateTime,
   InputDuration,

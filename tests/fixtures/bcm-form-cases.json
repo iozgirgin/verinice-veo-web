@@ -1,0 +1,274 @@
+{
+  "fixtureVersion": "1.0.0",
+  "forms": [
+    {
+      "modelType": "asset",
+      "subType": "Resource",
+      "name": {
+        "tr": "TEST BCM Kaynak Formu",
+        "en": "TEST BCM Resource Form"
+      },
+      "content": {
+        "type": "Layout",
+        "options": {
+          "format": "group",
+          "direction": "vertical"
+        },
+        "elements": [
+          {
+            "type": "Label",
+            "text": "#lang/identity",
+            "options": {
+              "class": "text-title-medium mt-4 mb-2"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/name",
+            "options": {
+              "label": "#lang/name"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/description",
+            "options": {
+              "label": "#lang/description"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/decisionResults",
+            "options": {
+              "label": "#lang/results",
+              "format": "decision-results",
+              "disabled": true,
+              "description": {
+                "tr": "Bu değerler bağlı süreçlerin en kısa hedeflerinden hesaplanır. Değişiklik için ilgili süreci düzenleyin.",
+                "en": "These values use the shortest linked process targets. Edit the relevant process to change them."
+              },
+              "emptyLabel": {
+                "tr": "Hesaplanmadı — süreç hedefi ekleyin",
+                "en": "Not calculated — add a process target"
+              },
+              "results": [
+                {
+                  "key": "rto",
+                  "label": {
+                    "tr": "RTO — kurtarma süresi hedefi",
+                    "en": "RTO — recovery time objective"
+                  },
+                  "format": "duration"
+                },
+                {
+                  "key": "rpo",
+                  "label": {
+                    "tr": "RPO — veri kaybı toleransı hedefi",
+                    "en": "RPO — recovery point objective"
+                  },
+                  "format": "duration"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "context": "elementDetails",
+      "sorting": "000",
+      "translation": {
+        "tr": {
+          "name": "Ad",
+          "description": "Açıklama",
+          "identity": "Temel bilgiler",
+          "limits": "İş sürekliliği hedefleri",
+          "mtpd": "MTPD — en fazla tolere edilen kesinti",
+          "mbco": "MBCO — asgari çalışma kapasitesi (%)",
+          "notice": "MTPD ve MBCO, iş biriminin belirlediği girdilerdir. Bu form bunları hesaplamaz.",
+          "resources": "Kurtarma hedefi tanımlanan kaynaklar",
+          "results": "Hesaplanan kurtarma hedefleri"
+        },
+        "en": {
+          "name": "Name",
+          "description": "Description",
+          "identity": "Basic information",
+          "limits": "Business continuity targets",
+          "mtpd": "MTPD — maximum tolerable disruption",
+          "mbco": "MBCO — minimum operating capacity (%)",
+          "notice": "MTPD and MBCO are declared business inputs. This form does not calculate them.",
+          "resources": "Resources with recovery requirements",
+          "results": "Calculated recovery targets"
+        }
+      }
+    },
+    {
+      "modelType": "process",
+      "subType": "BusinessProcess",
+      "name": {
+        "tr": "TEST BCM İş Süreci Formu",
+        "en": "TEST BCM Process Form"
+      },
+      "content": {
+        "type": "Layout",
+        "options": {
+          "format": "group",
+          "direction": "vertical"
+        },
+        "elements": [
+          {
+            "type": "Label",
+            "text": "#lang/identity",
+            "options": {
+              "class": "text-title-medium mt-4 mb-2"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/name",
+            "options": {
+              "label": "#lang/name"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/description",
+            "options": {
+              "label": "#lang/description"
+            }
+          },
+          {
+            "type": "Label",
+            "text": "#lang/limits",
+            "options": {
+              "class": "text-title-medium mt-4 mb-2"
+            }
+          },
+          {
+            "type": "Label",
+            "text": "#lang/notice",
+            "options": {
+              "class": "text-body-medium mb-3"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/customAspects/properties/bia/properties/mtpd",
+            "options": {
+              "label": "#lang/mtpd"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/customAspects/properties/bia/properties/mbco",
+            "options": {
+              "label": "#lang/mbco"
+            }
+          },
+          {
+            "type": "Label",
+            "text": "#lang/resources",
+            "options": {
+              "class": "text-title-medium mt-4 mb-2"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/links/properties/recoveryRequirement",
+            "options": {
+              "label": "#lang/resources"
+            }
+          }
+        ]
+      },
+      "context": "elementDetails",
+      "sorting": "000",
+      "translation": {
+        "tr": {
+          "name": "Ad",
+          "description": "Açıklama",
+          "identity": "Temel bilgiler",
+          "limits": "İş sürekliliği hedefleri",
+          "mtpd": "MTPD — en fazla tolere edilen kesinti",
+          "mbco": "MBCO — asgari çalışma kapasitesi (%)",
+          "notice": "MTPD ve MBCO, iş biriminin belirlediği girdilerdir. Bu form bunları hesaplamaz.",
+          "resources": "Kurtarma hedefi tanımlanan kaynaklar",
+          "results": "Hesaplanan kurtarma hedefleri"
+        },
+        "en": {
+          "name": "Name",
+          "description": "Description",
+          "identity": "Basic information",
+          "limits": "Business continuity targets",
+          "mtpd": "MTPD — maximum tolerable disruption",
+          "mbco": "MBCO — minimum operating capacity (%)",
+          "notice": "MTPD and MBCO are declared business inputs. This form does not calculate them.",
+          "resources": "Resources with recovery requirements",
+          "results": "Calculated recovery targets"
+        }
+      }
+    }
+  ],
+  "displayCases": [
+    {
+      "caseId": "BCM-UI-RESULT-01",
+      "results": {
+        "rto": {
+          "value": "PT1H"
+        },
+        "rpo": {
+          "value": "PT10M"
+        }
+      },
+      "expected": [
+        "1 saat",
+        "10 dakika"
+      ]
+    },
+    {
+      "caseId": "BCM-UI-EMPTY-02",
+      "results": {},
+      "expected": [
+        "Hesaplanmadı — süreç hedefi ekleyin",
+        "Hesaplanmadı — süreç hedefi ekleyin"
+      ]
+    },
+    {
+      "caseId": "BCM-UI-ZERO-03",
+      "results": {
+        "rto": {
+          "value": "PT0S"
+        },
+        "rpo": {
+          "value": "PT0M"
+        }
+      },
+      "expected": [
+        "0 saniye",
+        "0 dakika"
+      ]
+    },
+    {
+      "caseId": "BCM-UI-SECONDS-04",
+      "results": {
+        "rto": {
+          "value": "PT1M30S"
+        },
+        "rpo": {
+          "value": "PT15S"
+        }
+      },
+      "expected": [
+        "1 dakika 30 saniye",
+        "15 saniye"
+      ]
+    }
+  ],
+  "editCase": {
+    "caseId": "BCM-UI-EDIT-05",
+    "caseKey": "BCM-SHARED-01-PROCESS-0",
+    "field": "MBCO",
+    "original": 50,
+    "edited": 55,
+    "restore": true
+  },
+  "remoteDemoCompared": false
+}

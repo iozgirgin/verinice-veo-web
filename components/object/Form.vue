@@ -109,6 +109,7 @@ import { VeoElementTypePlurals } from '~/types/VeoTypes';
 import domainQueryDefinitions from '~/composables/api/queryDefinitions/domains';
 import formQueryDefinitions from '~/composables/api/queryDefinitions/forms';
 import objectQueryDefinitions from '~/composables/api/queryDefinitions/objects';
+import { localizeText } from '~/lib/localizeText';
 import schemaQueryDefinitions from '~/composables/api/queryDefinitions/schemas';
 import translationQueryDefinitions from '~/composables/api/queryDefinitions/translations';
 
@@ -357,7 +358,7 @@ export default defineComponent({
       inspectionFindings.map((finding) => ({
         key: JSON.stringify(finding.suggestions),
         type: finding.severity.toLowerCase() as Message['type'],
-        text: finding.description[locale.value] || Object.values(finding.description)[0],
+        text: localizeText(finding.description, locale.value),
         actions: transformInspectionFindingSuggestions(finding.suggestions)
       }));
 
