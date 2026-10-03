@@ -1,0 +1,665 @@
+{
+  "fixtureVersion": "1.0.0",
+  "ruleVersion": "EU-2022-2555-ART23-PREVIEW-1",
+  "cases": [
+    {
+      "caseId": "NIS2-GENERAL-01",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "earlyWarning": "2026-01-06T08:00:00.000Z",
+          "notification": "2026-01-08T08:00:00.000Z",
+          "finalReport": "2026-02-06T08:00:00.000Z"
+        },
+        "status": {
+          "earlyWarning": "withinLimit",
+          "notification": "withinLimit",
+          "finalReport": "withinLimit"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-TRUST-02",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "TRUST_SERVICE_IMPACT",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "notification": "2026-01-06T08:00:00.000Z"
+        },
+        "status": {
+          "notification": "withinLimit"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-LATE-03",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-06T08:00:01Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "status": {
+          "earlyWarning": "afterLimit"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-OFFSET-04",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T11:00:00+03:00",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "earlyWarning": "2026-01-06T08:00:00.000Z",
+          "notification": "2026-01-08T08:00:00.000Z"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-MONTH-END-05",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-30T08:00:00Z",
+        "earlyWarning": "2026-01-30T10:00:00Z",
+        "notification": "2026-01-31T08:00:00Z",
+        "finalReport": "2026-02-28T08:00:00Z",
+        "progressReport": "2026-02-01T08:00:00Z",
+        "handlingCompleted": "2026-02-01T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "finalReport": "2026-02-28T08:00:00.000Z"
+        },
+        "status": {
+          "finalReport": "withinLimit"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-LEAP-MONTH-06",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2024-01-30T08:00:00Z",
+        "earlyWarning": "2024-01-30T10:00:00Z",
+        "notification": "2024-01-31T08:00:00Z",
+        "finalReport": "2024-02-29T08:00:00Z",
+        "progressReport": "2024-02-01T08:00:00Z",
+        "handlingCompleted": "2024-02-01T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "finalReport": "2024-02-29T08:00:00.000Z"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-ONGOING-07",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-02-01T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-25T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": true,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "progressReport": "2026-02-06T08:00:00.000Z",
+          "finalReport": "2026-02-25T08:00:00.000Z"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-ONGOING-NO-HANDLING-08",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": true,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "finalReport": null
+        },
+        "status": {
+          "finalReport": "missingAnchor"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-REVIEW-09",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "REVIEW_PENDING",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "reviewRequired",
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-NOT-APPLIES-10",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "NOT_APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "notApplicable",
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-NOT-SIGNIFICANT-11",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "NOT_SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "notApplicable",
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-INVALID-DATE-12",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-02-30T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "invalid:awareness"
+        ],
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-NO-OFFSET-13",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "invalid:awareness"
+        ],
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-BEFORE-AWARENESS-14",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-04T08:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "beforeAwareness:earlyWarning"
+        ],
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-FINAL-BEFORE-NOTIFICATION-15",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-05T09:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "beforeNotification:finalReport"
+        ],
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-MISSING-AWARENESS-16",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "missing:awareness"
+        ],
+        "rowCount": 0
+      }
+    },
+    {
+      "caseId": "NIS2-OVERDUE-17",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "status": {
+          "earlyWarning": "overdue",
+          "notification": "overdue",
+          "finalReport": "missingAnchor"
+        },
+        "due": {
+          "finalReport": null
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-PENDING-18",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-01-05T12:00:00Z",
+      "expected": {
+        "state": "ready",
+        "status": {
+          "earlyWarning": "pending",
+          "notification": "pending",
+          "finalReport": "missingAnchor"
+        }
+      }
+    },
+    {
+      "caseId": "NIS2-FINAL-BEFORE-HANDLING-19",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2026-01-05T10:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-25T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": true,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "beforeHandling:finalReport"
+        ]
+      }
+    },
+    {
+      "caseId": "NIS2-FUTURE-SUBMISSION-20",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-05T08:00:00Z",
+        "earlyWarning": "2027-01-01T08:00:00Z",
+        "notification": "2026-01-06T08:00:00Z",
+        "finalReport": "2026-01-20T08:00:00Z",
+        "progressReport": "2026-01-07T08:00:00Z",
+        "handlingCompleted": "2026-01-07T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "invalid",
+        "errors": [
+          "future:earlyWarning"
+        ]
+      }
+    },
+    {
+      "caseId": "NIS2-OFFSET-CALENDAR-21",
+      "input": {
+        "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+        "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+        "awareness": "2026-01-29T08:00:00Z",
+        "earlyWarning": "2026-01-29T10:00:00Z",
+        "notification": "2026-01-31T00:30:00+03:00",
+        "finalReport": "2026-02-27T21:30:00Z",
+        "progressReport": "2026-02-01T08:00:00Z",
+        "handlingCompleted": "2026-02-01T08:00:00Z",
+        "applicability": "APPLIES",
+        "significanceAssessment": "SIGNIFICANT",
+        "reportingProfile": "GENERAL",
+        "ongoingAtReportDue": false,
+        "authority": "TEST yetkili makam rolü",
+        "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+      },
+      "now": "2026-03-01T00:00:00Z",
+      "expected": {
+        "state": "ready",
+        "due": {
+          "finalReport": "2026-02-27T21:30:00.000Z"
+        }
+      }
+    }
+  ],
+  "baseRecord": {
+    "jurisdiction": "TEST AB üye ülke senaryosu; ulusal uygulama kabulü yapılmadı",
+    "significance": "TEST önemli olay senaryosu; uzman incelemesi bekleniyor",
+    "awareness": "2026-01-05T08:00:00Z",
+    "earlyWarning": "2026-01-05T10:00:00Z",
+    "notification": "2026-01-06T08:00:00Z",
+    "finalReport": "2026-01-20T08:00:00Z",
+    "progressReport": "2026-01-07T08:00:00Z",
+    "handlingCompleted": "2026-01-07T08:00:00Z",
+    "applicability": "APPLIES",
+    "significanceAssessment": "SIGNIFICANT",
+    "reportingProfile": "GENERAL",
+    "ongoingAtReportDue": false,
+    "authority": "TEST yetkili makam rolü",
+    "evidence": "TEST-WARNING-01; TEST-NOTIFICATION-01; TEST-FINAL-01"
+  },
+  "relations": {
+    "responsible": {
+      "name": "TEST NIS2 Olay Sorumlusu",
+      "subType": "ResponsibleRole",
+      "status": "NEW"
+    },
+    "evidenceDocuments": [
+      {
+        "name": "TEST NIS2 Olay İnceleme Kanıtı",
+        "subType": "Evidence",
+        "status": "NEW",
+        "description": "TEST-EVIDENCE-01: Sentetik hizmet kesintisi incelemesi; gerçek dosya veya kişi bilgisi içermez."
+      }
+    ],
+    "reportDrafts": [
+      {
+        "name": "TEST NIS2 Erken Uyarı Taslağı",
+        "subType": "Evidence",
+        "status": "NEW",
+        "description": "TEST-WARNING-01: Sentetik olay için erken uyarı taslağı. Gönderim değildir."
+      },
+      {
+        "name": "TEST NIS2 Olay Bildirimi Taslağı",
+        "subType": "Evidence",
+        "status": "NEW",
+        "description": "TEST-NOTIFICATION-01: Sentetik önemlilik ve etki değerlendirmesi. Gönderim değildir."
+      },
+      {
+        "name": "TEST NIS2 Nihai Rapor Taslağı",
+        "subType": "Evidence",
+        "status": "NEW",
+        "description": "TEST-FINAL-01: Sentetik kök neden ve tedbir özeti. Gönderim değildir."
+      }
+    ]
+  },
+  "apiCases": [
+    "NIS2-RELATION-22",
+    "NIS2-DATE-VALIDATION-23",
+    "NIS2-ISOLATION-24",
+    "NIS2-IDEMPOTENCE-25"
+  ],
+  "localeCases": [
+    {
+      "locale": "de",
+      "reviewRequired": "Zuerst Anwendbarkeit, Erheblichkeit und Meldeprofil beurteilen."
+    },
+    {
+      "locale": "en",
+      "reviewRequired": "Assess applicability, significance and reporting profile first."
+    }
+  ],
+  "objectSchemaCase": {
+    "caseId": "NIS2-IMPLICIT-OBJECT-30",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "awareness": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "livePreviewCaseId": "NIS2-LIVE-PREVIEW-26",
+  "uiCases": [
+    {
+      "caseId": "NIS2-UI-PROFILE-27",
+      "original": "GENERAL",
+      "edited": "TRUST_SERVICE_IMPACT",
+      "restore": true
+    },
+    {
+      "caseId": "NIS2-UI-RELATIONS-28",
+      "expectedResponsibleCount": 1,
+      "expectedEvidenceCount": 1,
+      "expectedDraftCount": 3
+    },
+    {
+      "caseId": "NIS2-UI-MOBILE-29",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "remoteDemoCompared": false,
+  "legalAcceptance": false
+}

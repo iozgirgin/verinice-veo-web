@@ -23,6 +23,7 @@ import { VeoFormsControlProps } from '../util';
 import * as Autocomplete from './Autocomplete.vue';
 import * as Checkbox from './Checkbox.vue';
 import * as DecisionResults from './DecisionResults.vue';
+import * as IncidentTimeline from './IncidentTimeline.vue';
 import * as InputDate from './InputDate.vue';
 import * as InputDateTime from './InputDateTime.vue';
 import * as InputDuration from './InputDuration.vue';
@@ -40,6 +41,7 @@ const AVAILABLE_CONTROLS = [
   Autocomplete,
   Checkbox,
   DecisionResults,
+  IncidentTimeline,
   InputDate,
   InputDateTime,
   InputDuration,
