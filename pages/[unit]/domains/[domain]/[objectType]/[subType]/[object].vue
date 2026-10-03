@@ -104,7 +104,7 @@
             </template>
             <template #append-form-outer>
               <div
-                class="d-flex object-details-actions pt-4"
+                class="d-flex object-details-actions bg-basepage pt-4"
                 data-component-name="object-details-actions"
                 data-veo-test="object-details-actions"
               >
@@ -171,6 +171,8 @@ export const ROUTE_NAME = 'unit-domains-domain-objectType-subType-object';
 </script>
 
 <script setup lang="ts">
+import { useDisplay } from 'vuetify';
+import { compactObjectPanels } from '~/lib/objectPanels';
 import { mdiAccountEdit, mdiBookOpenPageVariantOutline, mdiCheck } from '@mdi/js';
 import { cloneDeep, isEqual, omit, upperFirst } from 'lodash';
 import { useVeoAlerts } from '~/composables/VeoAlert';
@@ -294,6 +296,8 @@ onUnmounted(() => {
 const { getSessionState, setSessionState } = useObjectPageCollapseState();
 
 // Display stuff
+const { smAndDown: compactLayout } = useDisplay();
+const compactCollapsedStates = ref<boolean[]>([true, false]);
 const pageWidths = ref<number[]>([3, 9]);
 const pageWidthsLg = ref<number[]>([5, 7]);
 const pageWidthsXl = ref<number[]>([5, 7]);
@@ -302,6 +306,7 @@ const pageTitles = ref<string[]>([t('objectInfo'), t('objectForm')]);
 const wasSavedSuccessfully = ref<boolean>(false);
 
 const initialCollapsedStates = computed<boolean[]>(() => {
+  if (compactLayout.value) return compactCollapsedStates.value;
   const sessionState = getSessionState();
   const collapseOption = sessionState !== null ? sessionState : 'none';
 
@@ -338,6 +343,14 @@ function applyCollapseWidths(collapseOption: ObjectPageCollapseOption) {
 }
 
 const onPageCollapsed = (collapsedPages: boolean[]) => {
+  if (compactLayout.value) {
+    const normalized = compactObjectPanels(collapsedPages, compactCollapsedStates.value);
+    if (normalized.some((value, index) => value !== compactCollapsedStates.value[index])) {
+      compactCollapsedStates.value = normalized;
+    }
+    applyCollapseWidths(normalized[0] ? 'info' : 'form');
+    return;
+  }
   let newCollapseState: ObjectPageCollapseOption = 'none';
 
   if (collapsedPages[0] && !collapsedPages[1]) {

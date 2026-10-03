@@ -17,9 +17,15 @@
 -->
 <template>
   <!-- @vue-ignore TODO #3066 not assignable -->
-  <LayoutPageWrapper unresponsive-page-widths :page-widths="[{ width: '100%', minWidth: 0 }, 'auto']">
+  <LayoutPageWrapper unresponsive-page-widths :page-widths="formPageWidths">
     <template #default>
-      <BasePage :id="scrollWrapperId" data-component-name="object-form-form" sticky-footer no-padding>
+      <BasePage
+        v-show="!compactLayout || !selectedSideBarAction"
+        :id="scrollWrapperId"
+        data-component-name="object-form-form"
+        sticky-footer
+        no-padding
+      >
         <template #default>
           <slot name="prepend-form"></slot>
           <BaseCard>
@@ -49,8 +55,12 @@
       </BasePage>
       <BasePage content-class="fill-height" height="100%" no-padding data-component-name="object-form-sidebar">
         <template #default>
-          <div class="d-flex flex-row fill-height pb-13 ml-2 align-start">
-            <BaseCard v-if="selectedSideBarAction" class="overflow-y-auto" style="max-height: 100%; width: 300px">
+          <div class="d-flex flex-row fill-height pb-13 ml-2 align-start" :class="{ 'fill-width': compactLayout }">
+            <BaseCard
+              v-if="selectedSideBarAction"
+              class="overflow-y-auto"
+              :style="{ maxHeight: '100%', width: compactLayout ? '100%' : '300px', minWidth: 0 }"
+            >
               <component
                 :is="sideBarActions[selectedSideBarAction].component"
                 v-bind="sideBarActions[selectedSideBarAction].props"
@@ -98,6 +108,7 @@
 <script lang="ts">
 import { mdiEyeOutline, mdiHistory, mdiInformationOutline, mdiTableOfContents } from '@mdi/js';
 import { debounce, isEmpty, merge, upperFirst } from 'lodash';
+import { useDisplay } from 'vuetify';
 
 import {
   getRiskAdditionalContext,
@@ -202,6 +213,15 @@ export default defineComponent({
   ],
   setup(props, { emit }) {
     const { t, locale } = useI18n();
+    const { smAndDown: compactLayout } = useDisplay();
+    const formPageWidths = computed(() =>
+      compactLayout.value && selectedSideBarAction.value ?
+        [
+          { width: 0, minWidth: 0 },
+          { width: '100%', minWidth: 0 }
+        ]
+      : [{ width: '100%', minWidth: 0 }, 'auto']
+    );
     const dynamicForm = ref<{ flushPendingUpdates: () => void }>();
     const flushPendingUpdates = () => dynamicForm.value?.flushPendingUpdates();
     const { personReactiveFormActions, riskReactiveFormActions } = useVeoReactiveFormActions();
@@ -549,6 +569,7 @@ export default defineComponent({
       () => messages.value,
       (newMessages) => {
         if (
+          !compactLayout.value &&
           !defaultSideBarActionApplied.value &&
           props.defaultSideBarAction === 'messages' &&
           newMessages.length > 0 &&
@@ -577,11 +598,15 @@ export default defineComponent({
       });
     };
 
+    watch(compactLayout, (isCompact) => {
+      if (isCompact) selectedSideBarAction.value = undefined;
+    });
+
     // Show current messages when the messages tab gets closed
     watch(
       () => selectedSideBarAction.value,
       (newAction, oldAction) => {
-        if (oldAction === 'messages' && newAction !== 'messages') {
+        if (!compactLayout.value && oldAction === 'messages' && newAction !== 'messages') {
           messages.value.forEach(displayMessageAlert);
         }
       }
@@ -591,7 +616,7 @@ export default defineComponent({
     watch(
       () => messages.value,
       (newMessages, oldMessages) => {
-        if (oldMessages && selectedSideBarAction.value !== 'messages') {
+        if (!compactLayout.value && oldMessages && selectedSideBarAction.value !== 'messages') {
           for (const newMessage of newMessages) {
             if (!oldMessages.some((oldMessage) => oldMessage.key === newMessage.key)) {
               displayMessageAlert(newMessage);
@@ -603,6 +628,8 @@ export default defineComponent({
     );
 
     return {
+      compactLayout,
+      formPageWidths,
       dynamicForm,
       flushPendingUpdates,
       localAdditionalContext,

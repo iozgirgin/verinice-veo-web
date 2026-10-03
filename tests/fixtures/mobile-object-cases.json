@@ -1,0 +1,116 @@
+{
+  "fixtureVersion": "1.0.0",
+  "panelCases": [
+    {
+      "caseId": "MOBILE-PANEL-01",
+      "previous": [
+        true,
+        false
+      ],
+      "requested": [
+        false,
+        false
+      ],
+      "expected": [
+        false,
+        true
+      ]
+    },
+    {
+      "caseId": "MOBILE-PANEL-02",
+      "previous": [
+        false,
+        true
+      ],
+      "requested": [
+        false,
+        false
+      ],
+      "expected": [
+        true,
+        false
+      ]
+    },
+    {
+      "caseId": "MOBILE-PANEL-03",
+      "previous": [
+        true,
+        false
+      ],
+      "requested": [
+        true,
+        true
+      ],
+      "expected": [
+        false,
+        true
+      ]
+    },
+    {
+      "caseId": "MOBILE-PANEL-04",
+      "previous": [
+        false,
+        true
+      ],
+      "requested": [
+        true,
+        true
+      ],
+      "expected": [
+        true,
+        false
+      ]
+    },
+    {
+      "caseId": "MOBILE-PANEL-05",
+      "previous": [
+        false,
+        true
+      ],
+      "requested": [
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        false
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "caseId": "MOBILE-FORM-06",
+      "width": 390,
+      "height": 844,
+      "unit": "institution",
+      "domain": "bcm",
+      "element": "asset",
+      "expected": [
+        "2 saat",
+        "30 dakika"
+      ]
+    },
+    {
+      "caseId": "DESKTOP-FORM-07",
+      "width": 1280,
+      "height": 900,
+      "expectedLayout": "existing split information/form"
+    }
+  ],
+  "editCase": {
+    "caseId": "MOBILE-DRAFT-08",
+    "element": "institution bcm process",
+    "field": "mbco",
+    "original": 50,
+    "edited": 55,
+    "restore": true,
+    "actions": [
+      "edit",
+      "open messages",
+      "close messages",
+      "save",
+      "restore"
+    ]
+  },
+  "remoteDemoCompared": false
+}
