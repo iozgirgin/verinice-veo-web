@@ -1,0 +1,257 @@
+{
+  "fixtureVersion": "1.0.0",
+  "workflowFixtureVersion": "1.0.0",
+  "reportFixtureVersion": "1.0.0",
+  "workflowTargets": [
+    {
+      "modelType": "process",
+      "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+    },
+    {
+      "modelType": "incident",
+      "subTypes": ["PersonalDataBreach"]
+    }
+  ],
+  "selections": [
+    {
+      "caseId": "REPORT-TARGET-01",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": null,
+        "subType": null
+      },
+      "expected": {
+        "objectType": "process",
+        "subType": "DataSubjectRequest"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-02",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": "process",
+        "subType": "ErasureRecord"
+      },
+      "expected": {
+        "objectType": "process",
+        "subType": "ErasureRecord"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-03",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": "process",
+        "subType": "TransferAssessment"
+      },
+      "expected": {
+        "objectType": "process",
+        "subType": "TransferAssessment"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-04",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": "incident",
+        "subType": "DataSubjectRequest"
+      },
+      "expected": {
+        "objectType": "incident",
+        "subType": "PersonalDataBreach"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-05",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": "incident",
+        "subType": "PersonalDataBreach"
+      },
+      "expected": {
+        "objectType": "incident",
+        "subType": "PersonalDataBreach"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-06",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": "asset",
+        "subType": "Resource"
+      },
+      "expected": {
+        "objectType": "process",
+        "subType": "DataSubjectRequest"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-07",
+      "targets": [
+        {
+          "modelType": "process",
+          "subTypes": ["DataSubjectRequest", "ErasureRecord", "TransferAssessment"]
+        },
+        {
+          "modelType": "incident",
+          "subTypes": ["PersonalDataBreach"]
+        }
+      ],
+      "requested": {
+        "objectType": "process",
+        "subType": "ProcessingActivity"
+      },
+      "expected": {
+        "objectType": "process",
+        "subType": "DataSubjectRequest"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-08",
+      "targets": [
+        {
+          "modelType": "scope",
+          "subTypes": ["ISO_Scope"]
+        }
+      ],
+      "requested": {
+        "objectType": "process",
+        "subType": "DataSubjectRequest"
+      },
+      "expected": {
+        "objectType": "scope",
+        "subType": "ISO_Scope"
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-09",
+      "targets": [
+        {
+          "modelType": "process"
+        }
+      ],
+      "requested": {
+        "objectType": "process",
+        "subType": "DataSubjectRequest"
+      },
+      "expected": {
+        "objectType": "process",
+        "subType": null
+      }
+    },
+    {
+      "caseId": "REPORT-TARGET-10",
+      "targets": [],
+      "requested": {
+        "objectType": null,
+        "subType": null
+      },
+      "expected": {
+        "objectType": null,
+        "subType": null
+      }
+    }
+  ],
+  "eligibility": [
+    {
+      "caseId": "REPORT-TARGET-11",
+      "modelType": "process",
+      "subType": "DataSubjectRequest",
+      "expected": true
+    },
+    {
+      "caseId": "REPORT-TARGET-12",
+      "modelType": "process",
+      "subType": "ErasureRecord",
+      "expected": true
+    },
+    {
+      "caseId": "REPORT-TARGET-13",
+      "modelType": "process",
+      "subType": "TransferAssessment",
+      "expected": true
+    },
+    {
+      "caseId": "REPORT-TARGET-14",
+      "modelType": "incident",
+      "subType": "PersonalDataBreach",
+      "expected": true
+    },
+    {
+      "caseId": "REPORT-TARGET-15",
+      "modelType": "process",
+      "subType": "ProcessingActivity",
+      "expected": false
+    },
+    {
+      "caseId": "REPORT-TARGET-16",
+      "modelType": "asset",
+      "subType": "Resource",
+      "expected": false
+    },
+    {
+      "caseId": "REPORT-TARGET-17",
+      "modelType": "incident",
+      "subType": "DataSubjectRequest",
+      "expected": false
+    }
+  ],
+  "unitId": "10000000-0000-4000-8000-000000000001",
+  "domainId": "30000000-0000-4000-8000-000000000002",
+  "relatedDataFixture": "kvkk-report-cases.json",
+  "demoCompared": false
+}

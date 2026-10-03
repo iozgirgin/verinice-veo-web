@@ -118,6 +118,10 @@ export default defineComponent({
       type: Array as PropType<string[]>,
       default: () => []
     },
+    availableSubTypesByObjectType: {
+      type: Object as PropType<Record<string, string[]>>,
+      default: undefined
+    },
     disabledFields: {
       type: Array as PropType<string[]>,
       default: () => []
@@ -221,6 +225,9 @@ export default defineComponent({
     );
 
     const localAvailableSubTypes = computed(() => subTypes.value[localFilter.value.objectType] || []);
+    const localAllowedSubTypes = computed(
+      () => props.availableSubTypesByObjectType?.[localFilter.value.objectType] ?? props.availableSubTypes
+    );
 
     const filterOptions = computed<(IVeoFilterOption | IVeoFilterDivider)[]>(() => {
       return [
@@ -259,7 +266,9 @@ export default defineComponent({
               title: subTypes.name[locale.value] || subTypes.subType,
               value: subTypes.subType
             }))
-            .filter((subTypes) => !props.availableSubTypes.length || props.availableSubTypes.includes(subTypes.value))
+            .filter(
+              (subTypes) => !localAllowedSubTypes.value.length || localAllowedSubTypes.value.includes(subTypes.value)
+            )
             .sort((a, b) => {
               const sortValueA = (formSchemas.value as IVeoFormSchemaMeta[]).find(
                 (schema) => schema.subType === a.value

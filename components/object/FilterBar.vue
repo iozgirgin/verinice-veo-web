@@ -82,6 +82,10 @@ export default defineComponent({
     availableSubTypes: {
       type: Array as PropType<string[]>,
       default: () => []
+    },
+    availableSubTypesByObjectType: {
+      type: Object as PropType<Record<string, string[]>>,
+      default: undefined
     }
   },
   emits: ['update:filter'],

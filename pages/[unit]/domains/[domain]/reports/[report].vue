@@ -40,6 +40,7 @@
         data-component-name="report-entity-selection-filter-bar"
         :available-object-types="availableObjectTypes"
         :available-sub-types="availableSubTypes"
+        :available-sub-types-by-object-type="availableSubTypesByObjectType"
         :domain-id="$route.params.domain as string"
         :filter="filter"
         :required-fields="requiredFields"
@@ -75,7 +76,9 @@
                 flat
                 size="small"
                 color="primary"
-                :disabled="generatingReport"
+                :disabled="
+                  generatingReport || !isReportTargetAllowed(report?.targetTypes || [], item.type, item.subType)
+                "
                 data-component-name="generate-report-button"
                 @click.stop="generateReport(item)"
               >
@@ -92,6 +95,7 @@
 
 <script lang="ts">
 import { omit, upperCase, upperFirst } from 'lodash';
+import { getReportTargetFilter, isReportTargetAllowed } from '~/lib/reportTargets';
 
 import type { QueryClient } from '@tanstack/vue-query';
 import type { RouteRecordName } from 'vue-router';
@@ -128,6 +132,9 @@ export default defineComponent({
         (report.value?.targetTypes || []).find((targetType) => targetType.modelType === filter.value.objectType)
           ?.subTypes || []
     );
+    const availableSubTypesByObjectType = computed(() =>
+      Object.fromEntries((report.value?.targetTypes || []).map((target) => [target.modelType, target.subTypes || []]))
+    );
     const outputType = computed<string>(() => report.value?.outputTypes?.[0] || '');
 
     const title = computed(() =>
@@ -150,7 +157,7 @@ export default defineComponent({
       availableSubTypes.value.length ? ['objectType', 'subType'] : ['objectType']
     );
 
-    const disabledFields = ['objectType'];
+    const disabledFields = computed(() => (availableObjectTypes.value.length === 1 ? ['objectType'] : []));
 
     // accepted filter keys (others wont be respected when specified in URL query parameters)
     const filterKeys = [
@@ -183,11 +190,9 @@ export default defineComponent({
         })
       );
 
-      const fixedSubTypes = report?.value?.targetTypes?.[0]?.subTypes || [];
       filterObject = {
         ...filterObject,
-        objectType: report?.value?.targetTypes?.[0]?.modelType,
-        subType: fixedSubTypes.length === 1 ? fixedSubTypes[0] : undefined
+        ...getReportTargetFilter(report.value?.targetTypes || [], filterObject.objectType, filterObject.subType)
       };
       return filterObject;
     });
@@ -250,7 +255,7 @@ export default defineComponent({
     });
 
     const generateReport = async (object: IVeoEntity) => {
-      if (!report.value) {
+      if (!report.value || !isReportTargetAllowed(report.value.targetTypes, object.type, object.subType)) {
         return;
       }
 
@@ -287,8 +292,10 @@ export default defineComponent({
     return {
       availableObjectTypes,
       availableSubTypes,
+      availableSubTypesByObjectType,
       downloadButton,
       filter,
+      isReportTargetAllowed,
       generateReport,
       generatingReport,
       objects,
