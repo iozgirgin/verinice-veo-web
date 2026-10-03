@@ -28,5 +28,20 @@
       "singular": "Name singular",
       "plural": "Name plural"
     }
+  },
+  "tr": {
+    "add": "Ekle",
+    "addSubtype": "Alt tür ekle",
+    "availableStatus": "Kullanılabilir durumlar",
+    "deleteSubtype": "Alt türü sil",
+    "language": "Dil",
+    "status": "Durum",
+    "statusAlphaNumericUnderscore": "Durum yalnız büyük alfasayısal karakterler ve alt çizgi içerebilir",
+    "subtype": "Alt tür",
+    "subtypesForDomain": "{domain} alanının alt türleri",
+    "translation": {
+      "singular": "Tekil ad",
+      "plural": "Çoğul ad"
+    }
   }
 }

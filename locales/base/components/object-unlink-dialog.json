@@ -8,5 +8,10 @@
     "genericText": "Diese Aktion entfernt nur die Verknüpfung zum Objekt.",
     "text": "Es wird nur die Verknüpfung von \"{displayName}\" zu \"{parentDisplayName}\" entfernt.",
     "unlinkObject": "Verknüpfung entfernen"
+  },
+  "tr": {
+    "genericText": "Bu işlem yalnız üst nesneyle bağlantıyı kaldırır.",
+    "text": "“{displayName}” bağlantısını kaldırmak, nesneyi yalnız “{parentDisplayName}” içinden çıkarır.",
+    "unlinkObject": "Nesne bağlantısını kaldır"
   }
 }

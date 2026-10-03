@@ -6,5 +6,9 @@
   "de": {
     "text": "Das Objekt \"{displayName}\" wurde bearbeitet. Die Änderungen werden nicht gespeichert. Wollen Sie die Seite wirklich verlassen?",
     "headline": "Verlassen"
+  },
+  "tr": {
+    "text": "“{displayName}” nesnesi düzenlendi. Değişiklikler kaydedilmeyecek. Bu sayfadan ayrılmak istediğinizden emin misiniz?",
+    "headline": "Kapat"
   }
 }

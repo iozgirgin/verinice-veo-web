@@ -20,5 +20,16 @@
     "catalog": "Katalog",
     "addTarget": "{0} hinzufügen",
     "select": "{0} auswählen"
+  },
+  "tr": {
+    "object": "Nesne",
+    "objects": "Nesneler",
+    "noSubTypeInUnit": "Mevcut birimde {type} bulunmuyor. İlgili bir nesne oluşturun.",
+    "noObjectTypeInUnit": "Mevcut birimde {type} bulunmuyor. İlgili bir nesne ekleyin.",
+    "noObjectsInUnitApplyFromCatalog": "Mevcut birimde {type} bulunmuyor. {catalogLink} üzerinden ilgili nesneyi ekleyin veya yeni bir nesne oluşturun.",
+    "noSearchResults": "Aramanızla eşleşen sonuç bulunamadı",
+    "catalog": "Katalog",
+    "addTarget": "{0} ekle",
+    "select": "{0} seç"
   }
 }

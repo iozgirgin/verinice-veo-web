@@ -54,5 +54,33 @@
     "selectedCount": "{count} ausgewählt",
     "objectType": "Objekttyp",
     "subType": "Subtyp"
+  },
+  "tr": {
+    "import.title": "Öğeleri içe aktar",
+    "import.dropzone.label": "CSV dosyasını buraya sürükleyip bırakın",
+    "import.button.browse": "Dosya seç",
+    "assignObject": "Nesneyi başka alana ata",
+    "assignObjects": "Nesneleri başka alana ata",
+    "createObject": "Nesne oluştur",
+    "clone": "Çoğaltıldı",
+    "cloneObject": "Nesneyi kopyala",
+    "cloneSuccess": "Nesne başarıyla kopyalandı.",
+    "deleteObject": "Nesneyi sil",
+    "deleteObjects": "Nesneleri sil",
+    "dpiaMandatory": "Veri koruma etki değerlendirmesi gerekli",
+    "errors": {
+      "clone": "Nesne kopyalanamadı",
+      "delete": "Nesne silinemedi"
+    },
+    "objectDeleted": "Nesne silindi.",
+    "objectsDeleted": "Nesneler silindi.",
+    "open": "Aç",
+    "VdA": "Koruma yöntemi",
+    "cardViewOn": "Kayıtları tablo olarak göster",
+    "cardViewOff": "Kayıtları kart olarak göster",
+    "csvButtonText": "CSV içe aktarma",
+    "selectedCount": "{count} seçildi",
+    "objectType": "Nesne türü",
+    "subType": "Alt tür"
   }
 }

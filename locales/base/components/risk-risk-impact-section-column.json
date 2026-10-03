@@ -12,5 +12,12 @@
     "potentialImpact": "Potentielle Auswirkung",
     "saveCTA": "Speichern zum Neuberechnen",
     "specificImpact": "Spezifische Auswirkungen"
+  },
+  "tr": {
+    "effectiveImpact": "Etkin etki",
+    "explanation": "Açıklama",
+    "potentialImpact": "Potansiyel etki",
+    "saveCTA": "Yeniden hesaplamak için kaydedin",
+    "specificImpact": "Belirlenen etki"
   }
 }

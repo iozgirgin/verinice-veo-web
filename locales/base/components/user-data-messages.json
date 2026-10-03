@@ -22,7 +22,6 @@
     "alertLeavePageTitle": "Warning: History Download",
     "alertLeavePageCopy": "Do you really want to leave this page and stop downloading history data?"
   },
-
   "de": {
     "hint": "Hier können Sie Ihr Recht auf Datenübertragbarkeit nach { 0 } wahrnehmen. Laden Sie ihre personenbezogenen Daten im JSON-Format (ZIP-komprimiert) durch Mausklick auf die Downloadlinks herunter:",
     "unitHeader": "Daten Ihrer aktiven Units:",
@@ -45,5 +44,28 @@
     },
     "alertLeavePageTitle": "Warnung: History-Download",
     "alertLeavePageCopy": "Wollen Sie die Seite wirklich verlassen und den History-Download abbrechen?"
+  },
+  "tr": {
+    "hint": "Bu sayfadan hesabınızla ilişkili verileri dışa aktarabilirsiniz.",
+    "unitHeader": "Etkin birimlerinizin verileri:",
+    "domainHeader": "Alan verileri:",
+    "domainBody": "(verinice içinde daha sonra yeniden kullanmayı kolaylaştırır.)",
+    "historyHeader": "Veri geçmişi:",
+    "historyBody": "(Tüm veri geçmişini indirmek, boyutuna bağlı olarak zaman alabilir.)",
+    "accountHeader": "Hesap verileri:",
+    "btnDownload": "İndir",
+    "btnPrepareDownload": "İndirmeyi hazırla",
+    "alertHeader": "Veri yok.",
+    "alertBody": "Destek ekibimizle iletişime geçin: verinice{'@'}sernet.de.",
+    "errorHeader": "Verileriniz indirilemedi.",
+    "errorBody": "Destek ekibimizle iletişime geçin: verinice{'@'}sernet.de.",
+    "successHeader": "İndirme tamamlandı.",
+    "prepareHistoryPhases": {
+      "IDLE": "Verileriniz indiriliyor...",
+      "DOWNLOAD": "Verileriniz indiriliyor...",
+      "ZIP": "ZIP arşivleri oluşturuluyor..."
+    },
+    "alertLeavePageTitle": "Uyarı: Geçmiş indirme",
+    "alertLeavePageCopy": "Bu sayfadan ayrılıp geçmiş verilerini indirmeyi durdurmak istediğinizden emin misiniz?"
   }
 }

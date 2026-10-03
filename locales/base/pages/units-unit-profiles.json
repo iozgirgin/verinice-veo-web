@@ -42,5 +42,27 @@
       "title": "Fehler",
       "text": "Domäne konnte nicht verknüpft werden"
     }
+  },
+  "tr": {
+    "profiles": "Profiller",
+    "active": "Etkin",
+    "createUnit": "Birim oluştur",
+    "deleteUnit": "Birimi sil",
+    "editUnit": "Birimi düzenle",
+    "exceeded": "Birim sayısı sınırına ulaştınız",
+    "management": "Birim yönetimi",
+    "of": "/",
+    "warningAssociateDomainTitle": "Uyarı!",
+    "warningAssociateDomainBody": "Bu işlem geri alınamaz. Profili uygulamak için biriminize yeni bir alan bağlanması gerekir. Bu bağlantı geri alınamaz!",
+    "applyProfiles": "Profilleri uygula",
+    "isApplyingProfile": "Profil uygulanıyor...",
+    "applyProfileSuccess": "Profil başarıyla uygulandı.",
+    "applyProfileErrorText": "Profil uygulanamadı.",
+    "isAssociatingDomain": "Alan ilişkilendiriliyor...",
+    "domainAssociatedSuccess": "Alan başarıyla bağlandı.",
+    "domainAssociatedError": {
+      "title": "Bir sorun oluştu",
+      "text": "Alan bağlanamadı"
+    }
   }
 }

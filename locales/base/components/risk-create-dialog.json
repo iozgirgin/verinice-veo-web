@@ -8,5 +8,10 @@
     "createRisk": "Risiko erstellen | Risiko erstellen | {count} Risiken erstellen",
     "createRiskError": "Das Risiko konnte nicht erstellt werden | Die Risiken konnten nicht erstellt werden",
     "risksCreated": "Risiko erfolgreich hinzugefügt | Risiken erfolgreich hinzugefügt"
+  },
+  "tr": {
+    "createRisk": "Risk oluştur | Risk oluştur | {count} risk oluştur",
+    "createRiskError": "Risk oluşturulamadı | Riskler oluşturulamadı",
+    "risksCreated": "Risk başarıyla eklendi | Riskler başarıyla eklendi"
   }
 }

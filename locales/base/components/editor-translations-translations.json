@@ -18,5 +18,15 @@
     "source": "Quelle",
     "unknown": "Unbekannt",
     "value": "Wert ({0})"
+  },
+  "tr": {
+    "createEditableTranslation": "Bu çeviriye dayalı düzenlenebilir bir çeviri oluştur",
+    "formschema": "Form şeması",
+    "key": "Anahtar",
+    "objectschema": "Nesne şeması",
+    "searchTranslations": "Çevirilerde ara",
+    "source": "Kaynak",
+    "unknown": "Bilinmiyor",
+    "value": "Değer ({0})"
   }
 }

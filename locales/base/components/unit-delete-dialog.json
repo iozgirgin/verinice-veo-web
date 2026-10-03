@@ -20,5 +20,16 @@
     "unitDeleted": "Die Unit wurde erfolgreich gelöscht.",
     "unitDeletionFailedtitle": "Fehler",
     "unitDeletionFailedText": "Die Unit konnte nicht gelöscht werden"
+  },
+  "tr": {
+    "dialogTitle": "Birimi sil",
+    "hint": "Bu işlem geri alınamaz.",
+    "placeholder": "Silinecek birimin adını girin",
+    "question": "“{name}” birimini kalıcı olarak silmek istediğinizden emin misiniz?",
+    "request": "Silmeden önce tüm verilerin yerel yedeğini oluşturmanız önerilir.",
+    "deletingUnit": "Birim siliniyor...",
+    "unitDeleted": "Birim başarıyla silindi.",
+    "unitDeletionFailedtitle": "Hata",
+    "unitDeletionFailedText": "Birim silinemedi."
   }
 }

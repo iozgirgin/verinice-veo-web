@@ -18,5 +18,15 @@
     "successHeader": "The unit was exported successfully.",
     "errorHeader": "Export failed",
     "errorBody": "The unit could not be exported."
+  },
+  "tr": {
+    "dialogTitle": "Birimi dışa aktar",
+    "description": "“{name}” birimini dışa aktarmak istiyor musunuz?\nYalnız mevcut birim dışa aktarılır. Geçmiş ve kullanıcı verileri dahil edilmez.",
+    "dataTransferHint": "Geçmiş ve kullanıcı verilerini dışa aktarmak için Veri aktarımı sayfasını kullanın.",
+    "dataTransfer": "Veri aktarımı",
+    "export": "Dışa aktar",
+    "successHeader": "Birim başarıyla dışa aktarıldı.",
+    "errorHeader": "Dışa aktarma başarısız",
+    "errorBody": "Birim dışa aktarılamadı."
   }
 }

@@ -4,5 +4,8 @@
   },
   "de": {
     "noObjects": "Keine Objekte vorhanden"
+  },
+  "tr": {
+    "noObjects": "Kullanılabilir nesne yok"
   }
 }

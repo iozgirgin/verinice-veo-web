@@ -16,5 +16,14 @@
       "layout": "Layout",
       "widget": "Widget"
     }
+  },
+  "tr": {
+    "edit": "{0} düzenle",
+    "type": {
+      "control": "kontrol",
+      "label": "etiket",
+      "layout": "düzen",
+      "widget": "bileşen"
+    }
   }
 }

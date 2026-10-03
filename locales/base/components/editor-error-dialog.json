@@ -6,5 +6,9 @@
   "de": {
     "schemaValidationErrors": "Fehler",
     "schemaValidationWarnings": "Warnungen"
+  },
+  "tr": {
+    "schemaValidationErrors": "Hatalar",
+    "schemaValidationWarnings": "Uyarılar"
   }
 }

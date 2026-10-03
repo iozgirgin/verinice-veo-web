@@ -12,5 +12,12 @@
     "filterList": "Liste filtern",
     "resetFilter": "Filter zurücksetzen",
     "submitFilter": "Filter anwenden"
+  },
+  "tr": {
+    "collapseOptions": "Daha az seçenek",
+    "expandOptions": "Daha fazla seçenek",
+    "filterList": "Listeyi filtrele",
+    "resetFilter": "Filtreyi sıfırla",
+    "submitFilter": "Filtreyi uygula"
   }
 }

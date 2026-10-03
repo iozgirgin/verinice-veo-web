@@ -52,5 +52,32 @@
     "linkSubType": "Link Subtyp",
     "linkType": "Linktyp",
     "technicalId": "Technischer Bezeichner"
+  },
+  "tr": {
+    "attributes": "alanlar",
+    "addAttribute": "Alan ekle",
+    "common": "genel",
+    "delete": {
+      "aspect": "Özellik grubunu sil",
+      "link": "Bağlantıyı sil"
+    },
+    "duplicateAttributes": "Alan başlıkları, bir özellik grubu veya bağlantı içinde benzersiz olmalıdır",
+    "headlineCreate": {
+      "aspect": "Özel özellik grubu oluştur",
+      "link": "Özel bağlantı oluştur"
+    },
+    "headlineEdit": {
+      "aspect": "“{title}” özellik grubunu düzenle",
+      "link": "“{title}” özel bağlantısını düzenle"
+    },
+    "noProperties": {
+      "aspect": "Bu özellik grubunda alan yok",
+      "link": "Bu bağlantıda alan yok"
+    },
+    "no_subtype": "Alt tür yok",
+    "linkName": "İlişki adı",
+    "linkSubType": "Bağlantı alt türü",
+    "linkType": "Bağlantı türü",
+    "technicalId": "Teknik kimlik"
   }
 }

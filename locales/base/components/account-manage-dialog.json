@@ -56,5 +56,34 @@
     "updatingOwnAccount": "Sie bearbeiten Ihren eigenen Account. Aus Sicherheitsgründen wurde das Bearbeiten von Berechtigungen deaktiviert.",
     "username": "Benutzername",
     "usernameAlreadyTaken": "Der Benutzername wird bereits verwendet. Bitte wählen Sie einen anderen."
+  },
+  "tr": {
+    "createAccount": "Hesap oluştur",
+    "creatingAccountFailed": "Hesap oluşturulamadı.",
+    "creatingAccountSuccess": "Hesap başarıyla oluşturuldu",
+    "email": "E-posta adresi",
+    "emailAddressAlreadyTaken": "Bu e-posta adresi zaten kullanılıyor. Başka bir adres seçin.",
+    "emailAddressOrUsernameAlreadyTaken": "Kullanıcı adı veya e-posta adresi zaten kullanılıyor.",
+    "emailAddressWrongFormat": "Geçerli bir e-posta adresi girin.",
+    "enabled": "Hesap etkin mi?",
+    "firstName": "Ad",
+    "roles": "Roller",
+    "accessGroups": "Erişim grupları",
+    "lastName": "Soyad",
+    "noPassword": "Kullanıcı, e-posta adresini doğruladıktan sonra parolasını belirleyebilir.",
+    "password": "Parola",
+    "permissions": {
+      "editors": "Yazma erişimi"
+    },
+    "tooltips": {
+      "roles": "Roller izin verilen işlemleri belirler. Nesnelere erişmek için uygun bir erişim grubuna üyelik de gerekir.",
+      "accessGroups": "Erişim grupları nesnelere erişimi belirler. Belirli işlemleri yapmak için ayrıca uygun rol gerekir."
+    },
+    "updateAccount": "Hesabı güncelle",
+    "updatingAccountFailed": "Hesap güncellenemedi",
+    "updatingAccountSuccess": "Hesap başarıyla güncellendi",
+    "updatingOwnAccount": "Kendi hesabınızı güncelliyorsunuz. Yetkilerinizin düzenlenmesi güvenliğiniz için devre dışı.",
+    "username": "Kullanıcı adı",
+    "usernameAlreadyTaken": "Bu kullanıcı adı zaten kullanılıyor. Başka bir ad seçin."
   }
 }

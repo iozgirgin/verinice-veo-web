@@ -10,5 +10,11 @@
     "control": "Strg",
     "expand": "{elementName} anzeigen",
     "page": "Seite"
+  },
+  "tr": {
+    "collapse": "{elementName} bölümünü daralt",
+    "control": "Ctrl",
+    "expand": "{elementName} bölümünü genişlet",
+    "page": "sayfa"
   }
 }

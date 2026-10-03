@@ -10,7 +10,8 @@
     "riskUpdated": "The risk was edited successfully",
     "riskNotSaved": "The risk couldn't be saved",
     "riskOwner": "Risk owner",
-    "scenarioRequired": "A risk scenario has to be selected"
+    "scenarioRequired": "A risk scenario has to be selected",
+    "scenario": "Risk scenario"
   },
   "de": {
     "common": "Allgemein",
@@ -23,6 +24,21 @@
     "riskUpdated": "Das Risiko wurde erfolgreich bearbeitet",
     "riskNotSaved": "Das Risiko konnte nicht gespeichert werden",
     "riskOwner": "Verantwortlicher",
-    "scenarioRequired": "Es muss ein Szenario ausgewählt werden"
+    "scenarioRequired": "Es muss ein Szenario ausgewählt werden",
+    "scenario": "Risikoszenario"
+  },
+  "tr": {
+    "common": "Genel",
+    "computedValues": "Bazı değerler sunucuda hesaplanır.",
+    "computedValuesCTA": "Bu değerleri yeniden hesaplamak için “Kaydet” düğmesine basın.",
+    "createRisk": "Risk oluştur",
+    "editRisk": "“{0} ({1})” riskini düzenle",
+    "mitigatingAction": "“{0}” için risk azaltma eylemi",
+    "riskCreated": "Risk başarıyla oluşturuldu",
+    "riskUpdated": "Risk başarıyla düzenlendi",
+    "riskNotSaved": "Risk kaydedilemedi",
+    "riskOwner": "Risk sahibi",
+    "scenarioRequired": "Bir risk senaryosu seçilmelidir",
+    "scenario": "Risk senaryosu"
   }
 }

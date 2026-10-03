@@ -52,5 +52,32 @@
     "childObjects": "Untergeordnetes Objekt | Untergeordnete Objekte",
     "targetObjects": "Zielobjekt | Zielobjekte",
     "CI": "{0}-Zuordnung | {0}-Zuordnungen "
+  },
+  "tr": {
+    "object": "Nesne",
+    "addOrLinkObject": "{0} ekle/bağla",
+    "objectLinked": "Nesne üst nesneye başarıyla eklendi.",
+    "linkError": "Üst nesnelere bağlantı kurulamadı",
+    "selectObjectType": "Nesne türünü seç",
+    "selectObjectTypeDescription": "Nesne türünü seçin.",
+    "addToScope": "Kapsama ekle/bağla",
+    "addedToScope": "Nesne kapsama başarıyla eklendi.",
+    "addedToMultipleScopes": "Nesne {count} kapsama eklendi.",
+    "childObjectLinked": "Nesne başarıyla bağlandı.",
+    "childLinkError": "Nesneler bağlanamadı",
+    "linkControl": "{0} bağla",
+    "linkControlGeneric": "Kontrol bağla",
+    "linkedControl": "Kontrol başarıyla bağlandı.",
+    "controlLinkError": "Kontrol bağlanamadı",
+    "linkTarget": "Hedef nesneye bağla",
+    "selectTargetType": "Hedef türünü seç",
+    "selectTargetTypeDescription": "Hedef nesne türünü seçin.",
+    "linkedToTarget": "Kontrol hedefe başarıyla bağlandı.",
+    "targetLinkError": "Hedefe bağlantı kurulamadı",
+    "successfullyAdded": "{name} başarıyla eklendi.",
+    "parentObjects": "Üst nesne | Üst nesneler",
+    "targetObjects": "Hedef nesne | Hedef nesneler",
+    "childObjects": "Alt nesne | Alt nesneler",
+    "CI": "{0} atama | {0} atama"
   }
 }

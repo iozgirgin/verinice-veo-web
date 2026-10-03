@@ -1,0 +1,11 @@
+{
+  "linkControl": "{0} modelle",
+  "riEditor": {
+    "targetObject": "Hedef nesne",
+    "description": "Açıklama",
+    "abbreviation": "Kısaltma",
+    "protectionApproach": "Koruma yaklaşımı",
+    "name": "Ad",
+    "originationDescription": "Gereklilik açıklaması"
+  }
+}

@@ -10,5 +10,11 @@
     "displayLanguageDescription": "Anzeigesprache im Objektschema Editor",
     "supportedLanguages": "Sprachen",
     "updateTranslationsError": "Übersetzungen konnten nicht aktualisiert werden"
+  },
+  "tr": {
+    "displayLanguage": "Diller",
+    "displayLanguageDescription": "Nesne şeması düzenleyicisinde görüntülenen dil",
+    "supportedLanguages": "Desteklenen diller",
+    "updateTranslationsError": "Çeviriler güncellenemedi"
   }
 }

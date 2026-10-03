@@ -1,0 +1,10 @@
+{
+  "linkControl": "{0} seç",
+  "riEditor": {
+    "targetObject": "BGYS kapsamı",
+    "description": "Açıklama",
+    "abbreviation": "Kısaltma",
+    "name": "Ad",
+    "originationDescription": "Gereklilik açıklaması"
+  }
+}

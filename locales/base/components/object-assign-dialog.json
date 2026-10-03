@@ -34,5 +34,23 @@
     "bulkDomainAssignmentHintTitleSingle": "Domänenzuordnung",
     "objectsAlreadyAssigned": "Die Objekte sind bereits den ausgewählten Domänen zugewiesen.",
     "objectAlreadyAssigned": "Das Objekt ist bereits den ausgewählten Domänen zugewiesen."
+  },
+  "tr": {
+    "assignmentFailed": "Nesne başka alana atanamadı.",
+    "domainAssignmentHint": "Bir nesneyi başka bir alana atamak geri alınamaz!",
+    "domainAssignmentHintTitle": "Alan atama",
+    "domainSelection": "Alan seçimi",
+    "objectAssigned": "Nesne başka alana başarıyla atandı.",
+    "objectsBulkAssigned": "{count} nesne başka alana başarıyla atandı.",
+    "subtype": "Alt tür",
+    "title": "“{object}” nesnesini alana ata",
+    "titleBulk": "{count} nesneyi alana ata",
+    "titleBulkSingle": "“{object}” nesnesini alana ata",
+    "bulkDomainAssignmentHint": "{count} nesneyi başka alanlara atamak üzeresiniz. Bu işlem geri alınamaz!",
+    "bulkDomainAssignmentHintTitle": "Toplu alan atama",
+    "bulkDomainAssignmentHintSingle": "“{object}” nesnesini başka alanlara atamak üzeresiniz. Bu işlem geri alınamaz!",
+    "bulkDomainAssignmentHintTitleSingle": "Alan atama",
+    "objectsAlreadyAssigned": "Nesneler seçili alanlara zaten atanmış.",
+    "objectAlreadyAssigned": "Nesne seçili alanlara zaten atanmış."
   }
 }

@@ -30,5 +30,21 @@
     "applyItemsError": "Katalogelemente konnten nicht angewandt werden.",
     "itemsAlreadyApplied": "Katalogelemente wurden bereits angewandt. Es wurden keinen neuen Elemente erzeugt.",
     "applyingItems": "Wende Katalogelemente an..."
+  },
+  "tr": {
+    "all": "Tümü",
+    "applyEntries": "Senaryoları uygula",
+    "applyScenariosError": "Senaryolar uygulanamadı",
+    "applyTOMs": "Teknik ve organizasyonel önlemleri uygula",
+    "applyTOMsError": "Teknik ve organizasyonel önlemler uygulanamadı",
+    "catalog": "{name}",
+    "scenariosApplied": "Senaryolar başarıyla uygulandı",
+    "selectScenariosCTA": "Uygulamak istediğiniz senaryoları seçin.",
+    "selectTOMsCTA": "Uygulanacak bir veya daha fazla teknik ve organizasyonel önlem seçin.",
+    "TOMsApplied": "Teknik ve organizasyonel önlemler uygulandı",
+    "itemsApplied": "Katalog öğeleri başarıyla uygulandı.",
+    "applyItemsError": "Katalog öğeleri uygulanamadı.",
+    "itemsAlreadyApplied": "Katalog öğeleri daha önce uygulanmış. Yeni öğe oluşturulmadı.",
+    "applyingItems": "Öğeler uygulanıyor..."
   }
 }

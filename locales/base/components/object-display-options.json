@@ -8,5 +8,10 @@
     "display": "Ansicht",
     "objectView": "Vollständige Ansicht",
     "viewAs": "Darstellen als"
+  },
+  "tr": {
+    "display": "Görünüm",
+    "objectView": "Tam görünüm",
+    "viewAs": "Görünüm türü"
   }
 }

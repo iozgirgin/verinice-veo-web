@@ -1,0 +1,12 @@
+{
+  "linkControl": "{0} seç",
+  "riEditor": {
+    "targetObject": "Bilgi güvenliği değerlendirmesi",
+    "description": "Açıklama",
+    "abbreviation": "Kısaltma",
+    "control_isaControl_headingLevel1": "Üst kategori",
+    "control_isaControl_headingLevel2": "Alt kategori",
+    "name": "Ad",
+    "originationDescription": "Gereklilik açıklaması"
+  }
+}

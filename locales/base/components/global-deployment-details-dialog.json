@@ -42,5 +42,27 @@
     },
     "versioninfo": "Versionsinformation",
     "footerNote": "Es gelten {privacyLink} und {imprintLink}  der SerNet GmbH."
+  },
+  "tr": {
+    "about": "verinice hakkında",
+    "build": "Derleme",
+    "buildDate": "Derleme tarihi",
+    "commit": "Commit",
+    "component": "Bileşen",
+    "contributors": "Katkıda bulunanlar",
+    "imprint": "Yayıncı bilgileri",
+    "privacyPolicy": "Gizlilik politikası",
+    "productinfo": "Ürün bilgileri",
+    "unknown": "Bilinmiyor",
+    "version": {
+      "header": "verinice, bütünleşik yönetim sistemleri için açık kaynaklı bir yazılım çatısıdır.",
+      "paragraph": {
+        "1": "Yeni verinice sürümü tamamen web tabanlıdır. Uzun yıllara dayanan deneyimi güncel teknolojiyle birleştirir. Sürekli geliştirme ve müşteri odaklılık önceliğini korur.",
+        "2": "Modüler yaklaşım, yerleşik bilgi güvenliği ve veri koruma yönetim çözümlerinin ötesine uzanır. Sektörler arası uzmanlık, diğer yönetim sistemleri için ortak temel sağlar. verinice kurumların ve kamu kuruluşlarının farklı gereksinimlerini karşılar; başlangıç seviyesindeki kullanıcıların kolayca çalışmasına ve uzmanların karmaşık süreçlerini yönetmesine uygundur.",
+        "3": "verinice'nin yayıncısı, BT güvenliği sektöründe 25 yılı aşkın deneyime sahip SerNet GmbH'dir."
+      }
+    },
+    "versioninfo": "Sürüm bilgileri",
+    "footerNote": "SerNet GmbH'nin {privacyLink} ve {imprintLink} metinleri geçerlidir."
   }
 }

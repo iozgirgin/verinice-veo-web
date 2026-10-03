@@ -12,5 +12,12 @@
     "domainselector": "Domänenauswahl",
     "furtherDomainInformation": "Das verinice.TEAM wird sukzessive weitere Domänen für verinice.veo zur Verfügung stellen, klicken Sie {here} für mehr Informationen.",
     "linkMoreInfo": "hier"
+  },
+  "tr": {
+    "domainpicker": "Bir alan seçin",
+    "domainpickerPlaceholder": "Alan ara...",
+    "domainselector": "Alan seçimi",
+    "furtherDomainInformation": "verinice.TEAM yeni alanları aşamalı olarak sunar. Ayrıntılı bilgi için {here} bağlantısını açın.",
+    "linkMoreInfo": "burada"
   }
 }

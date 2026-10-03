@@ -4,5 +4,8 @@
   },
   "de": {
     "attributecount": "Keine Attribute | Ein Attribut | {n} Attribute"
+  },
+  "tr": {
+    "attributecount": "Alan yok | Bir alan | {n} alan"
   }
 }

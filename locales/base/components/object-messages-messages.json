@@ -10,5 +10,11 @@
     "hint": "Hinweis | Hinweise",
     "messages": "Meldungen",
     "warning": "Warnung | Warnungen"
+  },
+  "tr": {
+    "error": "Hata | Hatalar",
+    "hint": "İpucu | İpuçları",
+    "messages": "Mesajlar",
+    "warning": "Uyarı | Uyarılar"
   }
 }

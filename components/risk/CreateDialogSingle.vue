@@ -52,7 +52,7 @@
                 data-test-selector="risk-scenario"
                 :model-value="data.scenario"
                 object-type="scenario"
-                sub-type="route.params.subType"
+                :label="t('scenario')"
                 :rules="[requiredRule]"
                 :domain-id="domainId"
                 :disabled="formDisabled"

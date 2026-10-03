@@ -16,5 +16,14 @@
     "furtherInformation": "Eine Übersicht über weitere Funktionen und Domänen finden Sie auf der",
     "linkName": "verinice Webseite",
     "moreModulesInfo": "Das verinice-Team wird sukzessive weitere Domänen für verinice.veo zur Verfügung stellen."
+  },
+  "tr": {
+    "associateDomainsErrorTitle": "Hata!",
+    "associateDomainsErrorBody": "Alanlar bağlanamadı.",
+    "associateDomainsSuccess": "Alanlar başarıyla bağlandı.",
+    "isAssociatingDomains": "Alanlar ilişkilendiriliyor...",
+    "furtherInformation": "Diğer işlevler ve alanlar hakkında genel bilgi şurada bulunabilir:",
+    "linkName": "verinice web sitesi",
+    "moreModulesInfo": "verinice ekibi verinice.veo için yeni alanları aşamalı olarak sunacaktır."
   }
 }

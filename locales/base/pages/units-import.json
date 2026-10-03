@@ -96,5 +96,54 @@
       "missingName": "Der Export enthält keinen Unit-Namen. Bitte geben Sie ihn im nächsten Schritt an.",
       "missingUnit": "Der Export enthält keine Unit-Metadaten."
     }
+  },
+  "tr": {
+    "acceptedFormats": "Desteklenen biçimler: JSON dışa aktarma dosyaları ve JSON dışa aktarma dosyası içeren ZIP arşivleri.",
+    "backendMessagesTitle": "İçe aktarma tamamlanamadı",
+    "descriptionLabel": "Açıklama",
+    "details": "Ayrıntılar",
+    "dropzoneTitle": "Birim dışa aktarma dosyanızı buraya bırakın",
+    "editStep": "Düzenle (isteğe bağlı)",
+    "explanation": {
+      "edit": "İçe aktarmayı başlatmadan önce birim adını ve açıklamasını düzenleyebilirsiniz.",
+      "import": "Dışa aktarılmış birimi JSON veya ZIP dosyası olarak yükleyin. İçe aktarma verileri dosyadan otomatik alınır.",
+      "summary": "Birimi oluşturmadan önce içe aktarılan verileri inceleyin."
+    },
+    "fileReadError": "Seçili dosya okunamadı.",
+    "fileReadErrorTitle": "Dosya işlenemedi",
+    "goToUnitAdmin": "Birim yönetimine dön",
+    "hint": {
+      "edit": "İçe aktarılan ad ve açıklama dosyadan önceden doldurulur.",
+      "import": "İçe aktarma, dışa aktarma dosyasındaki birim içeriğini korur. Sunucu veriyi reddederse nedeni burada gösterilir.",
+      "summary": "İçe aktarmayı tamamlamadan önce ayrıntıları doğrulayın."
+    },
+    "importedFile": "İçe aktarılan dosya",
+    "importStats": "İçe aktarma içeriği",
+    "importStatsValue": "{0} alan, {1} öğe",
+    "importSuccess": "Birim başarıyla içe aktarıldı.",
+    "importErrorBody": "Birim içe aktarılamadı.",
+    "importErrorTitle": "İçe aktarma başarısız",
+    "importUnit": "Birimi içe aktar",
+    "importUnitStep": "Birimi içe aktar",
+    "invalidImportStructure": "Seçili dosya geçerli bir birim dışa aktarma dosyası içermiyor.",
+    "isImportingUnit": "Birim içe aktarılıyor...",
+    "localErrorsTitle": "Seçili dosya henüz içe aktarılamaz",
+    "localWarningsTitle": "Bu içe aktarma ipuçlarını inceleyin",
+    "noDescription": "Açıklama yok",
+    "noJsonInZip": "Seçili ZIP dosyası JSON dışa aktarma dosyası içermiyor.",
+    "notAvailable": "Kullanılamıyor",
+    "or": "veya",
+    "pageTitle": "Birimi içe aktar",
+    "reviewAndFinalize": "İncele ve tamamla",
+    "selectFile": "Dosya seç",
+    "selectedFile": "Seçilen dosya",
+    "summary": "Özet",
+    "unitNameLabel": "Birim adı",
+    "validation": {
+      "missingDomains": "Dışa aktarma dosyasında alan yok.",
+      "missingElements": "Dışa aktarma dosyasında öğe yok.",
+      "missingName": "Dışa aktarma dosyasında birim adı yok. Sonraki adımda bir ad girin.",
+      "missingUnit": "Dışa aktarma dosyasında birim üst verisi yok."
+    }
   }
 }

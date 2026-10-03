@@ -1,0 +1,10 @@
+{
+  "linkControl": "{0} seç",
+  "riEdtior": {
+    "targetObject": "Kapsam",
+    "description": "Açıklama",
+    "abbreviation": "Kısaltma",
+    "name": "Ad",
+    "originationDescription": "Gereklilik açıklaması"
+  }
+}

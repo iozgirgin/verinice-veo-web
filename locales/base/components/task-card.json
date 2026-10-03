@@ -12,5 +12,12 @@
       "requirement-implementation": "Umsetzung",
       "requirement-implementation-revision": "Revision"
     }
+  },
+  "tr": {
+    "dueBy": "Son tarih: {date}",
+    "type": {
+      "requirement-implementation": "Uygulama",
+      "requirement-implementation-revision": "Sürüm kaydı"
+    }
   }
 }

@@ -20,5 +20,16 @@
       "success": "Risikomatrix erfolgreich aktualisiert.",
       "error": "Risikomatrix konnte nicht aktualisiert werden"
     }
+  },
+  "tr": {
+    "impact": "Etki",
+    "noData": "Veri yok",
+    "probability": "Olasılık",
+    "riskMatrix": "Risk matrisi:",
+    "messages": {
+      "isUpdatingRiskMatrix": "Risk matrisi güncelleniyor...",
+      "success": "Risk matrisi başarıyla güncellendi.",
+      "error": "Risk matrisi güncellenemedi."
+    }
   }
 }

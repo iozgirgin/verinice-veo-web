@@ -45,5 +45,28 @@
     "connectrisks": "Risiken erstellen",
     "connectcontrols": "Controls zuordnen",
     "missingPermissionsTooltip": "Fehlende Berechtigung"
+  },
+  "tr": {
+    "createObject": "{0} oluştur",
+    "createRisk": "Risk oluştur",
+    "createScope": "Kapsam oluştur",
+    "linkScope": "Kapsam seç",
+    "linkAsset": "Varlık seç",
+    "linkProcess": "Süreç seç",
+    "object": "Nesne",
+    "objectLinked": "Bağlantılar başarıyla güncellendi.",
+    "successfullyAdded": "{0} başarıyla eklendi.",
+    "objectNotLinked": "Bağlantılar güncellenemedi.",
+    "create_entity": "Yeni nesnenin türünü belirtin.",
+    "select_entity": "Eklenecek nesnenin türünü belirtin.",
+    "headline_create": "Yeni nesne oluştur",
+    "headline_select": "Nesne türünü seç",
+    "select": "Seç",
+    "create": "Oluştur",
+    "connectchildObjects": "Alt nesne ekle",
+    "connectparentObjects": "Gruba ekle",
+    "connectrisks": "Riskler oluştur",
+    "connectcontrols": "Kontrolleri ata",
+    "missingPermissionsTooltip": "Gerekli yetkiler eksik"
   }
 }

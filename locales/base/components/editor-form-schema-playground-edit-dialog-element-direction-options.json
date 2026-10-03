@@ -8,5 +8,10 @@
     "direction": "Ausrichtung",
     "horizontal": "Horizontal",
     "vertical": "Vertikal"
+  },
+  "tr": {
+    "direction": "Yön",
+    "horizontal": "Yatay",
+    "vertical": "Dikey"
   }
 }

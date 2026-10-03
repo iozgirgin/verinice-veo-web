@@ -4,5 +4,8 @@
   },
   "de": {
     "unsavedChanges": "Es gibt ungespeicherte Änderungen. Wollen Sie die Seite wirklich verlassen?"
+  },
+  "tr": {
+    "unsavedChanges": "Kaydedilmemiş değişiklikler var. Bu sayfadan ayrılmak istediğinizden emin misiniz?"
   }
 }

@@ -12,5 +12,12 @@
       "aspect": "Möchten Sie den Aspekt \"{title}\" wirklich löschen?",
       "link": "Möchten Sie den Link \"{title}\" wirklich löschen?"
     }
+  },
+  "tr": {
+    "deleteCustomAspect": "Özel özellik grubunu sil",
+    "delete": {
+      "aspect": "“{title}” özellik grubunu silmek istediğinizden emin misiniz?",
+      "link": "“{title}” bağlantısını silmek istediğinizden emin misiniz?"
+    }
   }
 }

@@ -8,5 +8,10 @@
     "saveSchema": "Codeänderungen übernehmen",
     "saveSchemaError": "Das Schema konnte nicht aktualisiert werden",
     "saveSchemaSuccess": "Schema wurde aktualisiert!"
+  },
+  "tr": {
+    "saveSchema": "Kod değişikliklerini uygula",
+    "saveSchemaError": "Şema güncellenemedi",
+    "saveSchemaSuccess": "Şema güncellendi!"
   }
 }

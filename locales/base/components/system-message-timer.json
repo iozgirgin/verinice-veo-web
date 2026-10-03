@@ -4,5 +4,8 @@
   },
   "de": {
     "remainingTime": "Verbleibende Zeit: "
+  },
+  "tr": {
+    "remainingTime": "Kalan süre: "
   }
 }

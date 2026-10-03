@@ -26,5 +26,19 @@
     "conflictsText": "Bitte lösen Sie alle Konflikte, bevor Sie das Update erneut versuchen.",
     "conflicts": "Konflikte",
     "updates": "Updates"
+  },
+  "tr": {
+    "noDescription": "Açıklama yok",
+    "noDomainUpdatesTitle": "Güncelleme yok",
+    "noDomainUpdatesText": "Birimleriniz en güncel alan sürümlerini kullanıyor.",
+    "updateRecommendedTitle": "Güncelleme öneriliyor",
+    "updateRecommendedText": "İyileştirmelerden ve yeni özelliklerden yararlanmak için birimlerinizi en güncel alan sürümlerine yükseltmeniz önerilir.",
+    "version": "Sürüm",
+    "currentVersion": "Mevcut sürüm",
+    "availableVersion": "Yeni sürüm",
+    "updateUnits": "Birimleri güncelle",
+    "conflictsText": "Güncellemeyi yeniden denemeden önce tüm çakışmaları giderin.",
+    "conflicts": "Çakışmalar",
+    "updates": "Güncellemeler"
   }
 }

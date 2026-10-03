@@ -1,14 +1,17 @@
 {
   "en": {
     "all": "All",
-    "selectObject": "Select Object"
+    "selectObject": "Select Object",
+    "showBreadcrumbs": "Show navigation path"
   },
   "de": {
     "all": "Alle",
-    "selectObject": "Objekt Auswählen"
+    "selectObject": "Objekt Auswählen",
+    "showBreadcrumbs": "Navigationspfad anzeigen"
   },
   "tr": {
     "all": "Tümü",
-    "selectObject": "Nesne seç"
+    "selectObject": "Nesne seç",
+    "showBreadcrumbs": "Gezinme yolunu göster"
   }
 }

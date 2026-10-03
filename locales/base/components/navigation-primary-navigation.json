@@ -5,7 +5,8 @@
     "all": "All",
     "backToVeo": "Go to verinice.veo",
     "scenario": "Scenario",
-    "control": "TOM"
+    "control": "TOM",
+    "mainNavigation": "Main navigation"
   },
   "de": {
     "collapse": "Menü verstecken",
@@ -13,7 +14,8 @@
     "all": "Alle",
     "backToVeo": "Zu verinice.veo",
     "scenario": "Gefährdung",
-    "control": "TOM"
+    "control": "TOM",
+    "mainNavigation": "Hauptnavigation"
   },
   "tr": {
     "collapse": "Menüyü daralt",
@@ -21,6 +23,7 @@
     "all": "Tümü",
     "backToVeo": "verinice.veo uygulamasına git",
     "scenario": "Risk senaryosu",
-    "control": "Teknik ve organizasyonel önlem"
+    "control": "Teknik ve organizasyonel önlem",
+    "mainNavigation": "Ana menü"
   }
 }

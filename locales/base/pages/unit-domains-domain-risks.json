@@ -54,5 +54,33 @@
     "riskMatrix": "Risikomatrix",
     "deletionDisabled": "Sie können das letzte Kriterium nicht löschen. Es wird zumindest ein Kriterium benötigt.",
     "addItem": "Risikostufe hinzufügen"
+  },
+  "tr": {
+    "selectRiskMatrixToView": "Görüntülemek istediğiniz risk tanımını seçin.",
+    "edit": "{item} düzenle",
+    "editRiskImpacts": "Etkileri düzenle",
+    "editRiskMatrix": "Risk matrisini düzenle",
+    "editProbabilities": "Olasılıkları düzenle",
+    "summary": "Özet",
+    "editCategory": "Düzenle [1]",
+    "editRiskValues": "Risk değerlerini düzenle",
+    "goToRiskDefintion": "İptal",
+    "saveRiskDefinition": "Risk tanımını kaydet",
+    "crossCategoryValues": "Ölçütler arası değerler",
+    "createValueMatrix": "Değer matrisi oluştur",
+    "createValueMatrixBody": "Bu alan için artık bir değer matrisi oluşturabilirsiniz. Böylece her ölçüt ve etki için risk değerlerini tanımlayabilirsiniz. Değer matrisi oluşturmak istiyor musunuz?",
+    "deleteValueMatrix": "Risk matrisini sil",
+    "createPotentialImpact": "Etki oluştur",
+    "createPotentialImpactBody": "Bu ölçüt için artık etki değerleri oluşturabilirsiniz.",
+    "saveRiskDefinitionWarningTitle": "Dikkat!",
+    "saveRiskDefinitionWarningBody": "Kaydettiğinizde risk değerleri değişir. Bu değerler elle düzenlenmelidir. Gerekirse mevcut risk analizleri de değişir.",
+    "deleteDialog": "Ölçütü sil",
+    "categoryName": "Ölçüt adı",
+    "deleteDialogBody": "Bu ölçütü silmek istediğinizden emin misiniz? Ölçütün kullanıldığı tüm birimlerde ilişkili etki ve risk değerleri de kaldırılır. Bu işlem geri alınamaz.",
+    "summaryHeader": "{name} için özet",
+    "summaryHint": "Kaydetmeden önce risk matrisini ve ayrıntıları inceleyin.",
+    "riskMatrix": "Risk matrisi",
+    "deletionDisabled": "Son ölçüt silinemez. En az bir ölçüt gereklidir.",
+    "addItem": "Olasılık düzeyi ekle"
   }
 }

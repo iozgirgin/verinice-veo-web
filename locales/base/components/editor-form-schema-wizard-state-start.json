@@ -12,5 +12,12 @@
     "importFormSchema": "Formschema importieren",
     "importFormSchemaDescription": "Existierendes Formschema importieren und modifizieren",
     "start": "Wie möchten Sie starten?"
+  },
+  "tr": {
+    "createFormSchema": "Form şeması oluştur",
+    "createFormSchemaDescription": "Yeni form şeması oluştur",
+    "importFormSchema": "Form şemasını içe aktar",
+    "importFormSchemaDescription": "Mevcut form şemasını içe aktarın ve düzenleyin.",
+    "start": "Nasıl başlamak istiyorsunuz?"
   }
 }

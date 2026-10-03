@@ -4,5 +4,8 @@
   },
   "de": {
     "hint": "TT.MM.JJJJ SS:MM z.B. {0}"
+  },
+  "tr": {
+    "hint": "GG.AA.YYYY SS:dd ör. {0}"
   }
 }

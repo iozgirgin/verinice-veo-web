@@ -18,5 +18,15 @@
     "isUpdatingDetails": "Aktualisiere Unitdetails...",
     "changeDetailsErrorTitle": "Warnung!",
     "changeDetailsErrorBody": "Unitdetails konnten nicht aktualisiert werden."
+  },
+  "tr": {
+    "genericHeading": "Ayrıntılar",
+    "unitName": "Ad",
+    "noUnitName": "Biriminize ad verin.",
+    "unitDescription": "Açıklama",
+    "changeDetailsSuccess": "Birim ayrıntıları başarıyla güncellendi.",
+    "isUpdatingDetails": "Birim ayrıntıları güncelleniyor...",
+    "changeDetailsErrorTitle": "Uyarı!",
+    "changeDetailsErrorBody": "Birim ayrıntıları güncellenemedi."
   }
 }

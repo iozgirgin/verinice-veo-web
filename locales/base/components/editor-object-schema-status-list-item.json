@@ -6,5 +6,9 @@
   "de": {
     "translation": "übersetzung",
     "deleteStatus": "Status löschen"
+  },
+  "tr": {
+    "deleteStatus": "Durumu sil",
+    "translation": "çeviri"
   }
 }

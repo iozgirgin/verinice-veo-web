@@ -10,5 +10,11 @@
     "importedTranslations": "Importierte Übersetzungen",
     "result": "Upload-Details",
     "unusedTranslations": "Übersetzungen von nicht im Formschema vorhandenen Controls (nicht importiert)"
+  },
+  "tr": {
+    "duplicateTranslations": "Nesne şemasında zaten bulunan çeviriler (içe aktarılmadı)",
+    "importedTranslations": "İçe aktarılan çeviriler",
+    "result": "Ayrıntıları yükle",
+    "unusedTranslations": "Form şemasında bulunmayan kontrollerin çevirileri (içe aktarılmadı)"
   }
 }

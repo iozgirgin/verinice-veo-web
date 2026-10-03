@@ -39,7 +39,7 @@
       </div>
     </template>
 
-    <v-list ref="primaryNavList" class="px-2" role="menu" aria-label="Main">
+    <v-list ref="primaryNavList" class="px-2" role="menu" :aria-label="t('mainNavigation')">
       <NavigationDrawerItems v-for="item in items" :key="item.id" :item="item" :mini-variant="miniVariant" />
     </v-list>
 

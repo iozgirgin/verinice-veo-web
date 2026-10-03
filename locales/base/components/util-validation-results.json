@@ -22,5 +22,17 @@
     "validationErrorsText": "Das Formschema kann aufgrund von Fehlern nicht dargestellt werden.",
     "validationErrorsAutoFixHint": "Einige Fehler können mithilfe des Beheben-Buttons automatisch behoben werden. Wenn dieser nicht sichtbar ist, muss das Problem manuell gelöst werden.",
     "warningInformationHint": "Warnungen und Informationen müssen nicht behoben werden, damit das Formschema dargestellt werden kann, es wird jedoch empfohlen, diese zu beheben."
+  },
+  "tr": {
+    "level": {
+      "errors": "hatalar",
+      "information": "bilgi",
+      "warnings": "uyarılar"
+    },
+    "noValidationErrors": "Doğrulama hatası yok",
+    "validationErrors": "{0} doğrulama hatası",
+    "validationErrorsText": "Hatalar nedeniyle form şeması görüntülenemiyor.",
+    "validationErrorsAutoFixHint": "Bazı hatalar düzeltme düğmesiyle giderilebilir. Düğme görünmüyorsa hatalar elle düzeltilmelidir.",
+    "warningInformationHint": "Uyarı ve bilgi iletileri şemanın uygulanmasını engellemese de bu iletilerin nedenlerinin düzeltilmesi önerilir."
   }
 }

@@ -20,5 +20,16 @@
     "linkedElement": "Verknüpftes Element",
     "show": "Anzeigen falls Regel zutrifft",
     "true": "Wahr"
+  },
+  "tr": {
+    "conditionalVisibility": "Koşullu görünürlük",
+    "deleteRule": "Kuralı sil",
+    "effect": "Etki",
+    "false": "Yanlış",
+    "hasValue": "değeri var",
+    "hide": "Kural geçerliyse gizle",
+    "linkedElement": "Bağlı öğe",
+    "show": "Kural geçerliyse göster",
+    "true": "Doğru"
   }
 }

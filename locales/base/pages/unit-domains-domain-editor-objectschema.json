@@ -24,5 +24,18 @@
     "saveSchemaSuccess": "Schema wurde gespeichert! Andere User werden die Änderung in spätestens 30 Minuten sehen.",
     "saveSchemaError": "Schema konnte nicht gespeichert werden",
     "saveContentCreator": "Sie müssen die Rolle \"Content Creator\" besitzen, um das Objektschema zu speichern."
+  },
+  "tr": {
+    "description": "Açıklama",
+    "hideemptyaspects": "Boş özellik gruplarını gizle",
+    "objectschema": "Nesne şeması",
+    "invalidObjectSchema": "Şema yüklenemedi. Aşağıdaki hataları giderip yeniden deneyin.",
+    "search": "Alan ara",
+    "translations": "Çeviriler",
+    "help": "Yardım",
+    "save": "Kaydet",
+    "saveSchemaSuccess": "Şema kaydedildi! Değişiklik 30 dakikadan kısa sürede diğer kullanıcılara görünür.",
+    "saveSchemaError": "Şema kaydedilemedi!",
+    "saveContentCreator": "Nesne şemasını kaydetmek için “Content Creator” rolü gerekir."
   }
 }

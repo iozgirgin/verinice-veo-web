@@ -8,5 +8,10 @@
     "clear": "Inhalt löschen",
     "openEditor": "Editor öffnen",
     "exitEditor": "Editor verlassen"
+  },
+  "tr": {
+    "clear": "İçeriği temizle",
+    "openEditor": "Düzenleyiciyi aç",
+    "exitEditor": "Düzenleyiciden çık"
   }
 }

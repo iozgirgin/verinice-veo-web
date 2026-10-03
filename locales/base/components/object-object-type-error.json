@@ -6,5 +6,9 @@
   "de": {
     "notFoundCode": "404 Not found",
     "notFound": "Der von Ihnen angeforderte Objekttyp konnte nicht gefunden werden."
+  },
+  "tr": {
+    "notFoundCode": "404 Bulunamadı",
+    "notFound": "Nesne türü bulunamadı."
   }
 }

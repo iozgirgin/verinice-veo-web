@@ -12,5 +12,12 @@
     "associateDomainsSuccess": "Domänen erfolgreich assoziert.",
     "associateDomains": "Domänen hinzufügen",
     "domainSelection": "Domänenauswahl"
+  },
+  "tr": {
+    "isAssociatingDomains": "Alanlar ilişkilendiriliyor...",
+    "associateDomainsErrorText": "Alanlar bağlanamadı.",
+    "associateDomainsSuccess": "Alanlar başarıyla bağlandı.",
+    "associateDomains": "Alanları bağla",
+    "domainSelection": "Alan seçimi"
   }
 }

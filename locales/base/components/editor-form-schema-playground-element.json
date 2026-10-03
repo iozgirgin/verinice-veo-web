@@ -4,5 +4,8 @@
   },
   "de": {
     "componentNotFound": "\"{0}\" mit dem Typ {1} wird nicht unterstützt."
+  },
+  "tr": {
+    "componentNotFound": "“{0}” türü desteklenmiyor: {1}."
   }
 }

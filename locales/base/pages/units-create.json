@@ -56,5 +56,34 @@
     "applyProfileErrorText": " Das Profil konnte nicht angewendet werden.",
     "preSelectedDomainTitle": "Vorausgewählte Domäne",
     "preSelectedDomainBody": "Weil Sie Objekte aus dem Profil { profile } importieren, ist die Domäne { domain } vorausgewählt."
+  },
+  "tr": {
+    "explanation": {
+      "name": "Yeni biriminize açıklayıcı bir ad ve isteğe bağlı açıklama verin.",
+      "profile": "Örneğin demo verisi veya risk profili yükleyin ya da boş birimle başlayın.",
+      "domain": "Biriminizde hangi alanlarla (ör. ISO, NIS2 veya GDPR) çalışmak istediğinizi belirleyin.",
+      "summary": "Tüm ayrıntıları kontrol edip yeni biriminizi oluşturun. Yeni birimin gösterge paneline yönlendirilirsiniz."
+    },
+    "hint": {
+      "name": "Test ve üretim çalışmaları gibi amaçlar için her zaman en az iki birim oluşturabilirsiniz!",
+      "profile": "Profiller her zaman en az bir alana özgüdür; örneğin ISO alanının örnek verileri!",
+      "domain": "En az bir alan gerekir!",
+      "summary": "Birim yönetiminden biriminizi daha sonra istediğiniz zaman düzenleyebilirsiniz!"
+    },
+    "createUnit": "Birim oluştur",
+    "createUnitSuccess": "Birim başarıyla oluşturuldu.",
+    "createUnitErrorBody": "Birim oluşturulamadı.",
+    "enterUnitDetails": "Ad ve açıklama girin",
+    "chooseProfile": "Profil seç (isteğe bağlı)",
+    "chooseDomains": "Alanları seç",
+    "goToUnitAdmin": "Birim yönetimine dön",
+    "summary": "Özet",
+    "isCreatingUnit": "Birim oluşturuluyor...",
+    "applyProfiles": "Profilleri uygula",
+    "isApplyingProfile": "Profil uygulanıyor...",
+    "applyProfileSuccess": "Profil başarıyla uygulandı.",
+    "applyProfileErrorText": "Profil uygulanamadı.",
+    "preSelectedDomainTitle": "Önceden seçili alan",
+    "preSelectedDomainBody": "{ profile } profilinden nesne içe aktardığınız için { domain } alanı önceden seçildi."
   }
 }

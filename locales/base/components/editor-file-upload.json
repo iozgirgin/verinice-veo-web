@@ -8,5 +8,10 @@
     "importCode": "Code einfügen",
     "importFile": "Datei hochladen",
     "uploadError": "Fehler beim Dateiupload"
+  },
+  "tr": {
+    "importCode": "Kodu yapıştır",
+    "importFile": "Dosya yükle",
+    "uploadError": "Dosya yüklenirken hata oluştu"
   }
 }

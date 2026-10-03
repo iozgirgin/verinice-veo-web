@@ -26,5 +26,19 @@
     },
     "type": "Art",
     "version": "Version"
+  },
+  "tr": {
+    "by": "tarafından",
+    "dataIncompatible": "Bu sürüm şemayla uyumlu değil ve görüntülenemiyor.",
+    "history": "Geçmiş",
+    "noPriorVersions": "Bu nesnenin önceki sürümü yok.",
+    "restoreRevision": "Sürümü geri yükle",
+    "revisionType": {
+      "CREATION": "Nesne oluşturuldu",
+      "MODIFICATION": "Nesne değiştirildi",
+      "SOFT_DELETION": "Nesne geri alınabilir biçimde silindi"
+    },
+    "type": "Tür",
+    "version": "Sürüm"
   }
 }

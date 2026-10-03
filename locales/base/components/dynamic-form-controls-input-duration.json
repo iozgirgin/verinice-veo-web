@@ -28,5 +28,20 @@
     "hoursCount": "{n} Stunde | {n} Stunden",
     "minutesCount": "{n} Minute | {n} Minuten",
     "secondsCount": "{n} Sekunde | {n} Sekunden"
+  },
+  "tr": {
+    "weeks": "Hafta",
+    "days": "Gün",
+    "hours": "Saat",
+    "minutes": "Dakika",
+    "seconds": "Saniye",
+    "clear": "Süreyi temizle",
+    "custom": "Kuruma özgü",
+    "customSelected": "Özel (değeri aşağıdaki alana girin...)",
+    "weeksCount": "{n} hafta | {n} hafta",
+    "daysCount": "{n} gün | {n} gün",
+    "hoursCount": "{n} saat | {n} saat",
+    "minutesCount": "{n} dakika | {n} dakika",
+    "secondsCount": "{n} saniye | {n} saniye"
   }
 }

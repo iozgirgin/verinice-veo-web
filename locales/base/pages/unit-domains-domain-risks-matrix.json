@@ -7,16 +7,15 @@
     "Newcriterion": "New criterion",
     "criterion": "Criteria",
     "manageCriteria": "Add criterion",
-    "error": "Updating risk definitions failed.",
+    "error": {
+      "rdEvaluation": "Could not evaluate risk definition. Risk definition cannot be saved.",
+      "update": "Risk definition could not be saved."
+    },
     "success": "Successfully updaded risk definitions.",
     "potentialImpacts": "Impact",
     "noMatrix": "No risk matrix defined yet.",
     "createMatrixInCategory": "A new matrix can be defined when editing the corresponding criterion.",
-    "updatingRiskDefinition": "Updating risk definition...",
-    "error": {
-      "rdEvaluation": "Could not evaluate risk definition. Risk definition cannot be saved.",
-      "update": "Risk definition could not be saved."
-    }
+    "updatingRiskDefinition": "Updating risk definition..."
   },
   "de": {
     "impact": "Auswirkung",
@@ -26,15 +25,32 @@
     "manageCriteria": "Kriterium hinzufügen",
     "riskValues": "Risikowerte",
     "probability": "Eintrittswahrscheinlichkeit",
-    "error": "Riskodefinitionen konnten nicht aktualisert werden.",
+    "error": {
+      "rdEvaluation": "Riskodefinition konnte nicht evaluiert werden. Ein Speichern ist nicht möglich.",
+      "update": "Speichern der Risikodefinition leider nicht möglich."
+    },
     "success": "Riskodefinitionen wurden erfolgreich aktualisiert.",
     "potentialImpacts": "Auswirkung",
     "noMatrix": "Bislang wurde keine Risikomatrix angelegt.",
     "createMatrixInCategory": "Eine neue Matrix kann bei der Bearbeitung des entsprechenden Kriteriums definiert werden.",
-    "updatingRiskDefinition": "Aktualisiere Risikodefinition",
+    "updatingRiskDefinition": "Aktualisiere Risikodefinition"
+  },
+  "tr": {
+    "impact": "Etki",
+    "noData": "Veri yok",
+    "probability": "Olasılık",
+    "riskValues": "Risk değerleri",
+    "Newcriterion": "Yeni ölçüt",
+    "criterion": "Ölçütler",
+    "manageCriteria": "Ölçüt ekle",
     "error": {
-      "rdEvaluation": "Riskodefinition konnte nicht evaluiert werden. Ein Speichern ist nicht möglich.",
-      "update": "Speichern der Risikodefinition leider nicht möglich."
-    }
+      "rdEvaluation": "Risk tanımı değerlendirilemedi. Risk tanımı kaydedilemez.",
+      "update": "Risk tanımı kaydedilemedi."
+    },
+    "success": "Risk tanımları başarıyla güncellendi.",
+    "potentialImpacts": "Etki",
+    "noMatrix": "Henüz risk matrisi tanımlanmadı.",
+    "createMatrixInCategory": "İlgili ölçüt düzenlenirken yeni bir matris tanımlanabilir.",
+    "updatingRiskDefinition": "Risk tanımı güncelleniyor..."
   }
 }

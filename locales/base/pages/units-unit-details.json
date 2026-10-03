@@ -10,5 +10,11 @@
     "unitUpdateSuccess": "Unit wurde erfolgreich aktualisiert.",
     "unitUpdateErrorTitle": "Ein Fehler ist passiert.",
     "unitUpdateErrorBody": "Unit konnte nicht aktualisiert werden"
+  },
+  "tr": {
+    "updateUnitDetails": "Birim ayrıntılarını güncelle",
+    "unitUpdateSuccess": "Birim başarıyla güncellendi.",
+    "unitUpdateErrorTitle": "Bir hata oluştu.",
+    "unitUpdateErrorBody": "Birim ayrıntıları güncellenemedi."
   }
 }

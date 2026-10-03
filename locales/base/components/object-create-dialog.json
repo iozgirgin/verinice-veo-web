@@ -10,5 +10,11 @@
     "object": "Objekt",
     "objectCreated": "\"{name}\" wurde erfolgreich erstellt!",
     "objectNotCreated": "\"{name}\" konnte nicht erstellt werden."
+  },
+  "tr": {
+    "createObject": "Nesne oluştur",
+    "object": "Nesne",
+    "objectCreated": "“{name}” başarıyla oluşturuldu!",
+    "objectNotCreated": "“{name}” oluşturulamadı"
   }
 }

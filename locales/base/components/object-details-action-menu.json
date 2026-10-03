@@ -8,7 +8,8 @@
     "performActionsErrorTitle": "Error",
     "performActionsErrorBody": "\"{actionName}\" was not successful.",
     "performActionsSuccess": "\"{actionName}\" was successful.",
-    "isPerformingActions": "{actionName}..."
+    "isPerformingActions": "{actionName}...",
+    "expandOptions": "More options"
   },
   "de": {
     "createDPIA": "DSFA erstellen",
@@ -19,6 +20,19 @@
     "performActionsErrorTitle": "Fehler",
     "performActionsErrorBody": "\"{actionName}\" war nicht erfolgreich.",
     "performActionsSuccess": "\"{actionName}\" war erfolgreich.",
-    "isPerformingActions": "{actionName}..."
+    "isPerformingActions": "{actionName}...",
+    "expandOptions": "Weitere Optionen"
+  },
+  "tr": {
+    "createDPIA": "DPIA oluştur",
+    "deleteObject": "Nesneyi sil",
+    "deleteObjectFailed": "Nesne silinemedi",
+    "dpia": "Veri koruma etki değerlendirmesi (DPIA)",
+    "linkDPIA": "DPIA bağla",
+    "performActionsErrorTitle": "Hata",
+    "performActionsErrorBody": "“{actionName}” başarısız oldu.",
+    "performActionsSuccess": "“{actionName}” başarıyla tamamlandı.",
+    "isPerformingActions": "{actionName}...",
+    "expandOptions": "Daha fazla seçenek"
   }
 }

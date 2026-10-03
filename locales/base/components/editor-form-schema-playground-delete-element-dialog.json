@@ -18,5 +18,15 @@
       "layout": "Layout",
       "widget": "Widget"
     }
+  },
+  "tr": {
+    "delete": "{0} sil",
+    "deleteText": "\"{0}\" nesnesini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "type": {
+      "control": "Kontrol",
+      "label": "Etiket",
+      "layout": "Düzen",
+      "widget": "Bileşen"
+    }
   }
 }

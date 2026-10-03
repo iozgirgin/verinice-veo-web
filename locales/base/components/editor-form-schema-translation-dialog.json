@@ -22,5 +22,17 @@
     "noTranslationsFound": "Keine Übersetzungen für \"{0}\" gefunden",
     "title": "Formschema-Titel ({0})",
     "translations": "Übersetzungen"
+  },
+  "tr": {
+    "click": "Buraya tıklayın",
+    "editTranslations": "Form şeması çevirilerini düzenle",
+    "expertMode": "Uzman modu",
+    "formSchemaTitle": "Form şeması başlığı",
+    "formSchemaTranslationNotFoundSearchAll": "Uygun form şeması çevirisi bulunamadı. Tüm çevirileri aramak için {0}.",
+    "formSchemaTranslationsOnly": "Yalnız form şeması çevirilerini göster",
+    "import": "İçe aktar",
+    "noTranslationsFound": "“{0}” için çeviri bulunamadı",
+    "title": "Form şeması başlığı ({0})",
+    "translations": "Çeviriler"
   }
 }

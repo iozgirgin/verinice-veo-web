@@ -40,5 +40,26 @@
     "objectsLinked": "Objekte wurden erfolgreich verknüpft.",
     "linkError": "Objekte konnten nicht verknüpft werden",
     "createError": "Objekt konnte nicht erstellt werden"
+  },
+  "tr": {
+    "objectType": "Nesne türü",
+    "subType": "Alt tür",
+    "abbreviation": "Kısaltma",
+    "name": "Ad",
+    "description": "Açıklama",
+    "object": "Nesne",
+    "objects": "Nesneler",
+    "selectObjectTitle": "{type} seç",
+    "createObjectTitle": "{type} oluştur",
+    "createObject": "Oluştur",
+    "createObjectButton": "{type} oluştur",
+    "createAndOpen": "Oluştur ve aç",
+    "selectObjectButton": "{type} seç",
+    "selectObjectsCount": "{type} seç ({count})",
+    "selectCount": "Seç ({count})",
+    "fieldRequired": "Bu alan zorunludur",
+    "objectsLinked": "Nesneler başarıyla bağlandı.",
+    "linkError": "Nesneler bağlanamadı",
+    "createError": "Nesne oluşturulamadı"
   }
 }

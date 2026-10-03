@@ -14,5 +14,13 @@
     "format": "(.json)",
     "openObjectSchema": "Objektschema öffnen",
     "objectSchemaUploadLabel": "Objektschema hochladen @:format"
+  },
+  "tr": {
+    "all": "Tümü",
+    "createFormSchema": "Form şeması oluştur",
+    "uploadJson": "JSON yükle",
+    "format": "(.json)",
+    "openObjectSchema": "Nesne şemasını aç",
+    "objectSchemaUploadLabel": "Nesne şeması yükleme @:format"
   }
 }

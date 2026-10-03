@@ -8,5 +8,10 @@
     "noTasks": "In dieser Unit gibt es keine offenen Aufgaben.",
     "pagination": "Seitennavigation",
     "paginationRange": "{from}-{to} von {total}"
+  },
+  "tr": {
+    "noTasks": "Bu birimde açık görev yok.",
+    "pagination": "Sayfalandırma",
+    "paginationRange": "{total} kaydın {from}-{to} arası"
   }
 }

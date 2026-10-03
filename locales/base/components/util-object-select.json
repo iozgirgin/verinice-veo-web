@@ -12,5 +12,12 @@
     "noObjects": "Keine Objekte vorhanden",
     "objectNotFound": "Objekt nicht gefunden",
     "objectNotFoundExplanation": "Das Objekt für die Verlinkung \"{0}\" mit der ID \"{1}\" konnte nicht gefunden werden."
+  },
+  "tr": {
+    "beMoreSpecific": "Diğer nesneleri görmek için aramanızı daraltın",
+    "errorWhileFetching": "Nesneler alınırken hata oluştu",
+    "noObjects": "Nesne bulunamadı",
+    "objectNotFound": "nesne bulunamadı",
+    "objectNotFoundExplanation": "“{0}” bağlantısının “{1}” kimlikli nesnesi bulunamadı."
   }
 }

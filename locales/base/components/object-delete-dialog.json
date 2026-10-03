@@ -12,5 +12,12 @@
     "loadingDomains": "Zugeordnete Domänen werden geladen...",
     "loadDomainsFailed": "Die zugeordneten Domänen konnten nicht geladen werden. Das Objekt kann nicht gelöscht werden.",
     "headline": "Objekt löschen"
+  },
+  "tr": {
+    "singleItem": "“{displayName}” nesnesini silmek istediğinizden emin misiniz? Nesne aşağıdaki tüm alanlardan kalıcı olarak silinir:",
+    "multipleItems": "Seçili nesneleri silmek istediğinizden emin misiniz? Seçili nesneler, atandıkları tüm alanlardan kalıcı olarak silinir.",
+    "loadingDomains": "Bağlı alanlar yükleniyor...",
+    "loadDomainsFailed": "Bağlı alanlar yüklenemedi. Nesne silinemez.",
+    "headline": "Nesneyi sil"
   }
 }

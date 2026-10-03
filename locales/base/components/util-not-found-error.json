@@ -12,5 +12,12 @@
     "backToPrevious": "Zurück zur vorherigen Seite",
     "pageDoesNotExist": "Die von Ihnen gesuchte Seite existiert nicht.",
     "goToDashboard": "Zum Dashboard"
+  },
+  "tr": {
+    "notFoundCode": "404 Bulunamadı",
+    "notFound": "İstenen nesne bulunamadı.",
+    "backToPrevious": "Önceki sayfaya dön",
+    "pageDoesNotExist": "Aradığınız sayfa mevcut değil.",
+    "goToDashboard": "Gösterge paneline git"
   }
 }

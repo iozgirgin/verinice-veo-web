@@ -6,5 +6,9 @@
   "de": {
     "schemaDetailsHeadline": "Formschema Eigenschaften",
     "schemaName": "Name des Formschemas"
+  },
+  "tr": {
+    "schemaDetailsHeadline": "Form şeması ayrıntıları",
+    "schemaName": "Form şemasının adı"
   }
 }

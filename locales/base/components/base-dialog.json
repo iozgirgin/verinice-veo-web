@@ -6,5 +6,9 @@
   "de": {
     "closeDialog": "Dialog schließen",
     "confirmationDialogText": "Möchten Sie den Dialog wirklich schließen? Ungespeicherte Änderungen gehen möglicherweise verloren."
+  },
+  "tr": {
+    "closeDialog": "Pencereyi kapat",
+    "confirmationDialogText": "Bu pencereyi kapatmak istediğinizden emin misiniz? Kaydedilmemiş değişiklikler kaybolabilir."
   }
 }

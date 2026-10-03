@@ -12,5 +12,12 @@
     "description": "Beschreibung",
     "responsible": "Verantwortliche Person",
     "title": "{0}-Zuordnung bearbeiten"
+  },
+  "tr": {
+    "controlUpdate": "Kontrol başarıyla güncellendi",
+    "controlUpdateFailed": "Kontrol güncellenemedi",
+    "description": "Açıklama",
+    "responsible": "Sorumlu kişi",
+    "title": "{0} atamasını düzenle"
   }
 }

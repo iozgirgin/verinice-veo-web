@@ -4,5 +4,8 @@
   },
   "de": {
     "pleaseFixError": "Bitte beheben Sie den folgenden Fehler, um die Übersetzungen zu speichern:"
+  },
+  "tr": {
+    "pleaseFixError": "Çevirileri kaydetmek için aşağıdaki hatayı giderin:"
   }
 }

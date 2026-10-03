@@ -14,5 +14,13 @@
     "formWidgets": "Formular-Widgets",
     "searchNoMatch": "Keine passenden Steuerelemente vorhanden",
     "widget": "Widget"
+  },
+  "tr": {
+    "collapse": "tümünü daralt",
+    "expand": "tümünü genişlet",
+    "formElements": "Form öğeleri",
+    "formWidgets": "form bileşenleri",
+    "searchNoMatch": "eşleşen kontrol yok",
+    "widget": "bileşen"
   }
 }

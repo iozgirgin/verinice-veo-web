@@ -4,5 +4,8 @@
   },
   "de": {
     "formSchema": "Formschema"
+  },
+  "tr": {
+    "formSchema": "Form şeması"
   }
 }

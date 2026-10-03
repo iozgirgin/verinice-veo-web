@@ -18,5 +18,15 @@
     "tableOfContents": "Inhalt",
     "unknown": "Unbestimmt",
     "addPart": "{partSubType} hinzufügen"
+  },
+  "tr": {
+    "display": "Görünüm türü",
+    "hint": "İpucu | İpuçları",
+    "history": "Geçmiş",
+    "messages": "Mesajlar",
+    "objects": "Nesneler",
+    "tableOfContents": "İçerik",
+    "unknown": "Bilinmiyor",
+    "addPart": "{partSubType} ekle"
   }
 }

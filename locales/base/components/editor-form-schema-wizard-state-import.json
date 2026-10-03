@@ -30,5 +30,21 @@
     "objectSchemaUploadLabel": "Objektschema hochladen @:format",
     "objectTypeMissing": "Das zum Formschema gehörende Objektschema konnte nicht gefunden werden",
     "uploadObjectSchemaHint": "Bitte laden Sie das zum Formschema gehörende Objektschema hoch"
+  },
+  "tr": {
+    "customFormSchema": "Özel form şeması",
+    "forceOwnSchema": "Mevcut nesne şemalarını sunucudan yükleme",
+    "forceProceed": "Yine de devam et",
+    "format": "(.json)",
+    "formSchema": "Form şeması",
+    "formSchemaType": "Form şemasının türü",
+    "importFormSchema": "Form şemasını içe aktar",
+    "openObjectSchema": "Nesne şemasını aç",
+    "formSchemaUploadLabel": "Form şeması yükleme @:format",
+    "objectschema": "Nesne şeması",
+    "objectSchemaIncompatible": "Nesne şeması form şemasıyla uyumlu değil",
+    "objectSchemaUploadLabel": "Nesne şeması yükleme @:format",
+    "objectTypeMissing": "Form şemasına ait nesne şeması bulunamadı",
+    "uploadObjectSchemaHint": "Form şemasına ait nesne şemasını yükleyin"
   }
 }

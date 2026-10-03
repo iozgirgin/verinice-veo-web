@@ -30,5 +30,21 @@
     "optionalCookies": "Optional",
     "requiredCookies": "Technisch erforderlich",
     "save": "speichern"
+  },
+  "tr": {
+    "acceptAllCookies": "Tüm çerezleri kabul et",
+    "configure": "Yapılandır",
+    "cookieBannerText": "Bu web sitesi en iyi deneyimi sağlamak için çerez kullanır.",
+    "cookie": {
+      "i18n": "Dil ayarları",
+      "keycloak": "Keycloak SSO",
+      "navigation": "Gezinme"
+    },
+    "cookieSettings": "Çerez ayarları",
+    "declineOptionalCookies": "İsteğe bağlı çerezleri reddet",
+    "moreInformation": "Daha fazla bilgi...",
+    "optionalCookies": "İsteğe bağlı çerezler",
+    "requiredCookies": "Zorunlu çerezler",
+    "save": "kaydet"
   }
 }

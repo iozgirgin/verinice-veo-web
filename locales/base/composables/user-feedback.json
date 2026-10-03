@@ -22,5 +22,17 @@
       "title": "Fehler",
       "text": "Ein Fehler ist aufgetreten"
     }
+  },
+  "tr": {
+    "loading": {
+      "text": "Yükleniyor..."
+    },
+    "success": {
+      "text": "İşlem tamamlandı"
+    },
+    "error": {
+      "title": "Hata",
+      "text": "Bir hata oluştu"
+    }
   }
 }

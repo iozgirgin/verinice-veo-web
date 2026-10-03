@@ -78,7 +78,7 @@
                           :disabled="actionProps.disabled"
                           :icon="actionProps.icon"
                           :value="actionProps.value"
-                          :aria-label="`${actionName}`"
+                          :aria-label="action.name"
                         />
                       </v-badge>
                     </div>

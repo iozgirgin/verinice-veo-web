@@ -78,5 +78,45 @@
       "requiredFields": "Das Pflichtattribut \"{required}\" muss zugeordnet sein."
     },
     "selectedFile": "Ausgewählte Datei:"
+  },
+  "tr": {
+    "importObjects": {
+      "title": "Nesneleri içe aktar",
+      "objectType": "Nesne türü",
+      "subType": "Alt tür",
+      "importSuccessful": "İçe aktarma tamamlandı: {imported}/{total} kayıt aktarıldı.",
+      "showingRemaining": "Kalan {count} kayıt gösteriliyor.",
+      "selectMapping": "Eşleştirme seç",
+      "importingTitle": "İçe aktarılıyor",
+      "importing": "İçe aktarılıyor...",
+      "importedProgress": "Verilerinizin %{progress} kadarı içe aktarıldı",
+      "importCancelled": "İçe aktarma iptal edildi",
+      "importCancelledMessage": "{imported}/{total} kayıt başarıyla içe aktarıldı. Kalan kayıtlar: {remaining}",
+      "importErrorMessageTitle": "İçe aktarma hatalarla tamamlandı",
+      "importErrorMessage": "{imported}/{total} kayıt başarıyla içe aktarıldı. Başarısız kayıtlar: {failed}",
+      "importFailedTitle": "İçe aktarma başarısız",
+      "importFailedMessage": "Bir hata nedeniyle nesneleriniz içe aktarılamadı.",
+      "importSuccessTitle": "İçe aktarma tamamlandı",
+      "importSuccessMessage": "{imported}/{total} kayıt başarıyla içe aktarıldı.",
+      "confirmClose": "İçe aktarma penceresini kapatmak istediğinizden emin misiniz? Kaydedilmemiş tüm değişiklikler kaybolur.",
+      "noOptionsAvailable": "Başka içe aktarma alanı yok.",
+      "status": "Durum",
+      "selectSubtypeFirst": "Önce alt türü seçin",
+      "invalidBeforeImport": "{total} kaydın {invalid} kadarı geçersiz ve içe aktarılmayacak",
+      "showInvalidRows": "{count} geçersiz satırı göster",
+      "validObjectsTitle": "Geçersiz kayıtlar bulundu",
+      "confirmImport": "İçe aktarılacak {total} kaydın {invalid} kadarı geçersiz. Yalnız {valid} geçerli kaydı içe aktarmak istiyor musunuz? Geçersiz kayıtları düzelttikten sonra yeniden içe aktarabilirsiniz",
+      "booleanFormat": "0, 1 veya boş olmalıdır.",
+      "integerFormat": "Sayı olmalıdır",
+      "urlFormat": "Geçerli URL olmalıdır.",
+      "dateFormat": "Geçersiz tarih biçimi. Beklenen: YYYY-MM-DD",
+      "dateTimeFormat": "Geçersiz tarih ve saat biçimi. Beklenen: YYYY-MM-DDTHH:mm:ss",
+      "enumSelectFormat": "İzin verilen seçeneklerden geçerli bir değer seçin.",
+      "importColumn": "İçe aktarma sütunu",
+      "targetAttribute": "Hedef alan",
+      "enumListSelectFormat": "Yalnız izin verilen seçenekleri virgülle ayırarak girin.",
+      "requiredFields": "Zorunlu “{required}” alanı eşleştirilmelidir."
+    },
+    "selectedFile": "Seçilen dosya:"
   }
 }

@@ -12,5 +12,12 @@
     "noProfile": "Kein Profil anwenden.",
     "hasNoProfilesTitle": "Keine Profile verfügbar",
     "hasNoProfilesBody": "Wir konnten leider keine Profile finden."
+  },
+  "tr": {
+    "isAssociatingDomain": "Alan bağlanıyor...",
+    "isApplyingProfile": "Profil uygulanıyor...",
+    "noProfile": "Profil uygulama.",
+    "hasNoProfilesTitle": "Profil yok",
+    "hasNoProfilesBody": "Profil bulunamadı."
   }
 }

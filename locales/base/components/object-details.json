@@ -20,5 +20,16 @@
     "targets": "Zielobjekte",
     "risksDisabledTooltip": "Um den Risiko-Reiter zu aktivieren, muss eine Risikodefinition in diesem Objekt hinterlegt werden.",
     "defaultDisabledTooltip": "Der Reiter ist deaktiviert."
+  },
+  "tr": {
+    "by": "tarafından",
+    "childObjects": "Alt nesneler",
+    "createdAt": "Oluşturuldu",
+    "links": "Bağlantılar",
+    "parentObjects": "Üst nesneler",
+    "risks": "Riskler",
+    "targets": "Hedef nesneler",
+    "risksDisabledTooltip": "Riskler sekmesini etkinleştirmek için bu nesnede bir risk tanımı belirlenmelidir.",
+    "defaultDisabledTooltip": "Sekme devre dışı."
   }
 }

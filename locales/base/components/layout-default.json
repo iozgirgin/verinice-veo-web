@@ -6,5 +6,9 @@
   "de": {
     "openDocumentationInNewTab": "Dokumentation in neuem Tab öffnen",
     "isLoading": "Bitte warten..."
+  },
+  "tr": {
+    "openDocumentationInNewTab": "Dokümantasyonu yeni sekmede aç",
+    "isLoading": "Bekleyin..."
   }
 }

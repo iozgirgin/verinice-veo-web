@@ -28,5 +28,20 @@
     "error": "Fehler",
     "saveContentCreator": "Sie müssen die Rolle \"Content Creator\" besitzen, um das Formschema zu speichern.",
     "viewIn": "Ansehen in"
+  },
+  "tr": {
+    "availableControls": "Kullanılabilir kontroller",
+    "usedControls": "Kullanılan kontroller",
+    "preview": "Önizleme",
+    "formSchemaCode": "Şema kodu",
+    "invalidFormSchema": "Şema yüklenemedi. Aşağıdaki hataları giderip yeniden deneyin.",
+    "search": "Kontrol ara",
+    "help": "Yardım",
+    "save": "Kaydet",
+    "saveSchemaSuccess": "Şema kaydedildi! Değişiklik 30 dakikadan kısa sürede diğer kullanıcılara görünür.",
+    "saveSchemaError": "Şema kaydedilemedi!",
+    "error": "Hata",
+    "saveContentCreator": "Form şemasını kaydetmek için “Content Creator” rolü gerekir.",
+    "viewIn": "Görüntüleme dili"
   }
 }

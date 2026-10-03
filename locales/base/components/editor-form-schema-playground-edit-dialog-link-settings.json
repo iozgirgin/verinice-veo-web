@@ -6,5 +6,9 @@
   "de": {
     "changesVisibleImmediately": "Änderungen in der Reihenfolge sind sofort ohne Klick auf \"Speichern\" sichtbar.",
     "displayedAttributes": "Angezeigte Felder"
+  },
+  "tr": {
+    "changesVisibleImmediately": "Özel bağlantı alanlarının sıra değişiklikleri “Kaydet” düğmesine basılmadan hemen görünür",
+    "displayedAttributes": "Görüntülenen alanlar"
   }
 }

@@ -24,5 +24,18 @@
     "saveAccessGroup": "Speichern der Zugriffsgruppe",
     "editMode": "Bearbeitung",
     "nameAlreadyTaken": "Name bereits vergeben"
+  },
+  "tr": {
+    "name": "Ad",
+    "accessGroups": "Erişim grupları",
+    "editAccessGroup": "Erişim grubunu düzenle",
+    "units": "Birimler",
+    "read": "Oku",
+    "write": "Yaz",
+    "cancel": "İptal",
+    "createAccessGroup": "Erişim grubu oluştur",
+    "saveAccessGroup": "Erişim grubunu kaydet",
+    "editMode": "Düzenle",
+    "nameAlreadyTaken": "Bu ad zaten kullanılıyor"
   }
 }

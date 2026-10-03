@@ -22,5 +22,17 @@
       "text-warning": "Farbige Schrift (Warnung - mittel)"
     },
     "stylingOptions": "Optionen zum Hervorheben des Elementes"
+  },
+  "tr": {
+    "options": {
+      "border": "Kenarlıklı",
+      "bg-error": "Vurgulu (Uyarı - kritik)",
+      "bg-info": "Vurgulu (Bilgi)",
+      "bg-warning": "Vurgulu (Uyarı - orta)",
+      "text-error": "Renkli metin (Uyarı - kritik)",
+      "text-info": "Renkli metin (Bilgi)",
+      "text-warning": "Renkli metin (Uyarı - orta)"
+    },
+    "stylingOptions": "Görünüm seçenekleri"
   }
 }

@@ -20,5 +20,16 @@
     "replaceTranslations": "Vorhandene Übersetzungen löschen und ersetzen",
     "sheet": "Tabellenblatt",
     "uploadLanguageFile": "Sprachdatei hochladen (.xlsx)"
+  },
+  "tr": {
+    "column": "Sütun",
+    "fileUploadFailed": "Dil dosyası yüklenemedi",
+    "idColumn": "Kimlik sütunu",
+    "import": "İçe aktar",
+    "langColumn": "{0} dili için sütun",
+    "languageFile": "Dil dosyası",
+    "replaceTranslations": "Mevcut çevirileri sil ve değiştir",
+    "sheet": "Sayfa",
+    "uploadLanguageFile": "Dil dosyası yükle (.xlsx)"
   }
 }

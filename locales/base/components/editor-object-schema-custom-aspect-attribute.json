@@ -32,5 +32,22 @@
       "uri": "URI"
     },
     "requiredIfEnum": "Sie müssen mindestens einen Wert angeben, wenn Sie den Typ \"Auswahl\" auswählen."
+  },
+  "tr": {
+    "multiple": "Çoklu",
+    "aspectDescription": "Açıklama",
+    "aspectName": "alan adı",
+    "aspectType": "Alan türü",
+    "inputFormat": "Girdi biçimi",
+    "values": "Kullanılabilir seçenekler",
+    "valuesHint": "Kullanılabilir seçenekler (girdileri Enter ile ayırın)",
+    "attributeTypes": {
+      "date": "Tarih",
+      "dateTime": "Tarih ve saat",
+      "duration": "Süre",
+      "text": "Metin",
+      "uri": "URI"
+    },
+    "requiredIfEnum": "“Seçim” türü seçildiğinde en az bir değer girilmelidir"
   }
 }

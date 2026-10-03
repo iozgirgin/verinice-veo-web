@@ -10,5 +10,11 @@
     "editors": "Editoren",
     "formSchemaDescription": "Formschemas erstellen, bearbeiten, importieren und exportieren",
     "objectSchemaDescription": "Objektschemas öffnen, bearbeiten oder exportieren"
+  },
+  "tr": {
+    "calltoaction": "Ne yapmak istiyorsunuz?",
+    "editors": "Düzenleyiciler",
+    "formSchemaDescription": "Form şemalarını oluşturun, düzenleyin, içe veya dışa aktarın",
+    "objectSchemaDescription": "Nesne şemalarını açın, düzenleyin veya dışa aktarın"
   }
 }

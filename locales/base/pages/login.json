@@ -24,5 +24,18 @@
     "policy": "Sicherheitsrichtlinie",
     "subscribe": "Abonnieren",
     "Wenn sie noch keine Anmeldedaten haben, wenden Sie sich an Ihre Administrator*innen": "Wenn sie noch keine Anmeldedaten haben, wenden Sie sich an Ihre Administrator*innen."
+  },
+  "tr": {
+    "access": "Hesap devre dışı.",
+    "subscribeCTA": "verinice.cloud'a\nabone ol",
+    "dataProtectionRegulations": "Veri koruma düzenlemeleri",
+    "error-message": "Hesap yöneticinizle iletişime geçin.",
+    "imprint": "Yayıncı bilgileri",
+    "login": "Giriş",
+    "loginCTA": "verinice.cloud'a\ngir",
+    "loginV": "verinice'ye\ngir",
+    "policy": "Güvenlik politikası",
+    "subscribe": "Abone ol",
+    "Wenn sie noch keine Anmeldedaten haben, wenden Sie sich an Ihre Administrator*innen": "Henüz giriş bilgileriniz yoksa yöneticilerinizle iletişime geçin."
   }
 }

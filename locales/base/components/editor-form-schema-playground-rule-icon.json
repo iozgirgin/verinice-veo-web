@@ -6,5 +6,9 @@
   "de": {
     "hideRule": "Dieses Element wird basierend auf einer Regel ausgeblendet.",
     "showRule": "Dieses Element wird basierend auf einer Regel angezeigt."
+  },
+  "tr": {
+    "hideRule": "Bu öğe bir kurala göre gizlenir.",
+    "showRule": "Bu öğe bir kurala göre gösterilir."
   }
 }

@@ -24,7 +24,7 @@
         class="headline-link"
         @click.capture.prevent="showNavigationDialog"
       >
-        {{ upperFirst(t('Container').toString()) }}&nbsp;&gt;&nbsp;
+        {{ upperFirst(t('container').toString()) }}&nbsp;&gt;&nbsp;
       </nuxt-link>
 
       {{ upperFirst(t('mitigationSection').toString()) }}
@@ -34,7 +34,7 @@
           <v-icon v-bind="props" :icon="mdiInformationOutline" />
         </template>
         <template #default>
-          <i18n-t keypath="mitigationAreaOfApplicationExplanation" tag="span" scope="global">
+          <i18n-t keypath="mitigationAreaOfApplicationExplanation" tag="span" scope="parent">
             <template #lineBreak>
               <br />
             </template>
@@ -73,7 +73,7 @@
                 <v-btn
                   v-bind="props"
                   :icon="mdiLinkOff"
-                  :aria-label="data?.mitigation ? t('navigateToPart') : t('saveFirst')"
+                  :aria-label="t('unlinkPart')"
                   variant="text"
                   @click="removeMitigationPart(item)"
                 />
@@ -259,16 +259,19 @@ export default defineComponent({
     };
 
     // Helper function to generate route parameters based on an object ID
-    const getRouteParams = (objectId) => ({
+    const getRouteParams = (
+      objectId,
+      subType = currentDomain.value?.raw.controlImplementationConfiguration.mitigationControlSubType
+    ) => ({
       ...route.params,
       objectType: 'controls',
-      subType: currentDomain.value?.raw.controlImplementationConfiguration.mitigationControlSubType,
+      subType,
       object: objectId
     });
 
     // Generic function to generate href
-    const generateHref = (objectId) => {
-      const params = getRouteParams(objectId);
+    const generateHref = (objectId, subType?: string) => {
+      const params = getRouteParams(objectId, subType);
       const { href } = router.resolve({
         name: OBJECT_DETAIL_ROUTE,
         params
@@ -289,11 +292,11 @@ export default defineComponent({
     const navigateToPart = (item) => {
       router.push({
         name: OBJECT_DETAIL_ROUTE,
-        params: getRouteParams(item?.id)
+        params: getRouteParams(item?.id, item?.subType)
       });
     };
 
-    const partHref = (item: IVeoEntity) => generateHref(item?.id);
+    const partHref = (item: IVeoEntity) => generateHref(item?.id, item?.subType);
 
     watch(
       () => props.data?.mitigation,

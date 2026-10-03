@@ -8,5 +8,10 @@
     "deleteAccessGroupTitle": "Zugriffsgruppe löschen",
     "deleteAccessGroupConfirmation": "Sind Sie sicher, dass Sie die Zugriffsgruppe '{groupName}' löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
     "confirmDelete": "Löschen bestätigen"
+  },
+  "tr": {
+    "deleteAccessGroupTitle": "Erişim grubunu sil",
+    "deleteAccessGroupConfirmation": "“{groupName}” erişim grubunu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "confirmDelete": "Silmeyi onayla"
   }
 }

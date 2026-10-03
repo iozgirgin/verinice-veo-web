@@ -30,5 +30,21 @@
       "body": "Aktivieren Sie den Kompaktmodus, um Abstände in Tabellen zu reduzieren."
     },
     "save": "Speichern"
+  },
+  "tr": {
+    "settings": "Ayarlar",
+    "alertHeader": "Ayarlar yüklenemedi.",
+    "errorHeader": "Güncelleme başarısız.",
+    "errorBody": "Ayarlarınız güncellenirken bir hata oluştu. ",
+    "successHeader": "Ayarlar başarıyla güncellendi.",
+    "userSettingsPage": {
+      "header": "Kullanıcı ayarları",
+      "body": "Düzen ve görünüm seçenekleri dahil arayüz tercihlerinizi özelleştirin."
+    },
+    "compact-styles": {
+      "header": "Sıkışık tablo görünümü",
+      "body": "Tablolardaki boşlukları azaltmak için sıkışık görünümü etkinleştirin."
+    },
+    "save": "Kaydet"
   }
 }

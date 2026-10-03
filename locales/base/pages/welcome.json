@@ -74,5 +74,43 @@
     },
     "subTitle": "Ihre ersten Schritte in verinice:",
     "unitCreation": "Unit erstellen"
+  },
+  "tr": {
+    "explanation": {
+      "name": "Yeni biriminize açıklayıcı bir ad ve isteğe bağlı açıklama verin.",
+      "profile": "Örneğin demo verisi veya risk profili yükleyin ya da boş birimle başlayın.",
+      "domain": "Biriminizde hangi alanlarla (ör. ISO, NIS2 veya GDPR) çalışmak istediğinizi belirleyin.",
+      "summary": "Tüm ayrıntıları kontrol edip yeni biriminizi oluşturun. Yeni birimin gösterge paneline yönlendirilirsiniz."
+    },
+    "footer": "Kullanılabilir birim sayısı, profiller ve alanlar seçilen plana bağlıdır. Şuraya bakın: ",
+    "goto": "Birim seçimine git",
+    "greeting": "Hoş geldiniz!",
+    "headline": "İlk biriminizi dört adımda oluşturun:",
+    "hint": {
+      "name": "Test ve üretim çalışmaları gibi amaçlar için her zaman en az iki birim oluşturabilirsiniz!",
+      "profile": "Profiller her zaman en az bir alana özgüdür; örneğin ISO alanının örnek verileri!",
+      "domain": "En az bir alan gerekir!",
+      "summary": "Birim yönetiminden biriminizi daha sonra istediğiniz zaman düzenleyebilirsiniz!"
+    },
+    "injector": {
+      "channel": "YouTube kanalı",
+      "documentation": "dokümantasyon",
+      "forum": "verinice.forum",
+      "profile": "profiller",
+      "tutorial": "rehberler",
+      "webinar": "web seminerleri"
+    },
+    "portal": "abonelik portalı",
+    "reminder": "Hesap düğmesiyle bu sayfayı istediğiniz zaman yeniden açabilirsiniz!",
+    "requestForDeletion": "Yeniden birim oluşturabilmek için önce mevcut bir birimi silin.",
+    "requestHeadline": "En fazla birim sayısına ulaşıldı",
+    "step": {
+      "name": "Ad ve açıklama",
+      "profile": "Profil seç",
+      "domain": "Alanları seç",
+      "summary": "Özet"
+    },
+    "subTitle": "verinice'de ilk adımlarınız:",
+    "unitCreation": "Birim oluştur"
   }
 }

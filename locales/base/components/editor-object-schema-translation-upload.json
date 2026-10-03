@@ -10,5 +10,11 @@
     "result": "Upload-Details",
     "unusedTranslations": "Übersetzungen von nicht im Objektschema vorhandenen Aspekten oder Attributen (nicht importiert)",
     "uploadOverwrite": "Das Hochladen einer Sprachdatei überschreibt alle Änderungen im Codeeditor seit Sie das letzte Mal speichern gedrückt haben."
+  },
+  "tr": {
+    "importedTranslations": "İçe aktarılan çeviriler",
+    "result": "Ayrıntıları yükle",
+    "unusedTranslations": "Nesne şemasında bulunmayan özellik gruplarının veya alanların çevirileri (içe aktarılmadı)",
+    "uploadOverwrite": "Dil dosyası yüklemek, son kayıttan sonra kod düzenleyicide yapılan değişikliklerin üzerine yazar."
   }
 }

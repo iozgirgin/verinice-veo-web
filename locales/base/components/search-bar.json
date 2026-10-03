@@ -10,5 +10,11 @@
     "searchFilter_name": "Name",
     "searchFilter_abbreviation": "Abkürzung",
     "searchFilter_displayName": "Name & Abkürzung"
+  },
+  "tr": {
+    "search": "Ara",
+    "searchFilter_name": "Ad",
+    "searchFilter_abbreviation": "Kısaltma",
+    "searchFilter_displayName": "Ad ve kısaltma"
   }
 }

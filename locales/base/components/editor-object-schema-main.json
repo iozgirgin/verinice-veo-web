@@ -10,5 +10,11 @@
     "collapse": "Alle einklappen",
     "createCustomPropertyError": "Der Link/Aspekt konnte nicht erstellt werden",
     "addCustomLink": "Link hinzufügen"
+  },
+  "tr": {
+    "expand": "Tümünü genişlet",
+    "collapse": "Tümünü daralt",
+    "createCustomPropertyError": "Bağlantı/özellik grubu oluşturulamadı",
+    "addCustomLink": "Bağlantı ekle"
   }
 }

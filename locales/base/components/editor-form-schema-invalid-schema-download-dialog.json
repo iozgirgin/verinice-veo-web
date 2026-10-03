@@ -6,5 +6,9 @@
   "de": {
     "downloadSchema": "Schema herunterladen",
     "invalidSchemaConfirmation": "Das Formschema ist nicht mit keinem aktuellen Objektschema kompatibel. Bitte laden Sie es nicht in der Live-Umgebung hoch. Möchten Sie das Schema trotzdem herunterladen?"
+  },
+  "tr": {
+    "downloadSchema": "Şemayı indir",
+    "invalidSchemaConfirmation": "Form şeması mevcut nesne şemalarıyla uyumlu değil. Üretim ortamına yüklemeyin. Şemayı indirmek istediğinizden emin misiniz?"
   }
 }

@@ -8,5 +8,10 @@
     "common": "Allgemein",
     "formElement": "Eingabeelement",
     "formElementOptions": "Elementspezifische Optionen"
+  },
+  "tr": {
+    "common": "Genel",
+    "formElement": "Form öğesi",
+    "formElementOptions": "Form öğesine özgü seçenekler"
   }
 }

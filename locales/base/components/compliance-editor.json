@@ -88,5 +88,50 @@
       "cost": "Cost",
       "document": "Document / record"
     }
+  },
+  "tr": {
+    "riEditor": {
+      "requirement": "Gereklilik",
+      "targetObject": "Hedef nesne",
+      "description": "Açıklama",
+      "origination": "Uygulama kaynağı",
+      "originationDescription": "Uygulama açıklaması",
+      "originationValues": {
+        "SystemSpecific": "Sisteme özgü",
+        "Inherited": "Devralma",
+        "Organisation": "Kurum"
+      },
+      "status": "Durum",
+      "statusValues": {
+        "UNKNOWN": "Bilinmiyor",
+        "YES": "Uygulandı",
+        "PARTIAL": "Kısmen uygulandı",
+        "NO": "Hayır",
+        "N_A": "Uygulanamaz"
+      },
+      "responsible": "Sorumlu",
+      "editRequirementImplementation": "Uygulamayı düzenle",
+      "requirementImplementationNotUpdated": "Uygulama güncellenemedi.",
+      "requirementImplementationUpdated": "Uygulama başarıyla güncellendi.",
+      "name": "Ad",
+      "protectionApproach": "Koruma yaklaşımı",
+      "implementationUntil": "Uygulama son tarihi",
+      "abbreviation": "Kısaltma",
+      "implementation": "Uygulama",
+      "targetObjectLabel": "Atama",
+      "id": "Kimlik",
+      "designator": "Kayıt kodu",
+      "implementationCard": "Uygulama",
+      "documentationCard": "Dokümantasyon",
+      "revisionCard": "Sürüm kayıtları",
+      "implementationDate": "Uygulama tarihi",
+      "implementedBy": "Uygulayan",
+      "lastRevisionDate": "Son gözden geçirme tarihi",
+      "lastRevisionBy": "Son gözden geçiren",
+      "nextRevisionDate": "Sonraki gözden geçirme tarihi",
+      "nextRevisionBy": "Sonraki gözden geçiren",
+      "cost": "Maliyet",
+      "document": "Doküman / kayıt"
+    }
   }
 }

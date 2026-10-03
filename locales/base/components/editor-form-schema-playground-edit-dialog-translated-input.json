@@ -24,5 +24,18 @@
       "objectSchemaKey": "Attribut-Key"
     },
     "text": "Text"
+  },
+  "tr": {
+    "displayedAs": "“{0}” olarak gösteriliyor (kaynak: {1})",
+    "label": "Etiket",
+    "noLabel": "Etiket yok",
+    "noText": "Metin yok",
+    "source": {
+      "formSchema": "Form şeması",
+      "formSchemaTranslations": "Form şeması çevirileri",
+      "objectSchema": "Nesne şeması çevirileri",
+      "objectSchemaKey": "Alan anahtarı"
+    },
+    "text": "Metin"
   }
 }

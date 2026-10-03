@@ -16,5 +16,14 @@
     "thStatus": "Status",
     "noRequirementImplementations": "No requirement implementations available.",
     "edit": "Edit {0}"
+  },
+  "tr": {
+    "thAbbreviation": "Kısaltma",
+    "thName": "Gereklilik",
+    "thOrigin": "Kaynak",
+    "thResponsibleBody": "Sorumlu",
+    "thStatus": "Durum",
+    "noRequirementImplementations": "Gereklilik uygulaması yok.",
+    "edit": "{0} düzenle"
   }
 }

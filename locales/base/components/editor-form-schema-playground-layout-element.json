@@ -16,5 +16,14 @@
       "accordion": "Akkordeon",
       "text": "Text"
     }
+  },
+  "tr": {
+    "addElementToGroup": "Bu düzene öğe ekle",
+    "layout": "Düzen",
+    "layoutType": {
+      "group": "Grup",
+      "accordion": "Açılır bölüm",
+      "text": "Metin"
+    }
   }
 }

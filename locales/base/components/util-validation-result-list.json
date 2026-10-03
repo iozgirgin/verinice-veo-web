@@ -6,5 +6,9 @@
   "de": {
     "fix": "Beheben",
     "noErrors": "Keine Fehler gefunden!"
+  },
+  "tr": {
+    "fix": "Düzelt",
+    "noErrors": "Hata bulunamadı!"
   }
 }

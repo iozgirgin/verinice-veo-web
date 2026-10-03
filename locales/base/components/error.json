@@ -28,5 +28,20 @@
       "404": "nicht gefunden",
       "default": "unbekannter Fehler"
     }
+  },
+  "tr": {
+    "goToHomepage": "Ana sayfaya git",
+    "texts": {
+      "401": "Daha sonra yeniden deneyin",
+      "403": "Bu sayfaya erişmek için gerekli yetkilere sahip değilsiniz.",
+      "404": "Aradığınız sayfa bulunamadı.",
+      "default": "Bilinmeyen bir hata oluştu."
+    },
+    "titles": {
+      "401": "giriş kullanılamıyor",
+      "403": "erişim yasak",
+      "404": "404 bulunamadı",
+      "default": "bilinmeyen hata"
+    }
   }
 }

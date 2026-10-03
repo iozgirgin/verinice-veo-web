@@ -14,5 +14,13 @@
     "noShortcuts": "Keine Tastaturkürzel für diese Seite verfügbar.",
     "disabled": "Deaktiviert",
     "then": "dann"
+  },
+  "tr": {
+    "title": "Klavye kısayolları",
+    "openInstructions": "Bu pencereyi aç:",
+    "domainNavigation": "Alan gezinme kısayolları",
+    "noShortcuts": "Bu sayfa için kısayol yok.",
+    "disabled": "Devre dışı",
+    "then": "ardından"
   }
 }

@@ -6,5 +6,9 @@
   "en": {
     "targetModule": "Edit {subType} \"{currentModule}\"",
     "implementation": "Implementation"
+  },
+  "tr": {
+    "targetModule": "“{currentModule}” {subType} nesnesini düzenle",
+    "implementation": "Uygulama"
   }
 }

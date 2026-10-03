@@ -18,5 +18,15 @@
     "start": "Wie möchten Sie starten?",
     "description": "Beschreibung",
     "type": "Typ des Objektschemas"
+  },
+  "tr": {
+    "format": "(.json)",
+    "openObjectSchema": "Nesne şemasını aç",
+    "openObjectSchemaDescription": "Mevcut nesne şemasını açın ve düzenleyin.",
+    "uploadLabel": "Nesne şeması yükleme @:format",
+    "uploadJson": "JSON yükle",
+    "start": "Nasıl başlamak istiyorsunuz?",
+    "description": "Açıklama",
+    "type": "Nesne şemasının türü"
   }
 }

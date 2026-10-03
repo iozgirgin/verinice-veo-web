@@ -6,5 +6,9 @@
   "de": {
     "noDescription": "Keine Beschreibung verfügbar.",
     "noName": "Kein Name verfügbar"
+  },
+  "tr": {
+    "noDescription": "Açıklama yok.",
+    "noName": "Ad yok"
   }
 }

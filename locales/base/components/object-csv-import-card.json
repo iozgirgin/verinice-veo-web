@@ -52,5 +52,32 @@
       "enum": "Ein möglicher Enum-Wert",
       "enumList": "Alle möglichen Enum-Werte in einer Zelle"
     }
+  },
+  "tr": {
+    "import.title": "Kayıtları içe aktar",
+    "export.sampleCsv": "CSV şablonu",
+    "export.sampleCsvDescription": "Tüm alanları içe aktarmak için CSV şablonu indirebilirsiniz.",
+    "import.uploadLimit.description": "En fazla dosya boyutu: 10 MB. Desteklenen biçim: CSV",
+    "import.dropzone.label": "Bir CSV dosyasını buraya sürükleyip bırakın",
+    "import.button.browse": "Dosya seç",
+    "import.button.changeFile": "Başka dosya seç",
+    "import.or.text": "veya cihazınızdan seçin",
+    "import.selectedFile": "Seçilen dosya:",
+    "import.loading.processing": "CSV dosyası işleniyor",
+    "import.errors.invalidFile": "Geçersiz dosya türü",
+    "import.errors.onlyCsvAllowed": "Yalnız CSV dosyaları kabul edilir. .csv uzantılı bir dosya seçin.",
+    "import.errors.emptyFile": "Boş CSV dosyası",
+    "import.errors.emptyFileMessage": "Seçili CSV dosyası boş. Başlık ve veri satırları içeren bir dosya seçin.",
+    "import.errors.fileTooLarge": "Dosya çok büyük",
+    "import.errors.maxFileSize": "Dosya boyutu en fazla 10 MB olabilir. Daha küçük bir dosya seçin.",
+    "import.errors.processingFailed": "Dosya işlenirken hata oluştu",
+    "import.selectedEncoding": "Kodlamayı seç",
+    "export.download.tooltip": "CSV şablonunu indir",
+    "examples": {
+      "text": "Örnek metin",
+      "boolean": "0 / 1",
+      "enum": "İzin verilen bir seçenek",
+      "enumList": "Tüm seçenekler tek hücrede"
+    }
   }
 }
