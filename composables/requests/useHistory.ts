@@ -48,6 +48,8 @@ export function useRevisions(
 }
 
 export function useLatestRevisions(unitId?: Ref<string>): UseHistoryReturnType<IVeoLegacyObjectHistoryEntry[]> {
+  const route = useRoute();
+  const ownerId = computed(() => unitId?.value || (route.params.unit as string));
   const getPath = (unitId: string) => {
     if (!unitId) {
       throw new Error('Missing unitId to build latest revisions path');
@@ -55,12 +57,12 @@ export function useLatestRevisions(unitId?: Ref<string>): UseHistoryReturnType<I
     return `history/revisions/my-latest?owner=/units/${unitId}`;
   };
 
-  const path = computed(() => getPath(unitId?.value ? unitId.value : (useRoute().params.unit as string)));
+  const path = computed(() => (ownerId.value ? getPath(ownerId.value) : ''));
 
   return useQuery({
-    queryKey: ['latestRevisions'],
+    queryKey: ['latestRevisions', { unitId: ownerId }],
     refetchOnMount: 'always',
     queryFn: () => read({ path: path.value }),
-    enabled: !!path.value
+    enabled: computed(() => !!ownerId.value)
   });
 }

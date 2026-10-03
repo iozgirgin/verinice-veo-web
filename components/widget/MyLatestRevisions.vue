@@ -17,14 +17,17 @@
 -->
 <template>
   <BaseWidget :title="t('myLatestRevisions')">
+    <p class="text-body-2 mb-4">{{ t('unitScope') }}</p>
     <v-table dense>
       <tbody>
         <tr v-for="(revision, key) in revisions || []" :key="key" class="text-no-wrap overflow-x-hidden fill-width">
           <td>
-            <nuxt-link :to="createUrl(revision)" class="text-body-2 text-color">
+            <nuxt-link v-if="target(revision)" :to="target(revision)!.url" class="text-body-2 text-color">
               {{ revision.content.designator }}
               <b>{{ revision.content.abbreviation }} {{ revision.content.name }}</b>
             </nuxt-link>
+            <span v-else class="text-body-2">{{ revision.content.designator }} {{ revision.content.name }}</span>
+            <div v-if="target(revision)" class="text-caption">{{ domainName(target(revision)!.domainId) }}</div>
           </td>
           <td class="text-right text-body-2">
             {{ new Date(revision.time).toLocaleString(locale) }}
@@ -36,23 +39,22 @@
 </template>
 
 <script setup lang="ts">
-import { VeoElementTypePlurals } from '~/types/VeoTypes';
+import { revisionTarget } from '~/lib/revisionNavigation';
 import type { IVeoLegacyObjectHistoryEntry } from '~/types/history';
 
 const { t, locale } = useI18n();
 
 const { data: revisions } = useLatestRevisions();
-
-const createUrl = (revision: IVeoLegacyObjectHistoryEntry) => {
-  const unitId = revision.content?.owner?.id;
-  // for now we assume, the object is associated to a single domain. So we pick the first and only one
-  const domainIdContainingObject = Object.keys(revision.content?.domains)?.[0];
-  const objectType = VeoElementTypePlurals[revision.content?.type];
-  const subType = revision.content?.domains?.[domainIdContainingObject]?.subType || '-';
-  const objectId = revision.content?.id;
-
-  return `/${unitId}/domains/${domainIdContainingObject}/${objectType}/${subType}/${objectId}/`;
-};
+const route = useRoute();
+const { data: domains } = useDomains();
+const target = (revision: IVeoLegacyObjectHistoryEntry) =>
+  revisionTarget(
+    revision,
+    route.params.unit as string,
+    route.params.domain as string,
+    (domains.value || []).map((domain) => domain.id)
+  );
+const domainName = (id: string) => domains.value?.find((domain) => domain.id === id)?.name;
 </script>
 
 <i18n src="~/locales/base/components/widget-my-latest-revisions.json"></i18n>

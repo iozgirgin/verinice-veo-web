@@ -1,11 +1,14 @@
 {
   "en": {
-    "myLatestRevisions": "My latest edited revisions"
+    "myLatestRevisions": "My latest edited revisions",
+    "unitScope": "Recent records from all domains in this unit. Shared records open in the selected domain."
   },
   "de": {
-    "myLatestRevisions": "Meine zuletzt bearbeiteten Objekte"
+    "myLatestRevisions": "Meine zuletzt bearbeiteten Objekte",
+    "unitScope": "Zuletzt bearbeitete Objekte aus allen Domänen dieser Einheit. Gemeinsame Objekte werden in der ausgewählten Domäne geöffnet."
   },
   "tr": {
-    "myLatestRevisions": "Son düzenlediğim sürüm kayıtları"
+    "myLatestRevisions": "Son düzenlediğim sürüm kayıtları",
+    "unitScope": "Bu birimdeki tüm alanlardan son düzenlediğiniz kayıtlar. Ortak kayıtlar seçili alanda açılır."
   }
 }
