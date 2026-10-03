@@ -1,0 +1,56 @@
+{
+  "fixtureVersion": "1.0.0",
+  "expectedResponseMode": "query",
+  "cases": [
+    {
+      "caseId": "AUTH-RETURN-RISK-01",
+      "destination": "/f5cad923-00bf-452b-bdd3-79c8b3f0018a/domains/a035d316-090a-45fc-98c8-fff1efdb33a4/assets/Server/053ce164-18a7-490a-881c-409149e08e59#risks"
+    },
+    {
+      "caseId": "AUTH-RETURN-QUERY-02",
+      "destination": "/units?search=TEST%20%C5%9Eube"
+    },
+    {
+      "caseId": "AUTH-RETURN-QUERY-TAB-03",
+      "destination": "/units?search=TEST#history"
+    },
+    {
+      "caseId": "AUTH-RETURN-ROOT-04",
+      "destination": "/"
+    },
+    {
+      "caseId": "AUTH-RETURN-DEFAULT-05",
+      "destination": null
+    }
+  ],
+  "syntheticUnitId": "f5cad923-00bf-452b-bdd3-79c8b3f0018a",
+  "readOnlyBusinessData": true,
+  "remoteDemoCompared": false,
+  "callbackCases": [
+    {
+      "caseId": "AUTH-CLEAN-RISK-06",
+      "path": "/assets/test?code=synthetic-code&state=synthetic-state&session_state=synthetic-session&iss=http%3A%2F%2Flocalhost%3A8781#risks",
+      "expected": "/assets/test#risks"
+    },
+    {
+      "caseId": "AUTH-CLEAN-QUERY-07",
+      "path": "/assets/test?search=TEST%20%C5%9Eube&code=synthetic-code&state=synthetic-state&iss=http%3A%2F%2Flocalhost%3A8781#history",
+      "expected": "/assets/test?search=TEST+%C5%9Eube#history"
+    },
+    {
+      "caseId": "AUTH-CLEAN-UNRELATED-08",
+      "path": "/units?state=open#history",
+      "expected": "/units?state=open#history"
+    },
+    {
+      "caseId": "AUTH-CLEAN-NO-CODE-09",
+      "path": "/units?state=open&iss=TEST#history",
+      "expected": "/units?state=open&iss=TEST#history"
+    },
+    {
+      "caseId": "AUTH-CLEAN-ROOT-10",
+      "path": "/?code=synthetic-code&state=synthetic-state&iss=TEST",
+      "expected": "/"
+    }
+  ]
+}

@@ -28,7 +28,7 @@ export interface IVeoUserComposable {
   initialize: (context: any) => Promise<void>;
   keycloak: Ref<Keycloak | undefined>;
   keycloakInitialized: Ref<boolean>;
-  login: (destination: string) => Promise<void>;
+  login: (destination?: string) => Promise<void>;
   logout: (destination: string) => Promise<void>;
   profile: ComputedRef<Record<string, any> | undefined>;
   refreshKeycloakSession: () => Promise<void>;
@@ -71,6 +71,8 @@ export const useVeoUser: () => IVeoUserComposable = () => {
     try {
       await keycloak.value.init({
         onLoad: 'check-sso',
+        // Keep OIDC callback parameters separate from application tabs such as #risks.
+        responseMode: 'query',
         silentCheckSsoRedirectUri: window.location.origin + '/sso',
         checkLoginIframe: false
       });
@@ -102,7 +104,7 @@ export const useVeoUser: () => IVeoUserComposable = () => {
   const login = async (destination?: string) => {
     if (keycloak.value) {
       await keycloak.value.login({
-        redirectUri: `${window.location.origin}${destination}`,
+        redirectUri: `${window.location.origin}${destination || '/'}`,
         scope: 'openid'
       });
       await keycloak.value.loadUserProfile();

@@ -25,6 +25,7 @@ describe('Turkish contextual help documents', () => {
   it.each(tr)('%s retains routing and target selectors while localizing every step', (path, doc) => {
     const original = modules[path.replace('.tr.yaml', '.en.yaml')];
     expect(doc.lang).toBe('tr');
+    expect(doc.stepNumbersOfLabel).toBe('/');
     expect(doc.route).toBe(original.route);
     expect(doc.exact).toBe(original.exact);
     expect(doc.steps.map((step: any) => step.element)).toEqual(original.steps.map((step: any) => step.element));

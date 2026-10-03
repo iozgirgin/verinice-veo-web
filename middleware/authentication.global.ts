@@ -15,6 +15,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+import { cleanAuthenticationReturn } from '~/lib/authCallback';
 import { useVeoPermissions } from '~/composables/VeoPermissions';
 import { useVeoUser } from '~/composables/VeoUser';
 
@@ -58,6 +59,13 @@ export default defineNuxtRouteMiddleware(async (to) => {
     } catch (error: any) {
       throw createError({ statusCode: 401, statusMessage: error });
     }
+  }
+
+  // The adapter cleans browser history before Nuxt finishes its initial navigation.
+  // Keep the router from writing accepted callback parameters back into that history.
+  if (authenticated.value) {
+    const returnPath = cleanAuthenticationReturn(to.fullPath);
+    if (returnPath !== to.fullPath) return navigateTo(returnPath, { replace: true });
   }
 
   // If keycloak is initialized, the user isn't logged in and the path isn't public, redirect to login
