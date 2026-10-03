@@ -18,5 +18,15 @@
     "selectRow": "Zeile Auswählen",
     "deselect": "Alle Abwählen",
     "selectAll": "Alle Auswählen"
+  },
+  "tr": {
+    "by": "tarafından",
+    "createdAt": "Oluşturuldu",
+    "loadingData": "Veriler yükleniyor...",
+    "updatedAt": "Güncellendi",
+    "deselectRow": "Satır seçimini kaldır",
+    "selectRow": "Satırı seç",
+    "deselect": "Tüm seçimleri kaldır",
+    "selectAll": "Tümünü seç"
   }
 }

@@ -44,5 +44,28 @@
     "firstStepHint": "Gehen Sie zur Erste-Schritte-Seite",
     "createUnitHint": "Legen Sie Ihre erste Unit an",
     "cannotCreateUnitHint": "Sie haben leider nicht die Berechtigung, eine Unit anzulegen. Wenden Sie sich an Ihren Administrator"
+  },
+  "tr": {
+    "addProfiles": "Profilleri uygula",
+    "editDomains": "Alanları düzenle",
+    "editUnit": "Birimi düzenle",
+    "deleteUnit": "Birimi sil",
+    "bookmarkTooltip": "Favori (sonraki girişte bu birimin panelini aç)",
+    "createdBy": "Oluşturan",
+    "createdAt": "Oluşturma tarihi",
+    "noDescription": "Açıklama yok",
+    "noSearchResults": "\"{search}\" aramasıyla eşleşen birim bulunamadı.",
+    "permissions": {
+      "missingPermissionTooltip": "Bu işlem için yetkiniz yok."
+    },
+    "noUnitsText": "Henüz birim yok. İlk biriminizi oluşturun veya başlangıç bilgileri için karşılama sayfasını açın.",
+    "createUnit": "birim oluştur",
+    "downloadUnit": "birimi indir",
+    "importUnit": "birim içe aktar",
+    "importUnitHint": "Bir dosyadan dışa aktarılmış birimi içe aktar",
+    "firstStep": "ilk adımlar",
+    "firstStepHint": "Başlangıç bilgileri için karşılama sayfasını açın",
+    "createUnitHint": "İlk biriminizi oluşturun",
+    "cannotCreateUnitHint": "Birim oluşturma yetkiniz yok. Yöneticinizle iletişime geçin."
   }
 }

@@ -1,0 +1,14 @@
+{
+  "fixtureVersion": "1.0.0",
+  "cases": [
+    { "caseId": "UI-TR-SAVE-01", "key": "global.button.save", "expected": "Kaydet" },
+    { "caseId": "UI-TR-REPORTS-01", "key": "breadcrumbs.reports", "expected": "Raporlar" },
+    { "caseId": "UI-TR-STATUS-01", "key": "compliance.status.PARTIAL", "expected": "Kısmen uygulandı" },
+    {
+      "caseId": "UI-TR-INTERPOLATION-01",
+      "key": "error.required",
+      "params": { "field": "Çağrı Şimşek" },
+      "expected": "\"Çağrı Şimşek\" alanı zorunludur"
+    }
+  ]
+}

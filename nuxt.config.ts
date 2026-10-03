@@ -125,7 +125,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'no_prefix',
     locales: LOCALES,
-    defaultLocale: 'de',
+    defaultLocale: 'tr',
     langDir: '../locales/base/'
   }
 });

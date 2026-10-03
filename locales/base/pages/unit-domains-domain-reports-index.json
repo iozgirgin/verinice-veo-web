@@ -4,5 +4,8 @@
   },
   "de": {
     "hint": "Wählen Sie den Reporttyp aus der Liste aus, für den Sie einen Report erstellen möchten."
+  },
+  "tr": {
+    "hint": "Üretmek istediğiniz rapor türünü seçin."
   }
 }

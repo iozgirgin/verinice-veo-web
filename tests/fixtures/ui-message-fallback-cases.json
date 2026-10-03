@@ -1,0 +1,24 @@
+{
+  "fixtureVersion": "1.0.0",
+  "cases": [
+    {
+      "caseId": "MSG-TR-01",
+      "messages": { "tr": "TEST Türkçe uyarı", "en": "TEST English warning" },
+      "locale": "tr",
+      "expected": "TEST Türkçe uyarı"
+    },
+    {
+      "caseId": "MSG-FALLBACK-01",
+      "messages": { "de": "TEST Warnung", "en": "TEST English warning" },
+      "locale": "tr",
+      "expected": "TEST English warning"
+    },
+    {
+      "caseId": "MSG-SPACE-01",
+      "messages": { "tr": "  ", "en": "TEST English warning" },
+      "locale": "tr",
+      "expected": "TEST English warning"
+    },
+    { "caseId": "MSG-EMPTY-01", "messages": {}, "locale": "tr", "expected": "Sistem bildirimi" }
+  ]
+}

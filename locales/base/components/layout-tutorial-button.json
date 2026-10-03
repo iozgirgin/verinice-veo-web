@@ -6,5 +6,9 @@
   "en": {
     "showHelp": "Show contextual help",
     "hideHelp": "Hide contextual help"
+  },
+  "tr": {
+    "showHelp": "Bağlamsal yardımı göster",
+    "hideHelp": "Bağlamsal yardımı gizle"
   }
 }

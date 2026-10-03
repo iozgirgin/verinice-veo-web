@@ -1,0 +1,269 @@
+{
+  "clone": "Kopyala",
+  "unsavedChanges": "Kaydedilmemiş değişiklikler var. Bu sayfadan ayrılmak istediğinizden emin misiniz?",
+  "editor.basicproperties": "Temel özellikler",
+  "editor.customaspects": "Özel alan grupları",
+  "editor.customaspects.add": "Alan grubu ekle",
+  "editor.customlinks": "Özel ilişkiler",
+  "editor.inputtypes.array": "Dizi",
+  "editor.inputtypes.boolean": "Mantıksal değer",
+  "editor.inputtypes.enum": "Seçim",
+  "editor.inputtypes.integer": "Tam sayı",
+  "editor.inputtypes.layout": "Grup",
+  "editor.inputtypes.null": "Boş değer",
+  "editor.inputtypes.number": "Sayı",
+  "editor.inputtypes.object": "Nesne",
+  "editor.inputtypes.string": "Metin",
+  "editor.inputtypes.label": "Metin",
+  "editor.inputtypes.unknown": "Bilinmiyor",
+  "editor.inputtypes.composite": "Bileşik",
+  "editor.formschema.create.title": "Form şeması adı",
+  "editor.formschema.create.title.text": "Yeni form şemasının adı",
+  "editor.formschema.create.type": "Nesne türü",
+  "editor.formschema.create.type.context": "Sistemdeki nesne türü",
+  "editor.formschema.create.type.text": "Nesne şemasının türü",
+  "editor.formschema.create.context": "Bağlam",
+  "editor.formschema.create.context.elementDetails": "Nesne görünümü",
+  "editor.formschema.create.context.requirementImplementationControlView": "Uygulama penceresi: Kontrol görünümü",
+  "editor.formschema.create.context.controlImplementationDetails": "Atama penceresi",
+  "editor.formschema.create.context.text": "Nesne şemasının bağlamı",
+  "editor.formschema.edit.css.class": "CSS sınıfları",
+  "editor.formschema.edit.css.style": "CSS stilleri",
+  "editor.formschema.edit.css.class.text": "Sınıflar",
+  "editor.formschema.edit.css.style.text": "Stiller",
+  "editor.formschema.edit.input.direction": "Yön",
+  "editor.formschema.edit.input.direction.horizontal": "yatay",
+  "editor.formschema.edit.input.direction.vertical": "dikey",
+  "editor.formschema.edit.input.label": "Etiket",
+  "editor.formschema.edit.input.label.text": "Alan etiketi",
+  "editor.formschema.headline": "Form şeması düzenleyicisi",
+  "editor.formschema.sorting": "Sıralama değeri",
+  "editor.formschema.subtype": "Alt tür",
+  "editor.formschema.subtype.context": "Sistemdeki alt tür",
+  "editor.formschema.translation": "Özel çeviriler",
+  "editor.formschema.underlying.scheme": "Temel şema",
+  "editor.objectschema.headline": "Nesne şeması düzenleyicisi",
+  "editor.schema.download": "Şemayı indir",
+  "editor.schema.warnings": "Uyarılar",
+  "editor.schema.properties": "Şema özellikleri",
+  "global.button.back": "Geri dön",
+  "global.button.cancel": "İptal",
+  "global.button.close": "Kapat",
+  "global.button.delete": "Sil",
+  "global.button.next": "İleri",
+  "global.button.no": "Hayır",
+  "global.button.ok": "Tamam",
+  "global.button.previous": "Önceki",
+  "global.button.save": "Kaydet",
+  "global.button.import": "İçe aktar",
+  "global.button.save_quit": "Kaydet ve çık",
+  "global.button.apply": "Uygula",
+  "global.button.yes": "Evet",
+  "global.input.required": "Bu alan zorunludur",
+  "global.input.requiredfields": "* Zorunlu alanlar",
+  "global.input.hasSpecialChar": "Geçersiz karakter var. Yalnız \"A-Z a-z 0-9 _ -\" kabul edilir.",
+  "global.input.usernameTooShort": "Kullanıcı adı en az 3 karakter olmalıdır.",
+  "global.input.invalidEmail": "Geçerli bir e-posta adresi girin.",
+  "global.input.invalidNumber": "Geçerli bir sayı girin.",
+  "global.input.mustBeString": "Metin olmalıdır.",
+  "global.logout": "Oturumu kapat",
+  "global.menu.collapse": "Menüyü daralt",
+  "global.menu.expand": "Menüyü sabitle",
+  "global.button.select": "Seç",
+  "global.button.create": "Oluştur",
+  "userMessages": {
+    "info": {
+      "title": "Bilgi"
+    },
+    "warning": {
+      "title": "Uyarı"
+    },
+    "error": {
+      "title": "Hata"
+    }
+  },
+  "objectlist": {
+    "abbreviation": "Kısaltma",
+    "createdAt": "Oluşturma tarihi",
+    "designator": "Kayıt kodu",
+    "description": "Açıklama",
+    "hasChildElements": "Alt nesneleri var",
+    "name": "Ad",
+    "hasNoParentElements": "Başka bir nesnenin parçası değil",
+    "objectType": "Nesne türü",
+    "status": "Durum",
+    "subType": "Alt tür",
+    "updatedAt": "Son değişiklik",
+    "updatedBy": "Düzenleyen",
+    "icon": "Tür",
+    "actions": "İşlemler",
+    "source": "Kaynak"
+  },
+  "sourceTooltip": "Kuruma özgü",
+  "domain.index.title": "Gösterge paneli",
+  "unit-selection": "Birim seçimi",
+  "breadcrumbs": {
+    "administration": "Hesap yönetimi",
+    "catalog": "Katalog",
+    "catalogs": "Katalog",
+    "compliance": "Uyum",
+    "create": "Birim oluştur",
+    "details": "Ayrıntılar",
+    "domain": "Alanlar",
+    "editor": "Düzenleyiciler",
+    "formschema": "Form şeması düzenleyicisi",
+    "help": "Kılavuz",
+    "units": "Birim yönetimi",
+    "more": "Diğer alanlar",
+    "objects": "Nesneler",
+    "objectschema": "Nesne şeması düzenleyicisi",
+    "profiles": "Profiller",
+    "reports": "Raporlar",
+    "risks": "Risk tanımları",
+    "security": "Güvenlik politikası",
+    "user-data": "Veri taşınabilirliği",
+    "welcome": "Hoş geldiniz",
+    "user-settings": "Ayarlar",
+    "edit": "Düzenle",
+    "update": "Alan güncellemeleri",
+    "tasks": "Görevler"
+  },
+  "compliance": {
+    "status": {
+      "NO": "Uygulanmadı",
+      "PARTIAL": "Kısmen uygulandı",
+      "UNKNOWN": "Bilinmiyor",
+      "YES": "Uygulandı",
+      "N_A": "Uygulanamaz"
+    },
+    "origination": {
+      "SYSTEM_SPECIFIC": "sisteme özgü"
+    }
+  },
+  "potentialImpactsCalculated": "Hesaplanan (en yüksek etki)",
+  "potentialImpacts": "Kullanıcının belirlediği",
+  "potentialImpactsEffective": "Etkin",
+  "potentialImpactReasons": "Gerekçe",
+  "potentialImpactExplanations": "Açıklama",
+  "potentialImpactEffectiveReasons": "Gerekçe",
+  "error": {
+    "additionalProperties": "\"{field}\" alanı nesne şemasında bulunmayan özellikler içeriyor",
+    "enum": "\"{field}\" alanında geçersiz bir değer var",
+    "format": "\"{field}\" alanı \"{format}\" biçimine uygun olmalıdır",
+    "required": "\"{field}\" alanı zorunludur",
+    "required_link": "\"{field}\" alanındaki {position} ilişkisi bir nesneye bağlanmalı veya kaldırılmalıdır"
+  },
+  "createEntitiesCTA": "{0} kaydını oluşturun, {1} için ad belirleyin veya bir {2} oluşturun.",
+  "dashboardCTA": "{0} genel durumu gösterir; varlıkların yaşam döngüsündeki görev ve son etkinliklere buradan erişebilirsiniz.",
+  "demoUnitCTA": "Önce örnekleri incelemek için {0} bölümünü açabilirsiniz.",
+  "lastLine": "İyi çalışmalar!{0}verinice.TEAM",
+  "piaMandatoryText": "Bu nesnenin verilerine göre veri koruma etki değerlendirmesi gereklidir.{0}Sağdaki uyarılar sekmesindeki düğmeyi kullanarak oluşturun.",
+  "mitigationAreaOfApplicationExplanation": "Azaltıcı kontroller koruma hedefleri ve risk tanımları genelinde uygulanır.{lineBreak} Seçilen kontroller \"{risk} için azaltıcı kontrol\" işlemi altında bulunur.",
+  "furtherDomainInformation": "verinice.TEAM yeni alanları aşamalı olarak sunar. Ayrıntılı bilgi için {here} bağlantısını açın.",
+  "residualRiskHint": "Gösterilen kalan risk girdi verilerinden hesaplandı.{0}Özel bir değer belirleyebilirsiniz",
+  "deleteText": "\"{0}\" nesnesini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+  "fix": "Düzelt",
+  "userDataExport": {
+    "hint": {
+      "text": "Veri taşınabilirliği hakkınızı burada kullanabilirsiniz. { linebreak } verinice içindeki verilerinizi saklamak veya başka bir hizmette kullanmak üzere indirin (ZIP içinde JSON biçimi).",
+      "href": "https://dsgvo-gesetz.de/art-20-dsgvo/"
+    }
+  },
+  "firstSteps": {
+    "channel": "{ 0 } kanalımızda verinice videolarını bulabilirsiniz.",
+    "documentation": "{ 0 } uygulamanın işlevlerini ve teknik ayrıntılarını açıklar. Sağ üstteki simgeden her zaman erişebilirsiniz.",
+    "forum": "{ 0 } içinde bilgi bulabilir ve diğer kullanıcılarla görüş alışverişi yapabilirsiniz.",
+    "tutorial": "Her sayfada hızlı yönlendirme için { 0 } bulunur. Sağ üstteki simgeden açabilirsiniz.",
+    "webinar": "Düzenli ve ücretsiz { 0 } etkinliklerimize kayıt olabilirsiniz."
+  },
+  "formSchemaTranslations": {
+    "formSchemaTranslationNotFoundSearchAll": "Uygun form şeması çevirisi bulunamadı. Tüm çevirileri aramak için {0}."
+  },
+  "linkObject": "{0} seç",
+  "linkControl": "{0} seç",
+  "inputPlaceholders": {
+    "date": "gg/aa/yyyy"
+  },
+  "inputLabel": {
+    "name": "Ad",
+    "description": "Açıklama"
+  },
+  "VdA": "Koruma yaklaşımı",
+  "na": "Yok",
+  "CatalogItemsApplied": "katalog öğesi uygulandı",
+  "unit": {
+    "isAssociatingDomain": "Alan ilişkilendiriliyor...",
+    "isApplyingProfile": "Profil uygulanıyor...",
+    "isUpdatingDetails": "Birim ayrıntıları güncelleniyor...",
+    "isAssociatingDomains": "Alanlar ilişkilendiriliyor...",
+    "isCreatingUnit": "Birim oluşturuluyor..."
+  },
+  "keys": {
+    "shift": "Diğer tuşlarla kullanılan Shift tuşu"
+  },
+  "shortcuts": {
+    "navigation": {
+      "home": {
+        "name": "Gösterge paneli",
+        "description": "Gösterge panelini aç"
+      },
+      "editor": {
+        "name": "Düzenleyiciler",
+        "description": "Düzenleyiciyi aç"
+      },
+      "catalogs": {
+        "name": "Katalog",
+        "description": "Katalogları aç"
+      },
+      "reports": {
+        "name": "Raporlar",
+        "description": "Raporları aç"
+      },
+      "riskDefinitions": {
+        "name": "Risk tanımları",
+        "description": "Risk tanımlarını aç"
+      },
+      "menu": {
+        "name": "Menü",
+        "description": "Menüyü daralt veya aç"
+      },
+      "units": {
+        "name": "Birim yönetimi",
+        "description": "Birim yönetimini aç"
+      }
+    },
+    "elements": {
+      "name": "{elementTypePlural} aç",
+      "description": "Tüm {elementTypePlural} kayıtlarını aç"
+    },
+    "objectAction": {
+      "hideObjectDetails": {
+        "name": "Nesne ayrıntılarını gizle",
+        "description": "Nesne ayrıntılarını gizle"
+      },
+      "displayObjectDetails": {
+        "name": "Nesne ayrıntılarını göster",
+        "description": "Nesne ayrıntılarını göster"
+      },
+      "hideForm": {
+        "name": "Formu gizle",
+        "description": "Formu gizle"
+      },
+      "displayForm": {
+        "name": "Formu göster",
+        "description": "Formu göster"
+      }
+    }
+  },
+  "noValue": "Değer yok",
+  "permissions": {
+    "missingPermissionTooltip": "Bu işlem için yetkiniz yok."
+  },
+  "i18n-t_messages": {
+    "preSelectedDomainBody": "{ profile } profilinden nesne içe aktardığınız için { domain } alanı önceden seçildi."
+  },
+  "graph": {
+    "displayed": "/ {total} ilişkili nesne",
+    "limitSelectLabel": "Gösterilecek ilişkili nesne üst sınırını seçin"
+  }
+}

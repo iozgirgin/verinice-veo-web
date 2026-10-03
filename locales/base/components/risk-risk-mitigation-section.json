@@ -26,5 +26,19 @@
     "navigationDialog": "Seite verlassen",
     "saveFirst": "Risiko speichern, bevor Sie zu den mitigierenden Maßnahmen navigieren können",
     "leavePage": "Sind Sie sicher, dass Sie diese Seite verlassen möchten? Nicht gespeicherte Änderungen werden verloren gehen."
+  },
+  "tr": {
+    "addMitigation": "Azaltıcı kontrol ekle",
+    "addMitigatingActionsToRisk": "\"{0} ({1})\" riskine mevcut azaltıcı kontrolleri ekle",
+    "createMitigation": "Azaltıcı kontrol oluştur",
+    "editMitigatingActions": "Azaltıcı kontroller ekle",
+    "mitigationAreaOfApplicationExplanation": "Azaltıcı kontroller koruma hedefleri ve risk tanımları genelinde uygulanır.{lineBreak} Seçilen kontroller \"{risk} için azaltıcı kontrol\" işlemi altında bulunur.",
+    "mitigationSection": "risk azaltıcı kontroller",
+    "unlinkPart": "Azaltıcı kontrol ilişkisini kaldır",
+    "navigateToPart": "Azaltıcı kontrolü aç",
+    "container": "Kontrol grubu",
+    "saveFirst": "Azaltıcı kontrolleri açmadan önce riski kaydedin.",
+    "navigationDialog": "Sayfadan ayrılmayı onayla",
+    "leavePage": "Bu sayfadan ayrılmak istediğinizden emin misiniz? Kaydedilmemiş değişiklikler kaybolabilir."
   }
 }

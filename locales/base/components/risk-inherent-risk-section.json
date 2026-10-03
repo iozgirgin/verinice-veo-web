@@ -4,5 +4,8 @@
   },
   "de": {
     "inherentRisk": "Bruttorisiko"
+  },
+  "tr": {
+    "inherentRisk": "Doğal risk"
   }
 }

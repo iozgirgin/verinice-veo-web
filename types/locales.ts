@@ -17,7 +17,8 @@
  */
 import type { LocaleObject } from '@nuxtjs/i18n';
 
-export const LOCALES: LocaleObject<'de' | 'en'>[] = [
+export const LOCALES: LocaleObject<'de' | 'en' | 'tr'>[] = [
+  { code: 'tr', file: 'tr.json', name: 'Türkçe' },
   { code: 'de', file: 'de.json', name: 'Deutsch' },
   { code: 'en', file: 'en.json', name: 'English' }
 ];

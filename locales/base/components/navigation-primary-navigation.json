@@ -14,5 +14,13 @@
     "backToVeo": "Zu verinice.veo",
     "scenario": "Gefährdung",
     "control": "TOM"
+  },
+  "tr": {
+    "collapse": "Menüyü daralt",
+    "fix": "Menüyü sabitle",
+    "all": "Tümü",
+    "backToVeo": "verinice.veo uygulamasına git",
+    "scenario": "Risk senaryosu",
+    "control": "Teknik ve organizasyonel önlem"
   }
 }

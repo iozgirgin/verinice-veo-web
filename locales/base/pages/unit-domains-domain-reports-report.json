@@ -8,5 +8,10 @@
     "create": "{type}",
     "generateReport": "Report generieren",
     "generateReportError": "Report konnte nicht erstellt werden"
+  },
+  "tr": {
+    "create": "{type}",
+    "generateReport": "Rapor oluştur",
+    "generateReportError": "Rapor oluşturulamadı"
   }
 }

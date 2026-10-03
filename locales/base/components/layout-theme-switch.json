@@ -4,5 +4,8 @@
   },
   "en": {
     "mode": "Light/dark mode"
+  },
+  "tr": {
+    "mode": "Açık/koyu tema"
   }
 }

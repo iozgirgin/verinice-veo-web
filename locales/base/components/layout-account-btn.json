@@ -16,5 +16,14 @@
     "notAvailable": "Keine Angabe",
     "OpenPreferences": "App-Einstellungen öffnen",
     "settings": "Einstellungen"
+  },
+  "tr": {
+    "about": "verinice hakkında",
+    "logout": "Oturumu kapat",
+    "editAccount": "Hesabı düzenle",
+    "firststeps": "İlk adımlar",
+    "notAvailable": "Kullanılamıyor",
+    "OpenPreferences": "Uygulama tercihlerini aç",
+    "settings": "Ayarlar"
   }
 }

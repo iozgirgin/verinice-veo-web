@@ -20,5 +20,16 @@
       "RISK_TREATMENT_REDUCTION": "Risikoreduktion",
       "RISK_TREATMENT_TRANSFER": "Risikotransfer"
     }
+  },
+  "tr": {
+    "explanation": "açıklama",
+    "more": "diğer",
+    "riskTreatment": "risk işleme",
+    "riskTreatments": {
+      "RISK_TREATMENT_ACCEPTANCE": "risk kabulü",
+      "RISK_TREATMENT_AVOIDANCE": "riskten kaçınma",
+      "RISK_TREATMENT_REDUCTION": "risk azaltma",
+      "RISK_TREATMENT_TRANSFER": "risk aktarımı"
+    }
   }
 }

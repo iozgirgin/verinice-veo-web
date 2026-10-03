@@ -6,5 +6,9 @@
   "de": {
     "inherentRisk": "Bruttorisiko",
     "saveCTA": "Speichern zum Neuberechnen"
+  },
+  "tr": {
+    "inherentRisk": "Doğal risk",
+    "saveCTA": "Yeniden hesaplamak için kaydedin"
   }
 }

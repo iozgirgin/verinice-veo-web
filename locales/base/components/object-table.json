@@ -10,5 +10,11 @@
     "createdAt": "Erstellt",
     "loadingData": "Daten werden geladen",
     "updatedAt": "Aktualisiert"
+  },
+  "tr": {
+    "by": "tarafından",
+    "createdAt": "Oluşturuldu",
+    "loadingData": "Veriler yükleniyor...",
+    "updatedAt": "Güncellendi"
   }
 }

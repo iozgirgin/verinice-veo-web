@@ -20,7 +20,7 @@ import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
-import { de, en } from 'vuetify/locale';
+import { de, en, tr } from 'vuetify/locale';
 import 'vuetify/styles';
 
 const vuetify = createVuetify({
@@ -37,7 +37,7 @@ const vuetify = createVuetify({
   locale: {
     // adapter: createVueI18nAdapter({ i18n, useI18n }) // Currently doesn't work with nuxt
     locale: Cookies.get('i18n_redirected') || navigator.language.split('-')[0],
-    messages: { de, en }
+    messages: { de, en, tr }
   },
   theme: {
     defaultTheme: 'light',
@@ -84,4 +84,14 @@ export default defineNuxtPlugin((nuxtApp) => {
   // @ts-ignore // the reason is a type mismatch: nuxt and vuetify are referencing different vue versions. Might resolve itself with coming upgrades.
   // Otherwise TODO: consider, if an override (and thus aligning vue versions) is worth it.
   nuxtApp.vueApp.use(vuetify);
+  nuxtApp.hook('app:mounted', () => {
+    const i18n = nuxtApp.$i18n as any;
+    watch(
+      () => i18n.locale.value,
+      (language) => {
+        vuetify.locale.current.value = language;
+      },
+      { immediate: true }
+    );
+  });
 });

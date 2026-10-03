@@ -11,7 +11,7 @@
     "outdatedObject": "This dataset has been edited by another user. Do you want to load the changes?",
     "reset": "Reset",
     "restore": "Restore",
-    "riskAlert": "Changing the potential probability of occurrence\/effect changes risks under certain circumstances. Please check all affected risks!",
+    "riskAlert": "Changing the potential probability of occurrence/effect changes risks under certain circumstances. Please check all affected risks!",
     "version": "Version {version}"
   },
   "de": {
@@ -26,7 +26,22 @@
     "outdatedObject": "Dieser Datensatz wurde bearbeitet nachdem Sie ihn geöffnet haben. Möchten Sie die Daten neu laden?",
     "reset": "Zurücksetzen",
     "restore": "Wiederherstellen",
-    "riskAlert": "Die Änderung der potentiellen Eintrittswahrscheinlichkeit\/Auswirkung ändert unter Umständen Risiken. Bitte prüfen Sie alle betroffenen Risiken!",
+    "riskAlert": "Die Änderung der potentiellen Eintrittswahrscheinlichkeit/Auswirkung ändert unter Umständen Risiken. Bitte prüfen Sie alle betroffenen Risiken!",
     "version": "Version {version}"
+  },
+  "tr": {
+    "notFound": "İstenen nesne bulunamadı.",
+    "objectInfo": "Nesne ayrıntıları",
+    "objectForm": "Form",
+    "objectNotRestored": "Nesne geri yüklenemedi",
+    "objectNotSaved": "Nesne güncellenemedi",
+    "objectRestored": "\"{name}\" geri yüklendi!",
+    "objectSaved": "\"{name}\" güncellendi!",
+    "oldVersionAlert": "Bu nesnenin eski ve salt okunur sürümünü görüntülüyorsunuz. Bu verilerle güncellemek için önce \"geri yükle\" işlemini yapın, ardından değişikliklerinizi kaydedin.",
+    "outdatedObject": "Bu kayıt başka bir kullanıcı tarafından düzenlendi. Değişiklikleri yüklemek ister misiniz?",
+    "reset": "Sıfırla",
+    "restore": "Geri yükle",
+    "riskAlert": "Potansiyel olasılık veya etki değişikliği riskleri etkileyebilir. İlgili riskleri kontrol edin!",
+    "version": "Sürüm {version}"
   }
 }

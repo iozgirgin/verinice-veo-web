@@ -8,5 +8,10 @@
     "management": "Units verwalten",
     "select": "Unit auswählen",
     "unit": "Unit"
+  },
+  "tr": {
+    "management": "Birimleri yönet",
+    "select": "Birim seç",
+    "unit": "Birim"
   }
 }

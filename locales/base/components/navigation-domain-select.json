@@ -6,5 +6,9 @@
   "de": {
     "domain": "Domäne",
     "select": "Domäne auswählen"
+  },
+  "tr": {
+    "domain": "Alan",
+    "select": "Alan seç"
   }
 }

@@ -24,7 +24,7 @@
           v-for="message in messages"
           :key="message.id"
           :model-value="message.displayProps.isShown"
-          :title="message.message[locale]"
+          :title="localizeText(message.message, locale)"
           :type="VeoAlertType[message.displayProps.alertType]"
           class="mt-2"
           flat
@@ -51,6 +51,7 @@
   </v-container>
 </template>
 <script setup lang="ts">
+import { localizeText } from '~/lib/localizeText';
 import { useFormatters } from '~/composables/utils';
 import type { TSystemMessage } from '~/composables/messages/useSystemMessages';
 import { VeoAlertType } from '~/types/VeoTypes';

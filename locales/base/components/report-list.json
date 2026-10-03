@@ -14,5 +14,13 @@
     "reportDescription": "Beschreibung",
     "reportName": "Reporttyp",
     "targetTypes": "Gültig für"
+  },
+  "tr": {
+    "noReports": "Rapor bulunmuyor",
+    "noDescriptionAvailable": "Yok",
+    "outputTypes": "Çıktı biçimi",
+    "reportDescription": "Açıklama",
+    "reportName": "Rapor türü",
+    "targetTypes": "Uygulanabildiği türler"
   }
 }

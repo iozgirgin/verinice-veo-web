@@ -4,5 +4,8 @@
   },
   "en": {
     "showHelp": "Switch language"
+  },
+  "tr": {
+    "showHelp": "Dil değiştir"
   }
 }

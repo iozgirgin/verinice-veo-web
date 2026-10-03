@@ -4,5 +4,8 @@
   },
   "de": {
     "domainNotFoundText": "Die gewünschte Domäne konnte nicht gefunden werden."
+  },
+  "tr": {
+    "domainNotFoundText": "İstenen alan bulunamadı."
   }
 }

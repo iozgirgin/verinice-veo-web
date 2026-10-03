@@ -4,5 +4,8 @@
   },
   "de": {
     "residualRisk": "Nettorisiko"
+  },
+  "tr": {
+    "residualRisk": "kalan risk"
   }
 }

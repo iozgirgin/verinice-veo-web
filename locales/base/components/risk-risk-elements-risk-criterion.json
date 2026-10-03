@@ -12,5 +12,12 @@
     "impact": "Mögliche Auswirkungen",
     "deleteHint": "Sie können das letzte Kriterium nicht löschen. Es wird zumindest ein Kriterium benötigt.",
     "delete": "Löschen"
+  },
+  "tr": {
+    "noMatrix": "Risk matrisi tanımlanmadı.",
+    "createMatrix": "Risk matrisi oluştur",
+    "impact": "Potansiyel etkiler",
+    "deleteHint": "Son ölçüt silinemez. En az bir ölçüt gereklidir.",
+    "delete": "Sil"
   }
 }

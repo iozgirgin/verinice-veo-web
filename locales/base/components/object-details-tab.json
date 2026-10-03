@@ -86,5 +86,50 @@
     "scenario": "Szenario",
     "implementations": "Umsetzung anzeigen",
     "noImplementations": "Keine mitigierenden Maßnahmen"
+  },
+  "tr": {
+    "cloneObject": "Nesneyi kopyala",
+    "controlDeleted": "Kontrol uygulaması kaldırıldı",
+    "controls": {
+      "abbreviation": "Kısaltma",
+      "description": "Açıklama",
+      "responsible": "Sorumlu",
+      "status": "Uygulama durumu"
+    },
+    "deleteDialogText": "Yalnız \"{ name }\" kontrolünün uygulaması kaldırılacaktır!",
+    "deleteDialogTitle": "Kontrol uygulamasını kaldır",
+    "deleteRisk": "Riski sil",
+    "errors": {
+      "clone": "Nesne kopyalanamadı",
+      "control": "Kontrol uygulaması ilişkisi kaldırılamadı",
+      "link": "Yeni nesne ilişkilendirilemedi",
+      "risk": "Risk silinemedi"
+    },
+    "inherentRisk": "Doğal risk",
+    "linkName": "İlişki adı",
+    "direction": "Yön",
+    "from": "Kaynak",
+    "to": "Hedef",
+    "outbound": "Giden",
+    "inbound": "Gelen",
+    "no": "Hayır",
+    "objectCloned": "Nesne kopyalandı",
+    "partial": "Kısmen",
+    "parentType": "Üst nesne türü",
+    "removeFromObject": "Nesneden çıkar",
+    "removeFromScope": "Kapsamdan çıkar",
+    "removeObjectFromObjectError": "Nesne kaldırılamadı",
+    "removeObjectFromObjectSuccess": "Nesne kaldırıldı",
+    "residualRisk": "Kalan risk",
+    "riskDeleted": "Risk kaldırıldı",
+    "riskTreatments": {
+      "RISK_TREATMENT_ACCEPTANCE": "risk kabulü",
+      "RISK_TREATMENT_AVOIDANCE": "riskten kaçınma",
+      "RISK_TREATMENT_REDUCTION": "risk azaltma",
+      "RISK_TREATMENT_TRANSFER": "risk aktarımı"
+    },
+    "scenario": "Risk senaryosu",
+    "implementations": "Uygulamaları göster",
+    "noImplementations": "Azaltıcı kontrol yok"
   }
 }

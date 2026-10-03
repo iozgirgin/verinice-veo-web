@@ -6,5 +6,9 @@
   "de": {
     "all": "Alle",
     "selectObject": "Objekt Auswählen"
+  },
+  "tr": {
+    "all": "Tümü",
+    "selectObject": "Nesne seç"
   }
 }

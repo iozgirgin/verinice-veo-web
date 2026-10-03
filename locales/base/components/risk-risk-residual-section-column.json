@@ -8,5 +8,10 @@
     "explanation": "Erklärung",
     "residualRisk": "Nettorisiko",
     "residualRiskHint": "Das angezeigte Nettorisiko wurde automatisch berechnet.{0}Sie können es allerdings überschreiben."
+  },
+  "tr": {
+    "explanation": "açıklama",
+    "residualRisk": "kalan risk",
+    "residualRiskHint": "Gösterilen kalan risk girdi verilerinden hesaplandı.{0}Özel bir değer belirleyebilirsiniz"
   }
 }

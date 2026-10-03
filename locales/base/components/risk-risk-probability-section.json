@@ -14,5 +14,13 @@
     "probability": "Eintrittswahrscheinlichkeit",
     "saveCTA": "Speichern zum Neuberechnen",
     "specificProbability": "spezifische Wahrscheinlichkeit"
+  },
+  "tr": {
+    "effectiveProbability": "Etkin olasılık",
+    "explanation": "Açıklama",
+    "potentialProbability": "Potansiyel olasılık",
+    "probability": "Olasılık",
+    "saveCTA": "Yeniden hesaplamak için kaydedin",
+    "specificProbability": "Belirlenen olasılık"
   }
 }

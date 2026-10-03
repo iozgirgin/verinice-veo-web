@@ -26,5 +26,19 @@
       "missingPermissionTooltip": "Fehlende Berechtigung für diese Aktion."
     },
     "search": "Suche"
+  },
+  "tr": {
+    "active": "Etkin",
+    "createUnit": "Birim oluştur",
+    "deleteUnit": "Birimi sil",
+    "editUnit": "Birimi düzenle",
+    "exceeded": "Birim sayısı sınırına ulaştınız",
+    "importUnit": "Birim içe aktar",
+    "importUnitHint": "Bir dosyadan dışa aktarılmış birimi içe aktar",
+    "of": "/",
+    "permissions": {
+      "missingPermissionTooltip": "Bu işlem için yetkiniz yok."
+    },
+    "search": "Ara"
   }
 }
