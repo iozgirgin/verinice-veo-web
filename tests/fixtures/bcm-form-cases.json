@@ -1,5 +1,5 @@
 {
-  "fixtureVersion": "1.0.0",
+  "fixtureVersion": "1.1.0",
   "forms": [
     {
       "modelType": "asset",
@@ -85,7 +85,9 @@
           "mbco": "MBCO — asgari çalışma kapasitesi (%)",
           "notice": "MTPD ve MBCO, iş biriminin belirlediği girdilerdir. Bu form bunları hesaplamaz.",
           "resources": "Kurtarma hedefi tanımlanan kaynaklar",
-          "results": "Hesaplanan kurtarma hedefleri"
+          "results": "Hesaplanan kurtarma hedefleri",
+          "rto": "RTO — kurtarma süresi hedefi",
+          "rpo": "RPO — veri kaybı toleransı hedefi"
         },
         "en": {
           "name": "Name",
@@ -96,7 +98,9 @@
           "mbco": "MBCO — minimum operating capacity (%)",
           "notice": "MTPD and MBCO are declared business inputs. This form does not calculate them.",
           "resources": "Resources with recovery requirements",
-          "results": "Calculated recovery targets"
+          "results": "Calculated recovery targets",
+          "rto": "RTO — recovery time objective",
+          "rpo": "RPO — recovery point objective"
         }
       }
     },
@@ -175,7 +179,23 @@
             "scope": "#/properties/links/properties/recoveryRequirement",
             "options": {
               "label": "#lang/resources"
-            }
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/attributes/properties/rto",
+                "options": {
+                  "label": "#lang/rto"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/attributes/properties/rpo",
+                "options": {
+                  "label": "#lang/rpo"
+                }
+              }
+            ]
           }
         ]
       },
@@ -191,7 +211,9 @@
           "mbco": "MBCO — asgari çalışma kapasitesi (%)",
           "notice": "MTPD ve MBCO, iş biriminin belirlediği girdilerdir. Bu form bunları hesaplamaz.",
           "resources": "Kurtarma hedefi tanımlanan kaynaklar",
-          "results": "Hesaplanan kurtarma hedefleri"
+          "results": "Hesaplanan kurtarma hedefleri",
+          "rto": "RTO — kurtarma süresi hedefi",
+          "rpo": "RPO — veri kaybı toleransı hedefi"
         },
         "en": {
           "name": "Name",
@@ -202,7 +224,9 @@
           "mbco": "MBCO — minimum operating capacity (%)",
           "notice": "MTPD and MBCO are declared business inputs. This form does not calculate them.",
           "resources": "Resources with recovery requirements",
-          "results": "Calculated recovery targets"
+          "results": "Calculated recovery targets",
+          "rto": "RTO — recovery time objective",
+          "rpo": "RPO — recovery point objective"
         }
       }
     }
@@ -269,6 +293,74 @@
     "original": 50,
     "edited": 55,
     "restore": true
+  },
+  "linkEditCase": {
+    "caseId": "BCM-UI-LINK-06",
+    "caseKey": "BCM-SHARED-01-PROCESS-0",
+    "original": {
+      "rto": "PT2H",
+      "rpo": "PT30M"
+    },
+    "edited": {
+      "rto": "PT15M",
+      "rpo": "PT1M"
+    },
+    "expectedResourceSeconds": {
+      "rto": 900,
+      "rpo": 60
+    },
+    "restoredResourceSeconds": {
+      "rto": 3600,
+      "rpo": 600
+    },
+    "restore": true
+  },
+  "linkTargetCases": [
+    {
+      "caseId": "BCM-LINK-TARGET-07",
+      "links": [
+        {
+          "target": {
+            "id": "synthetic-resource-a"
+          },
+          "attributes": {
+            "rto": "PT2H",
+            "rpo": "PT30M"
+          }
+        },
+        {
+          "target": {
+            "id": "synthetic-resource-b"
+          },
+          "attributes": {
+            "rto": "PT1H",
+            "rpo": "PT10M"
+          }
+        }
+      ],
+      "editedIndex": 0,
+      "newTarget": {
+        "id": "synthetic-resource-c"
+      }
+    },
+    {
+      "caseId": "BCM-LINK-TARGET-08",
+      "links": [
+        {
+          "target": null
+        }
+      ],
+      "editedIndex": 0,
+      "newTarget": {
+        "id": "synthetic-resource-a"
+      }
+    }
+  ],
+  "fastSaveCase": {
+    "caseId": "BCM-UI-FAST-SAVE-09",
+    "field": "rpo",
+    "value": "PT1M",
+    "maximumFormPropagationDelayMs": 250
   },
   "remoteDemoCompared": false
 }

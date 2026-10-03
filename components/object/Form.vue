@@ -26,6 +26,7 @@
             <v-card-text>
               <DynamicFormEntrypoint
                 v-if="!dataIsLoading && objectSchema"
+                ref="dynamicForm"
                 v-model="objectData"
                 :disabled="disabled"
                 :object-schema="objectSchema"
@@ -201,6 +202,8 @@ export default defineComponent({
   ],
   setup(props, { emit }) {
     const { t, locale } = useI18n();
+    const dynamicForm = ref<{ flushPendingUpdates: () => void }>();
+    const flushPendingUpdates = () => dynamicForm.value?.flushPendingUpdates();
     const { personReactiveFormActions, riskReactiveFormActions } = useVeoReactiveFormActions();
     const { displayInfoMessage } = useVeoAlerts();
 
@@ -600,6 +603,8 @@ export default defineComponent({
     );
 
     return {
+      dynamicForm,
+      flushPendingUpdates,
       localAdditionalContext,
       currentFormSchema,
       dataIsLoading,

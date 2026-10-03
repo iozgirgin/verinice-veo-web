@@ -129,8 +129,8 @@ export default defineComponent({
     };
 
     const onLinksFieldRowInput = (index: number, newValue: any) => {
-      const newInternalValue = internalValue.value;
-      newInternalValue[index] = { target: newValue };
+      const newInternalValue = cloneDeep(internalValue.value);
+      newInternalValue[index] = { ...newInternalValue[index], target: newValue };
       internalValue.value = newInternalValue;
     };
 

@@ -377,6 +377,9 @@ function handleSaveSuccess() {
 }
 
 async function saveObject() {
+  objectForm.value?.flushPendingUpdates();
+  await nextTick();
+  if (!isFormValid.value || !canManageUnitContent.value || formDataIsRevision.value) return;
   await updateObject(
     upperFirst(t('objectSaved', { name: object.value?.displayName })),
     upperFirst(t('objectNotSaved')),

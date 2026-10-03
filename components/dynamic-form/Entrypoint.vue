@@ -143,7 +143,7 @@ export default defineComponent({
     }
   },
   emits: ['update:model-value', 'update:messages', 'update:valid'],
-  setup(props, { emit }) {
+  setup(props, { emit, expose }) {
     const { locale } = useI18n();
 
     const { defaultReactiveFormActions } = useVeoReactiveFormActions();
@@ -447,6 +447,8 @@ export default defineComponent({
     }
 
     const updateFormDebounced = debounce(updateForm, 250);
+    expose({ flushPendingUpdates: () => updateFormDebounced.flush() });
+    onUnmounted(() => updateFormDebounced.cancel());
 
     // Every input uses this fn to store its state in `updateFormData`
     function onUpdate(objectSchemaPointer: string, newValue: any, oldValue: string, index?: number) {
