@@ -86,6 +86,7 @@
 
 <script setup lang="ts">
 import { useVeoUser } from '~/composables/VeoUser';
+import { customerField } from '~/lib/customerField';
 import { VeoAlertType } from '~/types/VeoTypes';
 
 definePageMeta({ layout: 'plain' });
@@ -106,13 +107,13 @@ if (!keycloakInitialized.value) {
 const login = () => _login((route.query.redirect_uri as string | undefined) || '/');
 const { data: customerConfig } = await useFetch<any>('/customer/config.json');
 
-function useLocalizedField(key: string) {
-  return computed(() => customerConfig.value?.[key]?.[locale.value]);
+function useLocalizedField(key: string, fallback?: () => string) {
+  return computed(() => customerField(customerConfig.value?.[key], locale.value, fallback?.()));
 }
 
 const onprem = customerConfig.value?.['onprem'];
 const logoLink = useLocalizedField('logoLink');
-const loginInstruction = useLocalizedField('loginInstruction');
+const loginInstruction = useLocalizedField('loginInstruction', () => t('loginV'));
 const registrationInstruction = useLocalizedField('registrationInstruction');
 const registrationAction = useLocalizedField('registrationAction');
 const registrationLink = useLocalizedField('registrationLink');
@@ -120,8 +121,8 @@ const customLogo = customerConfig.value?.['customLogo'];
 
 const localizedLinks = computed<{ label: string; url: string }[]>(() =>
   (customerConfig.value?.links ?? []).map((link) => ({
-    label: link.label[locale.value],
-    url: link.link[locale.value]
+    label: customerField(link.label, locale.value),
+    url: customerField(link.link, locale.value)
   }))
 );
 </script>

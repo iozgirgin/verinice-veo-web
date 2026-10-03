@@ -1,0 +1,43 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Birim seçimi
+description: Birim seçimi için kullanım rehberi
+route: /units
+exact: true
+lang: tr
+steps:
+  - title: Birim yönetimi
+    element: '[data-component-name=unit-selection-page]'
+    intro: Birim yönetiminde birim oluşturabilir, düzenleyebilir ve silebilirsiniz.
+  - title: Kullanılabilir birimler
+    element: '[data-component-name=number-available-units]'
+    intro: Seçili plana göre kaç birim daha oluşturabileceğiniz burada gösterilir.
+  - title: Birim bilgileri
+    element: '[data-component-name=item-card-slot-center-link]'
+    intro: Her kartta birimin adı, varsa açıklaması ve oluşturulma bilgileri gösterilir.
+  - title: Favori
+    element: '[data-component-name=unit-favorite-button]'
+    intro: Bir birimi favori olarak işaretleyerek sonraki girişte doğrudan yönetim panelini açabilirsiniz.
+  - title: Alanları düzenle
+    element: '[data-component-name=units-add-domains-button]'
+    intro: Her birime en az bir alan atanır. Kullanılabilir plana göre ek alanlar atayabilirsiniz.
+  - title: Profilleri uygula
+    element: '[data-component-name=apply-profiles-link]'
+    intro: Profiller, birime birden çok nesne eklemenizi sağlar. Örneğin IT-Grundschutz profilleri veya örnek kurumlar uygulanabilir.
+  - title: Birimi düzenle
+    element: '[data-component-name=units-edit-unit-button]'
+    intro: Birimin adını ve açıklamasını düzenleyebilirsiniz.
+  - title: Birimleri sil
+    element: '[data-component-name=units-delete-unit-button]'
+    intro: Gerekmeyen birimleri onay penceresinden sonra silebilirsiniz. Silmeden önce geri yüklenebilir bir yedek oluşturun.
+  - title: Birimi aç
+    element: '[data-component-name=item-card-slot-center-link]'
+    intro: Birimin yönetim panelini açmak için kartına tıklayın.
+  - title: Birim oluştur
+    element: '[data-component-name=create-unit-btn]'
+    intro: Sihirbazda yeni birim oluşturabilir, kullanılabilir profilleri uygulayabilir ve alanları atayabilirsiniz.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

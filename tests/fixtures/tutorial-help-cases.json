@@ -1,0 +1,121 @@
+{
+  "fixtureVersion": "1.0.0",
+  "tutorialCount": 8,
+  "stepCount": 90,
+  "cases": [
+    {
+      "caseId": "HELP-TR-UNITS-01",
+      "route": "/units",
+      "titles": [
+        "Uygulama çubuğu",
+        "Birim seçimi"
+      ]
+    },
+    {
+      "caseId": "HELP-TR-ASSET-01",
+      "route": "/:unit()/domains/:domain()/:objectType()/:subType()/:object()",
+      "titles": [
+        "Uygulama çubuğu",
+        "Ana menü",
+        "Nesne görünümü"
+      ]
+    },
+    {
+      "caseId": "HELP-TR-REPORT-01",
+      "route": "/:unit()/domains/:domain()/reports/:report()",
+      "titles": [
+        "Uygulama çubuğu",
+        "Ana menü",
+        "Raporlar"
+      ]
+    }
+  ],
+  "buttonCases": [
+    {
+      "caseId": "HELP-NONE-01",
+      "count": 0,
+      "visible": false,
+      "disabled": true
+    },
+    {
+      "caseId": "HELP-SINGLE-01",
+      "count": 1,
+      "visible": false,
+      "disabled": false,
+      "action": "load"
+    },
+    {
+      "caseId": "HELP-CLOSE-01",
+      "count": 1,
+      "visible": true,
+      "disabled": false,
+      "action": "stop"
+    }
+  ],
+  "syntheticContext": {
+    "unitId": "f5cad923-00bf-452b-bdd3-79c8b3f0018a",
+    "assetId": "053ce164-18a7-490a-881c-409149e08e59",
+    "fixtureVersion": "turkish-pilot-1.0.0",
+    "readOnly": true
+  },
+  "excluded": [
+    "10.riskdefinition",
+    "developer help pages",
+    "external documentation",
+    "Keycloak account settings"
+  ],
+  "customerFieldCases": [
+    {
+      "caseId": "LOGIN-TR-EXACT",
+      "fields": {
+        "tr": "Giriş yap",
+        "en": "Sign in"
+      },
+      "locale": "tr",
+      "fallback": "Giriş",
+      "expected": "Giriş yap"
+    },
+    {
+      "caseId": "LOGIN-TR-OLD-CONFIG",
+      "fields": {
+        "en": "Sign in"
+      },
+      "locale": "tr",
+      "fallback": "Giriş",
+      "expected": "Sign in"
+    },
+    {
+      "caseId": "LOGIN-TR-MISSING-CONFIG",
+      "fields": null,
+      "locale": "tr",
+      "fallback": "Giriş",
+      "expected": "Giriş"
+    },
+    {
+      "caseId": "LOGIN-TR-BLANK-CONFIG",
+      "fields": {
+        "tr": "  ",
+        "en": "Sign in"
+      },
+      "locale": "tr",
+      "fallback": "Giriş",
+      "expected": "Sign in"
+    },
+    {
+      "caseId": "LOGIN-TR-EMPTY-LINK",
+      "fields": null,
+      "locale": "tr",
+      "fallback": "",
+      "expected": ""
+    },
+    {
+      "caseId": "LOGIN-TR-LINK-FALLBACK",
+      "fields": {
+        "en": "http://localhost:8781"
+      },
+      "locale": "tr",
+      "fallback": "",
+      "expected": "http://localhost:8781"
+    }
+  ]
+}

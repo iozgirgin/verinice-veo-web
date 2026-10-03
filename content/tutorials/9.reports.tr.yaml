@@ -1,0 +1,30 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Raporlar
+description: Raporlar için kullanım rehberi
+route: /:unit()/domains/:domain()/reports/:report()
+lang: tr
+steps:
+  - title: Raporlar
+    element: '[data-component-name=report-page]'
+    intro: Bu bölümde bir rapor şablonu seçerek rapor oluşturabilirsiniz.
+  - title: Seçili rapor
+    element: '[data-component-name=report-selected]'
+    intro: Üst bölümde seçili raporun bilgileri gösterilir.
+  - title: Kapsam seçimi
+    element: '[data-component-name=report-entity-selection]'
+    intro: Raporun hazırlanacağı kapsamı listeden seçin.
+  - title: Kapsam türü
+    element: '[data-component-name=report-entity-selection-filter-bar]'
+    intro: Rapor şablonları belirli kapsam türleri üzerinde çalışır. Bu nedenle nesne türü ve alt türü filtreleri değiştirilemez.
+  - title: İç içe kapsamlar
+    element: '[data-component-name=report-entity-selection]'
+    intro: Aynı raporu farklı alt kapsamlar için oluşturmak istiyorsanız iç içe kapsamları kullanabilirsiniz.
+  - title: Rapor oluştur
+    element: '[data-component-name=generate-report-button]'
+    intro: Raporu PDF olarak oluşturmak için bu düğmeyi kullanın.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

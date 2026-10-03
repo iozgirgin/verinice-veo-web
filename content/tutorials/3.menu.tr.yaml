@@ -1,0 +1,39 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Ana menü
+description: Ana menü için kullanım rehberi
+route: /:unit()/domains/:domain()
+lang: tr
+steps:
+  - title: Ana menü
+    element: '[data-component-name=primary-navigation]'
+    intro: Menüden uygulamanın farklı bölümlerine geçebilirsiniz.
+  - title: Birim seçimi
+    element: '[data-component-name=unit-select]'
+    intro: Kullanılabilir birimlerden birini seçin.
+  - title: Alan seçimi
+    element: '[data-component-name=domain-select]'
+    intro: Seçili birimde kullanılabilir alanlardan birini seçin.
+  - title: Yönetim paneli
+    element: '[data-component-name=domain-dashboard-nav-item]'
+    intro: Yönetim panelinde nesneleri alt tür ve durumlarına göre görebilir, ilgili kayıtlara geçebilirsiniz.
+  - title: Nesneler
+    element: '[data-component-name=objects-nav-item]'
+    intro: Bu bölümden <i>Kapsamlar</i>, <i>Süreçler</i>, <i>Varlıklar</i>, <i>Kişiler</i>, <i>Olaylar</i>, <i>Dokümanlar</i>, <i>Senaryolar</i> ve <i>Kontroller</i> listelerine erişebilirsiniz.
+  - title: Kataloglar
+    element: '[data-component-name=catalogs-nav-item]'
+    intro: Kullanılabilir kataloglardan <i>nesneleri</i> biriminize uygulayabilirsiniz.
+  - title: Raporlar
+    element: '[data-component-name=reports-nav-item]'
+    intro: Rapor oluşturmak için kullanılabilir rapor şablonlarından birini seçin.
+  - title: Riskler
+    element: '[data-component-name=risks-nav-item]'
+    intro: Bu bölümde kullanılabilir risk tanımlarını ve matrislerini görüntüleyebilirsiniz.
+  - title: Menüyü daralt
+    element: '[data-component-name=toggle-navigation]'
+    intro: Gezinme menüsünü genişletmek veya daraltmak için bu düğmeyi kullanın.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

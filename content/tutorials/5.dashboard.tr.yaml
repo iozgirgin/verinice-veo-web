@@ -1,0 +1,43 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Yönetim paneli
+description: Yönetim paneli için kullanım rehberi
+route: /:unit()/domains/:domain()
+exact: true
+lang: tr
+steps:
+  - title: Yönetim paneli
+    element: '[data-component-name=domain-dashboard-page]'
+    intro: Panelde son düzenlediğiniz nesneler ve nesnelerin grafik özeti bulunur. Grafiklere tıklayarak ilgili alt tür ve durumdaki nesnelerin listesine geçebilirsiniz.
+  - title: Son düzenlediğim nesneler
+    element: '[data-component-name=domain-dashboard-latest-revisions-widget]'
+    intro: Son düzenlediğiniz nesneleri bu bölümden hızlıca açabilirsiniz.
+  - title: Kapsamlar
+    element: '[data-component-name=domain-dashboard-scope-widget]'
+    intro: Bu bölümde kapsam nesnelerinin kullanılabilir alt türleri gösterilir.
+  - title: Süreçler
+    element: '[data-component-name=domain-dashboard-process-widget]'
+    intro: Alt türler, nesnelerin farklı formlarda gösterilmesini sağlar. Örneğin süreçler işleme faaliyeti veya iş süreci olarak gösterilebilir.
+  - title: Varlıklar
+    element: '[data-component-name=domain-dashboard-asset-widget]'
+    intro: Her alt türün kendine özgü durumları olabilir. Varsayılan durumda nesnelerin yaşam döngüsü gösterilir.
+  - title: Kişiler
+    element: '[data-component-name=domain-dashboard-person-widget]'
+    intro: Nesne durumları renklerle gösterilir:<br>koyu gri = Yeni<br>sarı = İşlemde<br>mavi = İnceleme için<br>yeşil = Onaylandı<br>açık gri = Arşivlendi.
+  - title: Kontroller
+    element: '[data-component-name=domain-dashboard-control-widget]'
+    intro: Koyu gri, sarı ve mavi nesneler ek dokümantasyon gerektirir. Yeşil ve açık gri nesneler yeterince belgelenmiş olarak işaretlenmiştir. Bu durum tek başına kontrolün etkinliğini kanıtlamaz.
+  - title: Olaylar
+    element: '[data-component-name=domain-dashboard-incident-widget]'
+    intro: Zamanında müdahale gerektiren yeni olaylar bu bölümde <b>koyu gri</b> gösterilir.
+  - title: Dokümanlar
+    element: '[data-component-name=domain-dashboard-document-widget]'
+    intro: Örneğin incelenmesi gereken dokümanlar bu bölümün grafiğinde mavi gösterilir.
+  - title: Senaryolar
+    element: '[data-component-name=domain-dashboard-scenario-widget]'
+    intro: Ek değerlendirme gerektiren sarı senaryolara panelden doğrudan geçebilirsiniz.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

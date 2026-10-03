@@ -1,0 +1,60 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Nesne görünümü
+description: Nesne görünümü için kullanım rehberi
+route: /:unit()/domains/:domain()/:objectType()/:subType()/:object()
+lang: tr
+steps:
+  - title: Nesne görünümü
+    element: '[data-component-name=object-details-page]'
+    intro: Nesne görünümünde solda nesne ilişkileri, sağda form bulunur.
+  - title: Nesne bilgileri
+    element: '[data-component-name=object-details-details]'
+    intro: Sol bölümde seçili nesnenin ilişkilerini görebilirsiniz.
+  - title: Alt nesneler
+    element: '[data-component-name=object-details-childObjects-tab]'
+    intro: Bu bölümde seçili kapsamın veya nesnenin içerdiği nesneler gösterilir.
+  - title: Üst nesneler
+    element: '[data-component-name=object-details-parentObjects-tab]'
+    intro: Seçili nesnenin hangi nesnelerin içinde bulunduğu burada gösterilir.
+  - title: Bağlantılar
+    element: '[data-component-name=object-details-links-tab]'
+    intro: Formda ilişkilendirilen nesneler bu bölümde gösterilir.
+  - title: Uyumluluk
+    element: '[data-component-name=object-details-controls-tab]'
+    intro: Varlıklar, süreçler ve kapsamlar için gerekli uyumluluk kontrollerini bu sekmeden atayabilirsiniz. Bu özellik tüm alanlarda kullanılmaz.
+  - title: Riskler
+    element: '[data-component-name=object-details-risks-tab]'
+    intro: Alana bağlı olarak kapsam, süreç veya varlıklar için riskleri belgeleyebilir ve işleyebilirsiniz.
+  - title: Ekle
+    element: '[data-component-name=object-details-actions-button]'
+    intro: Etkin sekmeye göre alt veya üst nesne ilişkisi kurabilir ve desteklenen nesnelere risk ekleyebilirsiniz.
+  - title: Form
+    element: '[data-component-name=object-form-form]'
+    intro: Sağ bölümde nesnenin form bilgileri gösterilir.
+  - title: Formu kaydet
+    element: '[data-component-name=object-details-actions]'
+    intro: Değişiklikleri kaydedebilir veya sıfırlayabilirsiniz.
+  - title: Yan panel
+    element: '[data-component-name=object-form-sidebar]'
+    intro: Ek işlevler yan panelde bulunur.
+  - title: 'Yan panel: Görünüm'
+    element: '[data-component-name=object-form-view-tab]'
+    intro: Nesnenin farklı form görünümleri arasında geçiş yapabilirsiniz.
+  - title: 'Yan panel: İçindekiler'
+    element: '[data-component-name=object-form-toc-tab]'
+    intro: Belirli form bölümlerine hızlıca geçebilirsiniz.
+  - title: 'Yan panel: Geçmiş'
+    element: '[data-component-name=object-form-history-tab]'
+    intro: Nesnenin önceki sürümlerini görüntüleyebilir ve eski bir sürümü geri yükleyebilirsiniz.
+  - title: 'Yan panel: Mesajlar'
+    element: '[data-component-name=object-form-messages-tab]'
+    intro: Nesneyle ilgili hatalar, uyarılar ve bilgiler burada gösterilir.
+  - title: 'Yan panel: Diğer işlemler'
+    element: '[data-component-name=object-form-more-actions-button]'
+    intro: Silme gibi ek nesne işlemlerini bu menüden başlatabilirsiniz.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

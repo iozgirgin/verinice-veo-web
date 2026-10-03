@@ -23,7 +23,7 @@
           v-if="tutorialsForRoute.length <= 1"
           v-bind="tooltipProps"
           :aria-label="t('showHelp')"
-          :disabled="!tutorialsForRoute.length || !visible"
+          :disabled="!tutorialsForRoute.length"
           :title="t('showHelp')"
           data-component-name="tutorial-select"
           icon

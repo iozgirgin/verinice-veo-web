@@ -1,0 +1,21 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Kataloglar
+description: Kataloglar için kullanım rehberi
+route: /:unit()/domains/:domain()/catalog
+lang: tr
+steps:
+  - title: Kataloglar
+    element: '[data-component-name=catalog-page]'
+    intro: Bu bölümde kullanılabilir katalogları uygulayabilirsiniz.
+  - title: Arama
+    element: '[data-component-name=veo-search]'
+    intro: Nesneleri bulmak için adını, kısaltmasını veya ikisini birlikte arama kutusuna yazın.
+  - title: Nesneleri uygula
+    element: '[data-component-name=catalogs-nav-item]'
+    intro: Seçili birime kopyalamak istediğiniz katalog nesnelerini seçin.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

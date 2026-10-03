@@ -1,0 +1,54 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Uygulama çubuğu
+description: Uygulama çubuğu için kullanım rehberi
+route: /
+lang: tr
+steps:
+  - title: Uygulama çubuğu
+    element: '[data-component-name=app-bar]'
+    intro: Uygulama çubuğundan temel işlevlere erişebilirsiniz. Bu çubuk tüm görünümlerde bulunur.
+  - title: Logo
+    element: '[data-component-name=logo]'
+    intro: Birim yönetimine dönmek için logoya tıklayın.
+  - title: Gezinme yolu
+    element: '[data-component-name=breadcrumbs]'
+    intro: Gezinme yolundaki bağlantıları kullanarak daha önce açılan nesnelere dönebilirsiniz.
+  - title: Tema seçimi
+    element: '[data-component-name=theme-switch]'
+    intro: Simgeye tıklayarak <i>açık</i> ve <i>koyu</i> tema arasında geçiş yapabilirsiniz.
+  - title: Dil seçimi
+    element: '[data-component-name=language-select]'
+    intro: Dil seçicisinden kullanılabilir arayüz dillerinden birini seçebilirsiniz.
+  - title: Bağlamsal yardım
+    element: '[data-component-name=tutorial-select]'
+    intro: Bu sayfada kullanılabilir rehberleri açmak için yardım düğmesini kullanın.
+  - title: Dokümantasyon
+    element: '[data-component-name=docs-nav-item]'
+    intro: Dokümantasyon bağlantısından uygulamanın kullanım bilgilerine erişebilirsiniz.
+  - title: Hesap menüsü
+    element: '[data-component-name=account-menu-button]'
+    intro: Hesap düğmesinden ek işlevlere ve hesap bilgilerine erişebilirsiniz.
+  - title: 'Hesap menüsü: Hesabı düzenle'
+    element: '[data-component-name=account-menu-button]'
+    intro: <strong>Hesabı düzenle</strong> bağlantısı ayrı bir sekmede kişisel bilgiler, parola ve iki faktörlü kimlik doğrulama ayarlarını açar.
+  - title: 'Hesap menüsü: İlk adımlar'
+    element: '[data-component-name=account-menu-button]'
+    intro: <strong>İlk adımlar</strong> penceresi uygulamaya başlamak için temel bilgileri gösterir.
+  - title: 'Hesap menüsü: Veri taşınabilirliği'
+    element: '[data-component-name=account-menu-button]'
+    intro: <strong>Veri taşınabilirliği</strong> sayfasından verilerinizi yerel bir dosyaya aktarabilirsiniz. Bu dışa aktarma, servislerin tam yedeğinin yerini tutmaz.
+  - title: 'Hesap menüsü: Güvenlik politikası'
+    element: '[data-component-name=account-menu-button]'
+    intro: <strong>Güvenlik politikası</strong> bağlantısı güvenlik açıklarının bildirilmesi ve ele alınması hakkında bilgi verir.
+  - title: 'Hesap menüsü: verinice hakkında'
+    element: '[data-component-name=account-menu-button]'
+    intro: <strong>verinice hakkında</strong> bölümünde ürün ve sürüm bilgileri bulunur.
+  - title: 'Hesap menüsü: Oturumu kapat'
+    element: '[data-component-name=account-menu-button]'
+    intro: <strong>Oturumu kapat</strong> seçeneğiyle uygulamadan çıkabilirsiniz.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat

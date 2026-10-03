@@ -1,0 +1,55 @@
+# verinice.veo web — Turkish adaptation of upstream AGPL-3.0-or-later tutorial content.
+title: Nesne listesi
+description: Nesne listesi için kullanım rehberi
+route: /:unit()/domains/:domain()/:objectType()/:subType()
+exact: true
+lang: tr
+steps:
+  - title: Nesne listesi
+    element: '[data-component-name=object-overview-page]'
+    intro: Bu görünüm kullanılabilir nesneleri listeler.
+  - title: Arama
+    element: '[data-component-name=veo-search]'
+    intro: Nesneleri bulmak için adını, kısaltmasını veya ikisini birlikte arama kutusuna yazın.
+  - title: Gezinme yolu
+    element: '[data-component-name=breadcrumbs]'
+    intro: Gezinme yolundaki bağlantılara tıklayarak listelenen üst bölümlere geçebilirsiniz.
+  - title: Nesne listesi
+    element: '[data-component-name=object-overview-page]'
+    intro: Nesneleri hızlı bulmak için liste görünümünü farklı şekillerde düzenleyebilirsiniz.
+  - title: Sıralama
+    element: '[data-component-name=object-overview-table] thead'
+    intro: Nesneleri sıralamak için sütun başlıklarına tıklayın.
+  - title: Sayfalama
+    element: '[data-component-name=object-overview-table] > .v-data-table-footer'
+    intro: Sayfa başına gösterilen nesne sayısını değiştirebilir ve sayfalar arasında geçiş yapabilirsiniz.
+  - title: Nesneyi düzenle
+    element: '[data-component-name=object-overview-page]'
+    intro: Nesneyi düzenlemek için listedeki satırına tıklayın.
+  - title: Tür
+    element: '[data-component-name=object-overview-table] tbody > tr:nth-child(1) > td:nth-child(2)'
+    intro: Tür, nesnenin sistemdeki kategorisini veya sınıflandırmasını belirler.
+  - title: Nesne tanımlayıcısı
+    element: '[data-component-name=object-overview-table] tbody > tr:nth-child(1) > td:nth-child(3)'
+    intro: Sistemin verdiği benzersiz ve değiştirilemeyen tanımlayıcıyı nesneleri ararken kullanabilirsiniz.
+  - title: Nesneyi çoğalt
+    element: '[data-component-name=object-overview-clone-button]'
+    intro: Bu düğmeyle nesnenin bir kopyasını oluşturabilirsiniz.
+  - title: Nesneyi sil
+    element: '[data-component-name=object-overview-delete-button]'
+    intro: Bu düğmeyle nesneyi silme işlemini başlatabilirsiniz.
+  - title: Nesneyi ata
+    element: '[data-component-name=object-overview-assign-button]'
+    intro: Nesneyi başka bir alana atayabilirsiniz.
+  - title: Nesne oluştur
+    element: '[data-component-name=create-object-button]'
+    intro: Etkin filtre ayarlarına uygun yeni bir nesne oluşturmak için bu düğmeyi kullanın.
+  - title: Nesneleri içe aktar
+    element: '[data-component-name=csv-button]'
+    intro: İçe aktarılacak dosyayı seçmek için bu düğmeyi kullanın.
+  - title: Tamamlandı
+    intro: Ek kullanım bilgilerine dokümantasyondan erişebilirsiniz.
+nextLabel: İleri
+prevLabel: Geri
+doneLabel: Tamamla
+skipLabel: Kapat
