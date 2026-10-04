@@ -1,0 +1,275 @@
+{
+  "fixtureVersion": "1.0.0",
+  "forms": {
+    "DataSubjectRequest": [
+      {
+        "before": "/customAspects/kvkkRequest/receivedAt",
+        "after": "/customAspects/kvkkRequest/responseDueAt",
+        "message": "dateOrder_kvkkRequest_receivedAt_responseDueAt"
+      },
+      {
+        "before": "/customAspects/kvkkRequest/receivedAt",
+        "after": "/customAspects/kvkkRequest/respondedAt",
+        "message": "dateOrder_kvkkRequest_receivedAt_respondedAt"
+      },
+      {
+        "before": "/customAspects/kvkkRequest/receivedAt",
+        "after": "/customAspects/kvkkRequest/closedAt",
+        "message": "dateOrder_kvkkRequest_receivedAt_closedAt"
+      },
+      {
+        "before": "/customAspects/kvkkRequest/respondedAt",
+        "after": "/customAspects/kvkkRequest/closedAt",
+        "message": "dateOrder_kvkkRequest_respondedAt_closedAt"
+      }
+    ],
+    "ErasureRecord": [
+      {
+        "before": "/customAspects/kvkkErasure/approvedAt",
+        "after": "/customAspects/kvkkErasure/executedAt",
+        "message": "dateOrder_kvkkErasure_approvedAt_executedAt"
+      }
+    ],
+    "TransferAssessment": [
+      {
+        "before": "/customAspects/kvkkTransfer/reviewedAt",
+        "after": "/customAspects/kvkkTransfer/nextReviewAt",
+        "message": "dateOrder_kvkkTransfer_reviewedAt_nextReviewAt"
+      }
+    ],
+    "PersonalDataBreach": [
+      {
+        "before": "/customAspects/kvkkBreach/awareness",
+        "after": "/customAspects/kvkkBreach/boardNotification",
+        "message": "dateOrder_kvkkBreach_awareness_boardNotification"
+      },
+      {
+        "before": "/customAspects/kvkkBreach/awareness",
+        "after": "/customAspects/kvkkBreach/subjectNotification",
+        "message": "dateOrder_kvkkBreach_awareness_subjectNotification"
+      },
+      {
+        "before": "/customAspects/kvkkBreach/awareness",
+        "after": "/customAspects/kvkkBreach/closedAt",
+        "message": "dateOrder_kvkkBreach_awareness_closedAt"
+      },
+      {
+        "before": "/customAspects/kvkkBreach/boardNotification",
+        "after": "/customAspects/kvkkBreach/closedAt",
+        "message": "dateOrder_kvkkBreach_boardNotification_closedAt"
+      },
+      {
+        "before": "/customAspects/kvkkBreach/subjectNotification",
+        "after": "/customAspects/kvkkBreach/closedAt",
+        "message": "dateOrder_kvkkBreach_subjectNotification_closedAt"
+      }
+    ],
+    "Evidence": [
+      {
+        "before": "/customAspects/kvkkDocument/reviewedAt",
+        "after": "/customAspects/kvkkDocument/nextReviewAt",
+        "message": "dateOrder_kvkkDocument_reviewedAt_nextReviewAt"
+      }
+    ],
+    "Safeguard": [
+      {
+        "before": "/customAspects/kvkkSafeguard/reviewedAt",
+        "after": "/customAspects/kvkkSafeguard/nextReviewAt",
+        "message": "dateOrder_kvkkSafeguard_reviewedAt_nextReviewAt"
+      }
+    ]
+  },
+  "translations": {
+    "tr": {
+      "dateOrder_kvkkRequest_receivedAt_responseDueAt": "İncelenen cevap hedef zamanı, başvurunun alınma zamanı öncesinde olamaz.",
+      "dateOrder_kvkkRequest_receivedAt_respondedAt": "Cevabın iletilme zamanı, başvurunun alınma zamanı öncesinde olamaz.",
+      "dateOrder_kvkkRequest_receivedAt_closedAt": "Kapanış zamanı, başvurunun alınma zamanı öncesinde olamaz.",
+      "dateOrder_kvkkRequest_respondedAt_closedAt": "Kapanış zamanı, cevabın iletilme zamanı öncesinde olamaz.",
+      "dateOrder_kvkkErasure_approvedAt_executedAt": "İşlemin gerçekleşme zamanı, i̇şlem onay zamanı öncesinde olamaz.",
+      "dateOrder_kvkkTransfer_reviewedAt_nextReviewAt": "Sonraki inceleme zamanı, i̇nceleme zamanı öncesinde olamaz.",
+      "dateOrder_kvkkBreach_awareness_boardNotification": "Kurula bildirim kayıt zamanı, i̇hlalin öğrenilme zamanı öncesinde olamaz.",
+      "dateOrder_kvkkBreach_awareness_subjectNotification": "İlgili kişi bildirim kayıt zamanı, i̇hlalin öğrenilme zamanı öncesinde olamaz.",
+      "dateOrder_kvkkBreach_awareness_closedAt": "Olay kapanış zamanı, i̇hlalin öğrenilme zamanı öncesinde olamaz.",
+      "dateOrder_kvkkBreach_boardNotification_closedAt": "Olay kapanış zamanı, kurula bildirim kayıt zamanı öncesinde olamaz.",
+      "dateOrder_kvkkBreach_subjectNotification_closedAt": "Olay kapanış zamanı, i̇lgili kişi bildirim kayıt zamanı öncesinde olamaz.",
+      "dateOrder_kvkkDocument_reviewedAt_nextReviewAt": "Sonraki gözden geçirme zamanı, gözden geçirme zamanı öncesinde olamaz.",
+      "dateOrder_kvkkSafeguard_reviewedAt_nextReviewAt": "Sonraki inceleme zamanı, i̇nceleme zamanı öncesinde olamaz."
+    },
+    "en": {
+      "dateOrder_kvkkRequest_receivedAt_responseDueAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkRequest_receivedAt_respondedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkRequest_receivedAt_closedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkRequest_respondedAt_closedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkErasure_approvedAt_executedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkTransfer_reviewedAt_nextReviewAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkBreach_awareness_boardNotification": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkBreach_awareness_subjectNotification": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkBreach_awareness_closedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkBreach_boardNotification_closedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkBreach_subjectNotification_closedAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkDocument_reviewedAt_nextReviewAt": "The later recorded date must not precede the earlier recorded date.",
+      "dateOrder_kvkkSafeguard_reviewedAt_nextReviewAt": "The later recorded date must not precede the earlier recorded date."
+    }
+  },
+  "cases": [
+    {
+      "caseId": "KVKK-DATE-ORDER-01",
+      "subType": "DataSubjectRequest",
+      "rule": {
+        "before": "/customAspects/kvkkRequest/receivedAt",
+        "after": "/customAspects/kvkkRequest/responseDueAt",
+        "message": "dateOrder_kvkkRequest_receivedAt_responseDueAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-02",
+      "subType": "DataSubjectRequest",
+      "rule": {
+        "before": "/customAspects/kvkkRequest/receivedAt",
+        "after": "/customAspects/kvkkRequest/respondedAt",
+        "message": "dateOrder_kvkkRequest_receivedAt_respondedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-03",
+      "subType": "DataSubjectRequest",
+      "rule": {
+        "before": "/customAspects/kvkkRequest/receivedAt",
+        "after": "/customAspects/kvkkRequest/closedAt",
+        "message": "dateOrder_kvkkRequest_receivedAt_closedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-04",
+      "subType": "DataSubjectRequest",
+      "rule": {
+        "before": "/customAspects/kvkkRequest/respondedAt",
+        "after": "/customAspects/kvkkRequest/closedAt",
+        "message": "dateOrder_kvkkRequest_respondedAt_closedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-05",
+      "subType": "ErasureRecord",
+      "rule": {
+        "before": "/customAspects/kvkkErasure/approvedAt",
+        "after": "/customAspects/kvkkErasure/executedAt",
+        "message": "dateOrder_kvkkErasure_approvedAt_executedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-06",
+      "subType": "TransferAssessment",
+      "rule": {
+        "before": "/customAspects/kvkkTransfer/reviewedAt",
+        "after": "/customAspects/kvkkTransfer/nextReviewAt",
+        "message": "dateOrder_kvkkTransfer_reviewedAt_nextReviewAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-07",
+      "subType": "PersonalDataBreach",
+      "rule": {
+        "before": "/customAspects/kvkkBreach/awareness",
+        "after": "/customAspects/kvkkBreach/boardNotification",
+        "message": "dateOrder_kvkkBreach_awareness_boardNotification"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-08",
+      "subType": "PersonalDataBreach",
+      "rule": {
+        "before": "/customAspects/kvkkBreach/awareness",
+        "after": "/customAspects/kvkkBreach/subjectNotification",
+        "message": "dateOrder_kvkkBreach_awareness_subjectNotification"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-09",
+      "subType": "PersonalDataBreach",
+      "rule": {
+        "before": "/customAspects/kvkkBreach/awareness",
+        "after": "/customAspects/kvkkBreach/closedAt",
+        "message": "dateOrder_kvkkBreach_awareness_closedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-10",
+      "subType": "PersonalDataBreach",
+      "rule": {
+        "before": "/customAspects/kvkkBreach/boardNotification",
+        "after": "/customAspects/kvkkBreach/closedAt",
+        "message": "dateOrder_kvkkBreach_boardNotification_closedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-11",
+      "subType": "PersonalDataBreach",
+      "rule": {
+        "before": "/customAspects/kvkkBreach/subjectNotification",
+        "after": "/customAspects/kvkkBreach/closedAt",
+        "message": "dateOrder_kvkkBreach_subjectNotification_closedAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-12",
+      "subType": "Evidence",
+      "rule": {
+        "before": "/customAspects/kvkkDocument/reviewedAt",
+        "after": "/customAspects/kvkkDocument/nextReviewAt",
+        "message": "dateOrder_kvkkDocument_reviewedAt_nextReviewAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    },
+    {
+      "caseId": "KVKK-DATE-ORDER-13",
+      "subType": "Safeguard",
+      "rule": {
+        "before": "/customAspects/kvkkSafeguard/reviewedAt",
+        "after": "/customAspects/kvkkSafeguard/nextReviewAt",
+        "message": "dateOrder_kvkkSafeguard_reviewedAt_nextReviewAt"
+      },
+      "before": "2026-01-05T08:00:00Z",
+      "after": "2026-01-05T07:59:59Z",
+      "errorCount": 1
+    }
+  ],
+  "demoCompared": false,
+  "legalAcceptance": false,
+  "scope": "Optional recorded-date order only; no deadline calculation, mandatory state fields or API enforcement"
+}

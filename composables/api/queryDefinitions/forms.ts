@@ -16,6 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 import type { IVeoTranslationCollection } from '~/types/VeoTypes';
+import type { DateOrderRule } from '~/lib/formDateOrder';
 import type { IVeoMutationDefinition } from '../utils/mutation';
 import type { IVeoQueryDefinition } from '../utils/query';
 import { STALE_TIME } from '../utils/query';
@@ -31,6 +32,7 @@ export interface IVeoFormSchemaMeta {
 }
 
 export interface IVeoFormSchemaItemOptions {
+  dateOrderRules?: DateOrderRule[];
   label?: string;
   format?: string;
   direction?: string;

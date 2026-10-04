@@ -34,6 +34,7 @@ import type { IVeoFormSchemaItem } from '~/composables/api/queryDefinitions/form
 import { useVeoErrorFormatter } from '~/composables/VeoErrorFormatter';
 import { useVeoReactiveFormActions } from '~/composables/VeoReactiveFormActions';
 import FormSchemaValidator from '~/lib/FormSchemaValidator';
+import { dateOrderErrors } from '~/lib/formDateOrder';
 import type { VeoSchemaValidatorValidationResult } from '~/lib/ObjectSchemaValidator';
 import type { IVeoDomainSpecificObjectSchema } from '~/types/VeoTypes';
 import Control from './controls/Control';
@@ -430,8 +431,12 @@ export default defineComponent({
         } else {
           errorMessages.value = new Map();
         }
+        const dateErrors = dateOrderErrors(data, props.formSchema?.options?.dateOrderRules, localTranslations.value);
+        for (const [pointer, messages] of dateErrors) {
+          errorMessages.value.set(pointer, [...(errorMessages.value.get(pointer) || []), ...messages]);
+        }
         emit('update:messages', errorMessages.value);
-        emit('update:valid', formIsValid);
+        emit('update:valid', formIsValid && !dateErrors.size);
       } catch (e: any) {
         formError.value = e.message;
       }
@@ -453,6 +458,7 @@ export default defineComponent({
     // Every input uses this fn to store its state in `updateFormData`
     function onUpdate(objectSchemaPointer: string, newValue: any, oldValue: string, index?: number) {
       updateFormData({ objectSchemaPointer, newValue, oldValue, index });
+      if (props.formSchema?.options?.dateOrderRules?.length) validateFormData(formData);
       updateFormDebounced();
     }
 
@@ -489,7 +495,7 @@ export default defineComponent({
       }
     }
     watch(
-      [() => props.modelValue, () => props.locale, () => locale.value],
+      [() => props.modelValue, () => props.locale, () => locale.value, () => props.formSchema],
       ([newValue]) => {
         formData = cloneDeep(props.modelValue);
         validateFormData(newValue);
