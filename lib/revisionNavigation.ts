@@ -14,10 +14,9 @@ export function revisionTarget(
   const content = revision?.content;
   if (!unitId || content?.owner?.id !== unitId || !content?.id) return;
   const domains = content.domains || {};
-  const domainId =
-    Object.hasOwn(domains, selectedDomainId) && availableDomainIds.includes(selectedDomainId) ?
-      selectedDomainId
-    : Object.keys(domains).find((id) => availableDomainIds.includes(id));
+  // A domain dashboard must never fall back to a different standard or regulation.
+  if (!Object.hasOwn(domains, selectedDomainId) || !availableDomainIds.includes(selectedDomainId)) return;
+  const domainId = selectedDomainId;
   const objectType = VeoElementTypePlurals[content.type as keyof typeof VeoElementTypePlurals];
   if (!domainId || !objectType || !domains[domainId]?.subType) return;
   const segments = [unitId, 'domains', domainId, objectType, domains[domainId].subType, content.id];

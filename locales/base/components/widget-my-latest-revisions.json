@@ -1,14 +1,17 @@
 {
   "en": {
-    "myLatestRevisions": "My latest edited revisions",
-    "unitScope": "Recent records from all domains in this unit. Shared records open in the selected domain."
+    "myLatestRevisions": "My recent records in this domain",
+    "domainScope": "Records in the selected domain, from your 10 most recently edited records in this unit.",
+    "noRecentRecords": "None of your 10 most recently edited records in this unit belong to this domain."
   },
   "de": {
-    "myLatestRevisions": "Meine zuletzt bearbeiteten Objekte",
-    "unitScope": "Zuletzt bearbeitete Objekte aus allen Domänen dieser Einheit. Gemeinsame Objekte werden in der ausgewählten Domäne geöffnet."
+    "myLatestRevisions": "Meine letzten Objekte in dieser Domäne",
+    "domainScope": "Objekte der ausgewählten Domäne aus Ihren 10 zuletzt bearbeiteten Objekten dieser Einheit.",
+    "noRecentRecords": "Keines Ihrer 10 zuletzt bearbeiteten Objekte dieser Einheit gehört zu dieser Domäne."
   },
   "tr": {
-    "myLatestRevisions": "Son düzenlediğim sürüm kayıtları",
-    "unitScope": "Bu birimdeki tüm alanlardan son düzenlediğiniz kayıtlar. Ortak kayıtlar seçili alanda açılır."
+    "myLatestRevisions": "Bu alanda son düzenlediğim kayıtlar",
+    "domainScope": "Bu birimde son düzenlediğiniz 10 kayıt içinden seçili alana ait kayıtlar.",
+    "noRecentRecords": "Bu birimde son düzenlediğiniz 10 kayıt arasında bu alana ait kayıt yok."
   }
 }

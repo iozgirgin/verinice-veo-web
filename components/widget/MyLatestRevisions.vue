@@ -17,10 +17,13 @@
 -->
 <template>
   <BaseWidget :title="t('myLatestRevisions')">
-    <p class="text-body-2 mb-4">{{ t('unitScope') }}</p>
-    <v-table dense>
+    <p class="text-body-2 mb-4">{{ t('domainScope') }}</p>
+    <p v-if="revisions && !visibleRevisions.length" class="text-body-2" data-veo-test="domain-revisions-empty">
+      {{ t('noRecentRecords') }}
+    </p>
+    <v-table v-else dense>
       <tbody>
-        <tr v-for="(revision, key) in revisions || []" :key="key" class="text-no-wrap overflow-x-hidden fill-width">
+        <tr v-for="(revision, key) in visibleRevisions" :key="key" class="text-no-wrap overflow-x-hidden fill-width">
           <td>
             <nuxt-link v-if="target(revision)" :to="target(revision)!.url" class="text-body-2 text-color">
               {{ revision.content.designator }}
@@ -47,6 +50,13 @@ const { t, locale } = useI18n();
 const { data: revisions } = useLatestRevisions();
 const route = useRoute();
 const { data: domains } = useDomains();
+const visibleRevisions = computed(() =>
+  (revisions.value || []).filter(
+    (revision) =>
+      revision.content?.owner?.id === route.params.unit &&
+      Object.hasOwn(revision.content?.domains || {}, route.params.domain as string)
+  )
+);
 const target = (revision: IVeoLegacyObjectHistoryEntry) =>
   revisionTarget(
     revision,

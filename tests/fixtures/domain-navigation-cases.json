@@ -1,5 +1,5 @@
 {
-  "fixtureVersion": "1.0.0",
+  "fixtureVersion": "1.1.0",
   "unitId": "10000000-0000-4000-8000-000000000001",
   "domains": [
     {
@@ -157,10 +157,7 @@
         "30000000-0000-4000-8000-000000000002",
         "30000000-0000-4000-8000-000000000003"
       ],
-      "expected": {
-        "domainId": "30000000-0000-4000-8000-000000000001",
-        "url": "/10000000-0000-4000-8000-000000000001/domains/30000000-0000-4000-8000-000000000001/assets/Server/20000000-0000-4000-8000-000000000001/"
-      }
+      "expected": null
     },
     {
       "caseId": "DOMAIN-NAV-04",
@@ -195,10 +192,7 @@
       "availableDomainIds": [
         "30000000-0000-4000-8000-000000000002"
       ],
-      "expected": {
-        "domainId": "30000000-0000-4000-8000-000000000002",
-        "url": "/10000000-0000-4000-8000-000000000001/domains/30000000-0000-4000-8000-000000000002/assets/Resource/20000000-0000-4000-8000-000000000001/"
-      }
+      "expected": null
     },
     {
       "caseId": "DOMAIN-NAV-05",
@@ -345,12 +339,96 @@
   ],
   "componentCases": [
     "DOMAIN-NAV-UI-09",
-    "DOMAIN-NAV-UI-10"
+    "DOMAIN-NAV-UI-10",
+    "DOMAIN-NAV-UI-14",
+    "DOMAIN-NAV-UI-15"
   ],
   "historyCase": "DOMAIN-NAV-CACHE-11",
   "demoCompared": false,
   "liveCases": [
     "DOMAIN-NAV-LIVE-12",
-    "DOMAIN-NAV-MOBILE-13"
+    "DOMAIN-NAV-MOBILE-13",
+    "DOMAIN-NAV-LIVE-16",
+    "DOMAIN-NAV-LIVE-17",
+    "DOMAIN-NAV-LIVE-18",
+    "DOMAIN-NAV-MOBILE-19"
+  ],
+  "scope": "Selected domain only; source supplies the 10 most recently edited records in the unit.",
+  "scopeRevisions": [
+    {
+      "content": {
+        "id": "20000000-0000-4000-8000-000000000001",
+        "owner": {
+          "id": "10000000-0000-4000-8000-000000000001"
+        },
+        "name": "TEST Ortak Sunucu",
+        "designator": "AST-TEST-01",
+        "abbreviation": "",
+        "type": "asset",
+        "domains": {
+          "30000000-0000-4000-8000-000000000001": {
+            "subType": "Server"
+          },
+          "30000000-0000-4000-8000-000000000002": {
+            "subType": "Resource"
+          }
+        }
+      },
+      "time": "2026-01-05T08:00:00Z",
+      "author": "test-admin",
+      "type": "UPDATE",
+      "changeNumber": 1,
+      "uri": "/assets/20000000-0000-4000-8000-000000000001",
+      "id": "40000000-0000-4000-8000-000000000001"
+    },
+    {
+      "content": {
+        "id": "20000000-0000-4000-8000-000000000014",
+        "owner": {
+          "id": "10000000-0000-4000-8000-000000000001"
+        },
+        "name": "TEST Yalnız GDPR",
+        "designator": "PRO-TEST-14",
+        "abbreviation": "",
+        "type": "process",
+        "domains": {
+          "30000000-0000-4000-8000-000000000003": {
+            "subType": "ProcessingActivity"
+          }
+        }
+      },
+      "time": "2026-01-05T08:00:00Z",
+      "author": "test-admin",
+      "type": "UPDATE",
+      "changeNumber": 1,
+      "uri": "/processes/20000000-0000-4000-8000-000000000014",
+      "id": "40000000-0000-4000-8000-000000000014"
+    },
+    {
+      "content": {
+        "id": "20000000-0000-4000-8000-000000000015",
+        "owner": {
+          "id": "10000000-0000-4000-8000-000000000002"
+        },
+        "name": "TEST Diğer Birim",
+        "designator": "AST-TEST-01",
+        "abbreviation": "",
+        "type": "asset",
+        "domains": {
+          "30000000-0000-4000-8000-000000000001": {
+            "subType": "Server"
+          },
+          "30000000-0000-4000-8000-000000000002": {
+            "subType": "Resource"
+          }
+        }
+      },
+      "time": "2026-01-05T08:00:00Z",
+      "author": "test-admin",
+      "type": "UPDATE",
+      "changeNumber": 1,
+      "uri": "/assets/20000000-0000-4000-8000-000000000015",
+      "id": "40000000-0000-4000-8000-000000000015"
+    }
   ]
 }

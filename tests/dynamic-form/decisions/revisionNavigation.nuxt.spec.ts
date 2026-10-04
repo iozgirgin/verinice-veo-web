@@ -26,7 +26,7 @@ describe('Revision widget domain context', () => {
     const wrapper = await mountSuspended(Widget);
     expect(wrapper.find('a').attributes('href')).toBe(fixture.cases[0].expected!.url);
     expect(wrapper.text()).toContain('KVKK (sentetik)');
-    expect(wrapper.text()).toContain(messages.tr.unitScope);
+    expect(wrapper.text()).toContain(messages.tr.domainScope);
     state.route.params.domain = fixture.domains[0].id;
     await nextTick();
     expect(wrapper.find('a').attributes('href')).toBe(fixture.cases[1].expected!.url);
@@ -44,6 +44,39 @@ describe('Revision widget domain context', () => {
     state.domains.value = fixture.domains;
     await nextTick();
     expect(wrapper.find('a').attributes('href')).toBe(fixture.cases[0].expected!.url);
+    wrapper.unmount();
+  });
+});
+
+describe('Domain revision isolation', () => {
+  it('DOMAIN-NAV-UI-14 hides foreign-domain and foreign-unit records and switches immediately', async () => {
+    state.i18n = createI18n({ legacy: false, locale: 'tr', messages });
+    state.route = reactive({ params: { unit: fixture.unitId, domain: fixture.domains[1].id } });
+    const [, gdpr, foreignUnit] = fixture.scopeRevisions;
+    state.revisions = ref(fixture.scopeRevisions);
+    state.domains = ref(fixture.domains);
+    const wrapper = await mountSuspended(Widget);
+    expect(wrapper.findAll('a')).toHaveLength(1);
+    expect(wrapper.text()).not.toContain(gdpr.content.name);
+    expect(wrapper.text()).not.toContain(foreignUnit.content.name);
+    state.route.params.domain = fixture.domains[2].id;
+    await nextTick();
+    expect(wrapper.text()).toContain(gdpr.content.name);
+    expect(wrapper.text()).not.toContain(fixture.baseRevision.content.name);
+    expect(wrapper.find('a').attributes('href')).toContain('/domains/' + fixture.domains[2].id + '/');
+    wrapper.unmount();
+  });
+  it('DOMAIN-NAV-UI-15 explains an empty domain slice without claiming the whole domain is empty', async () => {
+    state.i18n = createI18n({ legacy: false, locale: 'tr', messages });
+    state.route = reactive({ params: { unit: fixture.unitId, domain: fixture.domains[2].id } });
+    state.revisions = ref([fixture.baseRevision]);
+    state.domains = ref(fixture.domains);
+    const wrapper = await mountSuspended(Widget);
+    expect(wrapper.findAll('a')).toHaveLength(0);
+    expect(wrapper.text()).toContain(messages.tr.noRecentRecords);
+    state.revisions.value = undefined;
+    await nextTick();
+    expect(wrapper.text()).not.toContain(messages.tr.noRecentRecords);
     wrapper.unmount();
   });
 });
