@@ -271,5 +271,11 @@
   ],
   "demoCompared": false,
   "legalAcceptance": false,
-  "scope": "Optional recorded-date order only; no deadline calculation, mandatory state fields or API enforcement"
+  "scope": "Optional recorded-date order only; no deadline calculation, mandatory state fields or API enforcement",
+  "layoutCase": {
+    "caseId": "KVKK-DATE-ORDER-NARROW-FORM",
+    "expectedStacked": true,
+    "reason": "Message sidebar leaves a narrow form even at desktop viewport",
+    "maxFormWidth": 236
+  }
 }

@@ -24,8 +24,8 @@ describe('Date/time control preserves recorded timestamps in its responsive layo
         options: { visible: true, label: testCase.label, required: false }
       }
     });
-    expect(wrapper.classes()).toContain('flex-column');
-    expect(wrapper.classes()).toContain('flex-sm-row');
+    expect(wrapper.classes()).toContain('d-flex');
+    expect(wrapper.classes()).toContain('flex-wrap');
     const date = wrapper.find('input[type=date]');
     const time = wrapper.find('input[type=time]');
     const local = new Date(testCase.timestamp);

@@ -19,7 +19,7 @@
   <div
     v-if="options.visible"
     :id="objectSchemaPointer"
-    class="vf-input-date-time vf-form-element d-flex flex-column flex-sm-row"
+    class="vf-input-date-time vf-form-element d-flex flex-wrap"
   >
     <!-- TODO-Vuetify: As of 3.1.0, v-date-picker and v-time-picker are not yet supported, so we use the browser fallback
     <v-menu
@@ -287,5 +287,16 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+.vf-input-date-time {
+  gap: 12px;
+}
+
+.vf-input-date-time > .v-input {
+  flex: 1 1 180px;
+  min-width: 0;
+}
+</style>
 
 <i18n src="~/locales/base/components/dynamic-form-controls-input-date-time.json"></i18n>
